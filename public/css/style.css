@@ -317,3 +317,7 @@ button.count-visits {
     float: left;
     text-transform: none;
 }
+
+.padding20 {
+    padding: 20px;
+}

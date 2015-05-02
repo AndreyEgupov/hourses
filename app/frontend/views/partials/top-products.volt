@@ -12,7 +12,7 @@
                     {% else %}
                         {% set src =  '/img/b1.jpg' %}
                     {% endif %}
-                    <a href=""><img src="/public/timthumb.php?w=128&h=171&src={{ src }}" class="img-responsive" alt=""></a>
+                    <a href="/service-item/view/{{ serviceItem.id }}"><img src="/public/timthumb.php?w=128&h=171&src={{ src }}" class="img-responsive" alt=""></a>
                 </div>
                 <h3><a href="item.html">{{ serviceItem.title }}</a></h3>
             </div>

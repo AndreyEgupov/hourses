@@ -1,6 +1,7 @@
 <?php
 namespace Multiple\Frontend\Controllers;
 use Phalcon\Mvc\View;
+use Phalcon\Security;
 use ServiceItem;
 use ServiceItemImages;
 use ServiceItemVideos;
@@ -202,6 +203,33 @@ class RoomController extends ControllerBase
             "order" => "date_post DESC"
         ));
         $this->br->add("Статистика обьявлений", "room/statistic");
+    }
+
+    public function userAction () {
+        $this->view->setRenderLevel(View::LEVEL_LAYOUT);
+
+        $this->view->setVar("errors", array());
+        $this->view->setVar("success", array());
+
+        if($this->request->isPost()) {
+            $password = $this->request->get("password");
+            $password2 = $this->request->get("password2");
+
+            if($password != $password2) {
+                $this->view->setVar("errors", array("Пароли не совпадают"));
+            } else {
+                $user = $this->session->get("user");
+                $security = new Security();
+                $user->password = $security->hash($password);
+
+                if ($user->save()) {
+                    $this->view->setVar("success", "Пароль успешно обновлен!");
+                } else {
+                    $this->view->setVar("errors", $user->getMessages());
+                }
+            }
+        }
+        $this->br->add("Профиль пользователя", "room/user");
     }
 }
 

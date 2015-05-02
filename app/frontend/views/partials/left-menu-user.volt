@@ -30,7 +30,7 @@
                 </ul>
             </li>
             <li class="list-group-item clearfix">
-                <a href="javascript:void(0);" >
+                <a href="/room/user" >
                     Мой профиль
                 </a>
             </li>
