@@ -45,7 +45,7 @@
                 </a>
                 <div class="pi-price">
                     <span class="price">{{ item.price }} руб</span>
-                    <span class="date"><i class="fa fa-tags"></i> {{ item.date_post }}</span>
+                    <span class="date"><i class="fa fa-tags"></i> {{ display_when(item.date_post) }}</span>
                 </div>
             </div>
             <h3><a href="/service-item/view/{{ item.id }}">{{ item.title }}</a></h3>

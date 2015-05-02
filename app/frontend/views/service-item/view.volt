@@ -70,7 +70,7 @@
                     {%  for comment in item.ServiceItemComments %}
                     <div class="review-item clearfix">
                         <div class="review-item-submitted">
-                            <strong>{{ comment.date_comment }}</strong>
+                            <strong>{{ display_when(comment.date_comment) }}</strong>
                             <em>{{ comment.user_name }}</em>
                             <div class="rateit" data-rateit-value="5" data-rateit-ispreset="true" data-rateit-readonly="true"></div>
                         </div>
@@ -80,19 +80,20 @@
                     </div>
                     {% endfor %}
                     <!-- BEGIN FORM-->
-                    <form action="#" class="reviews-form" role="form">
+                    <form data-action="/comment/add/{{ item.id }}" class="reviews-form" role="form" method="post"
+                          id="comment-form" onsubmit="saveComment()" action="javascript:void(0)">
                         <h2>Написать комментарий</h2>
                         <div class="form-group">
                             <label for="name">Имя <span class="require">*</span></label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" required="true" name="user_name" />
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" name="email" />
                         </div>
                         <div class="form-group">
                             <label for="review">Ваш комментарий <span class="require">*</span></label>
-                            <textarea class="form-control" rows="8" id="review"></textarea>
+                            <textarea class="form-control" rows="8" id="review" required="true" name="comment"></textarea>
                         </div>
 
                         <div class="padding-top-20">
@@ -133,5 +134,21 @@
 
     function writeComment() {
         $("#Reviews").trigger("click");
+    }
+
+    function saveComment () {
+        var $form = $("form#comment-form");
+        var params = $form.serialize();
+        $.ajax({
+            type: "POST",
+            url: $form.attr("data-action"),
+            data: params,
+            success: function (data) {
+                if(data && !data.error) {
+                    alert("Коментарий успешно добавлен, сейчас страница будет перезагружена");
+                    location.reload();
+                }
+            }
+        });
     }
 </script>

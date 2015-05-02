@@ -42,30 +42,11 @@ class ServiceItemComments extends \Phalcon\Mvc\Model
     public $date_comment;
 
     /**
-     * Validations and business logic
-     */
-    public function validation()
-    {
-
-        $this->validate(
-            new Email(
-                array(
-                    'field'    => 'email',
-                    'required' => true,
-                )
-            )
-        );
-        if ($this->validationHasFailed() == true) {
-            return false;
-        }
-    }
-
-    /**
      * Initialize method for model.
      */
     public function initialize()
     {
-        $this->belongsTo('service_item_id', 'Service_item', 'id', array('alias' => 'Service_item'));
+        $this->belongsTo('service_item_id', 'ServiceItem', 'id', array('alias' => 'ServiceItem'));
     }
 
 }
