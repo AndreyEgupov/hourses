@@ -35,8 +35,8 @@
                 </a>
             </li>
             <li class="list-group-item clearfix">
-                <a href="javascript:void(0);" >
-                    Статистика
+                <a href="/room/statistic" >
+                    Статистика обьявлений ({{ user.ServiceItem|length }})
                 </a>
             </li>
         </ul>

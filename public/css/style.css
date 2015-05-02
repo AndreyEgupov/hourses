@@ -311,3 +311,9 @@ div.langs-block-others {
     height: 30px !important;
     background-image: url("//yastatic.net/share/static/b-share_counter_large.png") !important;
 }
+
+button.count-visits {
+    margin-right: 10px;
+    float: left;
+    text-transform: none;
+}

@@ -193,5 +193,15 @@ class RoomController extends ControllerBase
 
         $this->br->add("Баланс", "balance");
     }
+
+    public function statisticAction () {
+        $this->view->setRenderLevel(View::LEVEL_LAYOUT);
+        $this->view->items = ServiceItem::find(array(
+            "conditions" => "user_id = ?1",
+            "bind"       => array(1 => $this->session->get("user")->id),
+            "order" => "date_post DESC"
+        ));
+        $this->br->add("Статистика обьявлений", "room/statistic");
+    }
 }
 

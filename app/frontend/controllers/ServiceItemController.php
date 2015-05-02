@@ -3,6 +3,7 @@
 namespace Multiple\Frontend\Controllers;
 use Phalcon\Mvc\View;
 use ServiceItem;
+use ServiceItemVisits;
 
 class ServiceItemController extends ControllerBase
 {
@@ -32,6 +33,13 @@ class ServiceItemController extends ControllerBase
     public function viewAction($id=null) {
         $this->view->item  = ServiceItem::findFirst("id = $id");
         $this->view->setRenderLevel(View::LEVEL_LAYOUT);
+
+        $visit = new ServiceItemVisits();
+        $visit->save(array(
+            "ip" => $_SERVER['REMOTE_ADDR'],
+            "date" => date("Y-m-d H:i:s"),
+            "service_item_id" => (int) $id
+        ));
     }
 
     public function getPhotosAction ($serviceItemId) {

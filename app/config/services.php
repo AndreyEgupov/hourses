@@ -71,6 +71,13 @@ $di->set('view', function () use ($config) {
                     $cityId = $compiler->expression($exprArgs[1]['expr']);
                     return '\ServiceItem::count("is_published = 1 AND city_id = '.$cityId.' AND service_id = '.$serviceId.'")';
                 });
+
+            $compiler->addFunction('count_service_item_visits',
+                function($resolvedArgs, $exprArgs) use ($compiler) {
+                    $serviceId = $compiler->expression($exprArgs[0]['expr']);
+                    $countDays = $compiler->expression($exprArgs[1]['expr']);
+                    return '\Statistics::countVisits('.$serviceId.','.$countDays.')';
+                });
             return $volt;
         },
         '.phtml' => 'Phalcon\Mvc\View\Engine\Php'
