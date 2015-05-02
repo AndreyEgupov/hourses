@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68d6220d-514f-4a92-8db8-fc51fb36306d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/top-products.volt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/featured-products.volt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/footer.phtml" afterPath="$PROJECT_DIR$/app/frontend/views/partials/footer.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/recommended_article.19.04.2015_20.30.mssql" afterPath="$PROJECT_DIR$/sql/recommended_article.19.04.2015_20.30.mssql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/library/Breadcrumbs.php" afterPath="$PROJECT_DIR$/app/library/Breadcrumbs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/library/DateFormat.php" afterPath="$PROJECT_DIR$/app/library/DateFormat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/library/FileUploader.php" afterPath="$PROJECT_DIR$/app/library/FileUploader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Slider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/slider.volt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/slider.phtml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/frontend/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Menu.php" afterPath="$PROJECT_DIR$/app/models/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/Module.php" afterPath="$PROJECT_DIR$/app/admin/Module.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/Module.php" afterPath="$PROJECT_DIR$/app/frontend/Module.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/News.php" afterPath="$PROJECT_DIR$/app/models/News.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/library/Order.php" afterPath="$PROJECT_DIR$/app/library/Order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/RecommendedArticle.php" afterPath="$PROJECT_DIR$/app/models/RecommendedArticle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ServiceItem.php" afterPath="$PROJECT_DIR$/app/models/ServiceItem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/room/balance.volt" afterPath="$PROJECT_DIR$/app/frontend/views/room/balance.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/db.19.04.2015_17.20.mssql" afterPath="$PROJECT_DIR$/sql/db.19.04.2015_17.20.mssql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/default-bootstrap.css" afterPath="$PROJECT_DIR$/public/css/default-bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/define.php" afterPath="$PROJECT_DIR$/app/config/define.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/dropzone.js" afterPath="$PROJECT_DIR$/public/js/app/dropzone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/error.volt" afterPath="$PROJECT_DIR$/app/frontend/views/layouts/error.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/payment/error.volt" afterPath="$PROJECT_DIR$/app/frontend/views/payment/error.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/index/index.volt" afterPath="$PROJECT_DIR$/app/frontend/views/index/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/news/index.volt" afterPath="$PROJECT_DIR$/app/frontend/views/news/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/items-null.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/items-null.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/error/notFound.volt" afterPath="$PROJECT_DIR$/app/frontend/views/error/notFound.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/services-table.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/services-table.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/payment/success.volt" afterPath="$PROJECT_DIR$/app/frontend/views/payment/success.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/service-item/view.volt" afterPath="$PROJECT_DIR$/app/frontend/views/service-item/view.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="651c3a30-c589-45c5-bc7d-209aa434fe1f" name="New changelist" comment="" />
@@ -56,12 +34,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="top-products.volt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="top-products.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/top-products.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19313304" vertical-offset="0" max-vertical-offset="932">
+            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="435">
               <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slider.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/slider.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+              <folding>
+                <element signature="e#132#183#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,31 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceItemImages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ServiceItemImages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="570">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerBase.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1666665" vertical-offset="500" max-vertical-offset="1635">
-              <caret line="42" column="40" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/frontend/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="450">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="540">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="e#48#71#0#PHP" expanded="true" />
               </folding>
@@ -108,11 +78,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceItem.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ServiceItem.php">
+      <file leaf-file-name="view.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/views/service-item/view.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.083334" vertical-offset="1090" max-vertical-offset="2070">
-              <caret line="100" column="104" selection-start-line="100" selection-start-column="87" selection-end-line="100" selection-end-column="104" />
+            <state vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="2145">
+              <caret line="48" column="302" selection-start-line="48" selection-start-column="302" selection-end-line="48" selection-end-column="302" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9686192" vertical-offset="3739" max-vertical-offset="4770">
+              <caret line="311" column="94" selection-start-line="311" selection-start-column="94" selection-end-line="311" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -129,9 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/frontend/views/partials/items-null.volt" />
-        <option value="$PROJECT_DIR$/app/frontend/views/partials/service-items.volt" />
-        <option value="$PROJECT_DIR$/app/frontend/views/layouts/news.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/news/view.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/news/list.volt" />
         <option value="$PROJECT_DIR$/app/frontend/controllers/NewsController.php" />
@@ -178,8 +155,11 @@
         <option value="$PROJECT_DIR$/app/frontend/views/partials/left-menu.volt" />
         <option value="$PROJECT_DIR$/app/models/ServiceItem.php" />
         <option value="$PROJECT_DIR$/app/frontend/views/index/index.volt" />
-        <option value="$PROJECT_DIR$/app/frontend/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/top-products.volt" />
+        <option value="$PROJECT_DIR$/app/frontend/views/partials/slider.volt" />
+        <option value="$PROJECT_DIR$/app/frontend/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/frontend/views/service-item/view.volt" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -248,11 +228,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -266,121 +242,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,7 +406,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429467913978</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added &quot;top products&quot; block in index page">
+      <created>1430569109359</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1430569109359</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -603,34 +475,14 @@
     <MESSAGE value="added payment robokasa" />
     <MESSAGE value="fixed button balance on 250" />
     <MESSAGE value="fixed breadcrumbs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed breadcrumbs" />
+    <MESSAGE value="added &quot;top products&quot; block in index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added &quot;top products&quot; block in index page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/admin/controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5976395" vertical-offset="163" max-vertical-offset="1200">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/controllers/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6598712" vertical-offset="0" max-vertical-offset="960">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="50" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/controllers/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.708334" vertical-offset="28" max-vertical-offset="1005">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/extjs/desktop/modules/ArticleManager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="4080">
@@ -678,6 +530,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.01609442" vertical-offset="0" max-vertical-offset="932">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -728,6 +581,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14121339" vertical-offset="0" max-vertical-offset="956">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -825,6 +679,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.01609442" vertical-offset="0" max-vertical-offset="932">
           <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding>
+            <element signature="e#54#82#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,35 +804,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php">
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/top-products.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1666665" vertical-offset="500" max-vertical-offset="1635">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="40" />
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="435">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/slider.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="450">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
           <folding>
-            <element signature="e#48#71#0#PHP" expanded="true" />
+            <element signature="e#132#183#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ServiceItem.php">
+    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.083334" vertical-offset="1090" max-vertical-offset="2070">
-          <caret line="100" column="104" selection-start-line="100" selection-start-column="87" selection-end-line="100" selection-end-column="104" />
+        <state vertical-scroll-proportion="0.13793103" vertical-offset="500" max-vertical-offset="1635">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ServiceItemImages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="570">
+        <state vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="725">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="19" />
           <folding />
         </state>
@@ -989,10 +846,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/top-products.volt">
+    <entry file="file://$PROJECT_DIR$/app/models/ServiceItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19313304" vertical-offset="0" max-vertical-offset="932">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.56551725" vertical-offset="1090" max-vertical-offset="2070">
+          <caret line="100" column="104" selection-start-line="100" selection-start-column="87" selection-end-line="100" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="540">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#48#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/service-item/view.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="2145">
+          <caret line="48" column="302" selection-start-line="48" selection-start-column="302" selection-end-line="48" selection-end-column="302" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9686192" vertical-offset="3739" max-vertical-offset="4770">
+          <caret line="311" column="94" selection-start-line="311" selection-start-column="94" selection-end-line="311" selection-end-column="94" />
           <folding />
         </state>
       </provider>

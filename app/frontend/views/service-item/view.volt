@@ -41,12 +41,12 @@
                 <a href="javascript:$('#review-click').trigger('click');">Написать комментарий</a>
             </div>
             <ul class="social-icons">
-                <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
-                <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
-                <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
-                <li><a class="evernote" data-original-title="evernote" href="#"></a></li>
-                <li><a class="tumblr" data-original-title="tumblr" href="#"></a></li>
-            </ul>
+                {#<li><a class="facebook" data-original-title="facebook" href="#"></a></li>#}
+                {#<li><a class="twitter" data-original-title="twitter" href="#"></a></li>#}
+                {#<li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>#}
+                {#<li><a class="evernote" data-original-title="evernote" href="#"></a></li>#}
+                {#<li><a class="tumblr" data-original-title="tumblr" href="#"></a></li>#}
+                <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>            </ul>
         </div>
 
         <div class="product-page-content">

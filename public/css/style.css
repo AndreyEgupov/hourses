@@ -305,3 +305,9 @@ div.langs-block-others {
 .inbox .table-hover tbody tr.unread > td{
     background: #EEF4F7 !important;
 }
+
+.b-share_theme_counter .b-share_type_small .b-share-icon {
+    width: 30px !important;
+    height: 30px !important;
+    background-image: url("//yastatic.net/share/static/b-share_counter_large.png") !important;
+}
