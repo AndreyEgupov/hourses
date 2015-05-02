@@ -4,5 +4,5 @@
     Каждая страна прекрасна по-своему дарит разнообразие пейзажей и свадебных площадок.
 </p>
 {{ partial("partials/service-list")  }}
-{{ partial("partials/featured-products")  }}
+{{ partial("partials/top-products")  }}
 {{ partial("partials/recommended-articles")  }}

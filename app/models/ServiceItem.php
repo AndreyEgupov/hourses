@@ -87,6 +87,12 @@ class ServiceItem extends \Phalcon\Mvc\Model
      *
      * @var integer
      */
+    public $is_top;
+
+    /**
+     *
+     * @var integer
+     */
     public $is_published;
 
     public function initialize()
@@ -118,6 +124,7 @@ class ServiceItem extends \Phalcon\Mvc\Model
             'service_id' => 'service_id', 
             'user_id' => 'user_id', 
             'is_vip' => 'is_vip', 
+            'is_top' => 'is_top', 
             'is_published' => 'is_published'
         );
     }
