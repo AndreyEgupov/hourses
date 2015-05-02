@@ -1,9 +1,11 @@
 <?php
 
 namespace Multiple\Frontend\Controllers;
+use Config;
 use Phalcon\Mvc\View;
 use ServiceItem;
 use ServiceItemVisits;
+use Users;
 
 class ServiceItemController extends ControllerBase
 {
@@ -84,11 +86,40 @@ class ServiceItemController extends ControllerBase
 
         $this->view->setRenderLevel(View::LEVEL_NO_RENDER);
         $serviceItem = ServiceItem::findFirst($serviceItemId);
+
+        if($serviceItem->is_vip) {
+            $price = Config::findFirst("name = 'price-vip'")->value;
+            $user = $this->session->get("user");
+            $user = Users::findFirst($user->id);
+
+            $balance = $user->balance;
+            if($balance < $price) {
+                return array(
+                    "success" => false,
+                    "msg" => "Что-бы размесить обьявление как VIP необходимо иметь на счету минимум ".$price." руб."
+                );
+            }
+
+            $user->balance = $balance - $price;
+            if ($user->save()) {
+                $this->session->set("user", $user);
+
+                $serviceItem->is_published = 1;
+                $serviceItem->save();
+
+                return array(
+                    "success" => true,
+                    "msg" => "Ваше обьявление размещено как vip, с вашего счета было снято ".$price." руб."
+                );
+            }
+        }
+
         $serviceItem->is_published = 1;
         $serviceItem->save();
 
         return array(
-            "success" => true
+            "success" => true,
+            "msg" => "Ваше обьявение было удачно размещено!."
         );
     }
 
@@ -108,13 +139,31 @@ class ServiceItemController extends ControllerBase
         $this->setJsonResponse();
 
         $serviceItem = ServiceItem::findFirst($serviceItemId);
-        $serviceItem->datePost = date('now');
-        $serviceItem->save();
 
-        return array(
-            "success" => true,
-            "msg" => "Обьявление успешно обновлено!"
-        );
+        $price = Config::findFirst("name = 'price-up'")->value;
+        $user = $this->session->get("user");
+        $user = Users::findFirst($user->id);
+
+        $balance = $user->balance;
+        if($balance < $price) {
+            return array(
+                "success" => false,
+                "msg" => "Что-бы поднять анкету на первое место, необходимо иметь на счету минимум ".$price." руб."
+            );
+        }
+
+        $user->balance = $balance - $price;
+        if ($user->save()) {
+            $this->session->set("user", $user);
+
+            $serviceItem->datePost = date('now');
+            $serviceItem->save();
+
+            return array(
+                "success" => true,
+                "msg" => "Обьявление успешно обновлено!"
+            );
+        }
     }
 }
 

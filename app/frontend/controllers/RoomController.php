@@ -7,8 +7,7 @@ use ServiceItemImages;
 use ServiceItemVideos;
 use Services;
 
-class RoomController extends ControllerBase
-{
+class RoomController extends ControllerBase {
     public function indexAction () {
         $this->checkUser();
         $this->view->setRenderLevel(View::LEVEL_LAYOUT);
@@ -86,7 +85,7 @@ class RoomController extends ControllerBase
             $serviceItem->user_id = $userId;
             $serviceItem->city_id = $cityId;
             $serviceItem->is_vip = $placeType;
-            $serviceItem->is_published = $serviceItemId? $serviceItem->is_published : 0;
+            $serviceItem->is_published = 0;
 
             $serviceItem->ServiceItemImages->delete();
             $serviceItem->ServiceItemVideos->delete();

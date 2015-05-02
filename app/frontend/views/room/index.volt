@@ -19,10 +19,9 @@
                         {% endif %}
                         <button type="button" class="btn btn-danger" style="margin-right: 15px;" onclick="deleteServiceItem({{ item.id }});"><i class="fa fa-times"></i> Удалить</button>
 
-                        <button type="button" class="btn btn-success" style="margin-right: 15px;" onclick="up({{ item.id }});">
-                            <i class="fa fa-arrow-up"></i> Поднять</button>
-
                         {% if item.is_published==1 %}
+                            <button type="button" class="btn btn-success" style="margin-right: 15px;" onclick="up({{ item.id }});">
+                                <i class="fa fa-arrow-up"></i> Поднять</button>
                             <button type="button" class="btn default" onclick="removeFromPlacement({{ item.id }});">
                                 <i class="fa fa-times"></i> Снять с размещения</button>
                         {% else %}
@@ -75,7 +74,11 @@
     function placement(id) {
         if (confirm("Вы действительно хотите разместить это обьявление?")) {
             $.post("/service-item/placement/"+id, {}, function (data) {
-                alert("Операция успешно завершена!");
+                if(data.success === false) {
+                    alert(data.msg);
+                    return;
+                }
+                alert(data.msg);
                 location.reload();
             });
         }
@@ -84,10 +87,12 @@
     function up (id) {
         if (confirm("Вы действительно хотите поднять это обьявление?")) {
             $.post("/service-item/up/"+id, {}, function (data) {
-                if(data.success) {
+                if(data.success === false) {
                     alert(data.msg);
-                    location.reload();
+                    return;
                 }
+                alert(data.msg);
+                location.reload();
             });
         }
     }

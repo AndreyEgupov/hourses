@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Май 02 2015 г., 14:52
+-- Время создания: Май 02 2015 г., 15:51
 -- Версия сервера: 5.6.21
 -- Версия PHP: 5.5.14
 
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `config` (
 `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `value` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `config`
@@ -64,7 +64,9 @@ CREATE TABLE IF NOT EXISTS `config` (
 INSERT INTO `config` (`id`, `name`, `value`) VALUES
 (1, 'admin-user-id', '1'),
 (2, 'max-count-video', '4'),
-(3, 'max-length-description', '500');
+(3, 'max-length-description', '500'),
+(4, 'price-up', '120'),
+(5, 'price-vip', '200');
 
 -- --------------------------------------------------------
 
@@ -105,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `text` mediumtext NOT NULL,
   `date` datetime NOT NULL,
   `is_unread` tinyint(1) DEFAULT '0' COMMENT 'просмотренное или нет '
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `messages`
@@ -316,10 +318,10 @@ CREATE TABLE IF NOT EXISTS `service_item` (
 INSERT INTO `service_item` (`id`, `title`, `logo_src`, `short_description`, `description`, `date_post`, `price`, `email`, `phone`, `city_id`, `service_id`, `user_id`, `is_vip`, `is_top`, `is_published`) VALUES
 (19, 'Новое обьявление', '/files/2d58c80f98b82a5a2745856f593d40bf.jpeg', ' Тут длинный текст обьявления ', ' Тут длинный текст обьявления ', '2015-04-05 15:08:00', 1500, 'bombascter@gmail.com', '0971665543', 1, 1, 3, NULL, 1, 1),
 (21, 'Название', '/files/689651adcf9799982ae7e48e14d182e9.jpeg', 'ткст', 'ткст', '2015-04-18 17:45:25', 1111, '', '', 1, 1, 1, 0, 1, 1),
-(22, 'hhhh', '/files/e8d4c883d5845a02f3ec232a4084d3b0.jpeg', '1111', '1111', '2015-04-18 17:48:28', 111, '', '', 1, 1, 1, 1, 1, 1),
+(22, 'hhhh', '/files/e8d4c883d5845a02f3ec232a4084d3b0.jpeg', '1111', '1111', '2015-04-18 17:48:28', 111, '', '', 1, 1, 1, 0, 1, 1),
 (23, 'новое обьявление', '/files/ab3229bba8728868221ade4c4e510317.jpeg', '111', '111', '2015-04-18 21:15:28', 11111, '', '', 1, 1, 1, 0, 1, 1),
-(24, 'фывфыв', '/files/a88acbe7af20d418e346de01989751ef.jpeg', 'фывфывф', 'фывфывф', '2015-04-18 21:15:56', 231312, '', '', 1, 1, 1, 0, 1, 1),
-(25, 'фывфыв', '/files/10e45f61208fb7d41e67ac5f7bae02be.jpeg', 'фыфывфы', 'фыфывфы', '2015-04-18 21:16:16', 1111, '', '', 2, 1, 1, 0, 1, 1);
+(24, 'фывфыв', '/files/a88acbe7af20d418e346de01989751ef.jpeg', 'фывфывф', 'фывфывф', '2015-04-18 21:15:56', 231312, '', '', 1, 1, 1, 1, 1, 0),
+(25, 'фывфыв', '/files/10e45f61208fb7d41e67ac5f7bae02be.jpeg', 'фыфывфы', 'фыфывфы', '2015-04-18 21:16:16', 1111, '', '', 2, 1, 1, 1, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -353,7 +355,7 @@ CREATE TABLE IF NOT EXISTS `service_item_images` (
 `id` int(11) NOT NULL,
   `img_src` varchar(255) NOT NULL,
   `service_item_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `service_item_images`
@@ -364,13 +366,13 @@ INSERT INTO `service_item_images` (`id`, `img_src`, `service_item_id`) VALUES
 (57, '/files/20e108f2a741fb5ff8c6e26becf950ea.jpeg', 21),
 (58, '/files/cb0dbb5f0fbadf255b8a780629355066.jpeg', 21),
 (59, '/files/6098c7f4b0cebdf8d4236cdf3dfb63fc.jpeg', 21),
-(63, '/files/368564874934715313236edbff8b2216.jpeg', 22),
-(64, '/files/d7a1cd76a5a73aeddb5c3081a74be984.jpeg', 22),
-(65, '/files/6a890084f5a1f96e33e18b1d1dfdbb3e.png', 22),
 (66, '/files/3e4f74392be87cf852970337e643eb78.jpeg', 23),
 (67, '/files/882cfa565cf22556c31b5a20eca54e94.jpeg', 23),
-(73, '/files/c787bd83557a955345a79f6b6a648a77.jpeg', 24),
-(74, '/files/25fd5ba4564506e45163d4014e16e448.jpeg', 24);
+(78, '/files/368564874934715313236edbff8b2216.jpeg', 22),
+(79, '/files/d7a1cd76a5a73aeddb5c3081a74be984.jpeg', 22),
+(80, '/files/6a890084f5a1f96e33e18b1d1dfdbb3e.png', 22),
+(81, '/files/c787bd83557a955345a79f6b6a648a77.jpeg', 24),
+(82, '/files/25fd5ba4564506e45163d4014e16e448.jpeg', 24);
 
 -- --------------------------------------------------------
 
@@ -403,7 +405,7 @@ CREATE TABLE IF NOT EXISTS `service_item_visits` (
   `ip` varchar(255) NOT NULL,
   `service_item_id` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `service_item_visits`
@@ -413,7 +415,12 @@ INSERT INTO `service_item_visits` (`id`, `ip`, `service_item_id`, `date`) VALUES
 (1, '127.0.0.1', 25, '2015-05-02 13:59:31'),
 (2, '127.0.0.1', 25, '2015-05-02 13:59:40'),
 (3, '127.0.0.1', 25, '2015-05-02 14:47:49'),
-(4, '127.0.0.1', 24, '2015-05-02 14:51:12');
+(4, '127.0.0.1', 24, '2015-05-02 14:51:12'),
+(5, '127.0.0.1', 22, '2015-05-02 14:58:15'),
+(6, '127.0.0.1', 22, '2015-05-02 14:58:33'),
+(7, '127.0.0.1', 21, '2015-05-02 14:58:36'),
+(8, '127.0.0.1', 22, '2015-05-02 14:58:40'),
+(9, '127.0.0.1', 19, '2015-05-02 14:58:45');
 
 -- --------------------------------------------------------
 
@@ -465,7 +472,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `phone`, `status_id`, `code_validate`, `user_group_id`, `balance`, `tariff_plan_id`, `binding_ip`, `date_register`, `is_new`, `newsletter`) VALUES
-(1, 'serg.tkachenko@hotmail.com', '$2a$04$FJ3fvxsf3QOSNGOZrmxnbubqDo5Y.RdtiNLB8lB6/eF5wobnhbNFa', '', 2, '30667f534bc2302873554b266b0adb2b', 3, 1550, 1, 0, '2013-08-24 17:01:02', 1, 0),
+(1, 'serg.tkachenko@hotmail.com', '$2a$08$xJyhdiuFqrPpnix0bBpf6u89K5Sf4o80M6pSOD8e9Ofvzf.uHFQsK', '', 2, '30667f534bc2302873554b266b0adb2b', 3, 0, 1, 0, '2013-08-24 17:01:02', 1, 0),
 (3, 'test@gmail.com', '$2a$08$icY4tJCmcqRpoYSvCGIU/.7E8GngC6cZAygpum8DKpmfFkbaEOJdu', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -653,7 +660,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 -- AUTO_INCREMENT для таблицы `config`
 --
 ALTER TABLE `config`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `menu`
 --
@@ -663,7 +670,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 -- AUTO_INCREMENT для таблицы `messages`
 --
 ALTER TABLE `messages`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `news`
 --
@@ -698,7 +705,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 -- AUTO_INCREMENT для таблицы `service_item_images`
 --
 ALTER TABLE `service_item_images`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=75;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=83;
 --
 -- AUTO_INCREMENT для таблицы `service_item_videos`
 --
@@ -708,7 +715,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 -- AUTO_INCREMENT для таблицы `service_item_visits`
 --
 ALTER TABLE `service_item_visits`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT для таблицы `slider`
 --

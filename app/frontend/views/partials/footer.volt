@@ -91,7 +91,7 @@
                     <h2>Подписка на новости</h2>
                     <form action="#" onsubmit="alert('Ваш email успешно подписан на рассылку!')">
                         <div class="input-group">
-                            <input type="email" required="true" placeholder="youremail@mail.com" class="form-control">
+                            <input type="email2"  placeholder="youremail@mail.com" class="form-control">
                   <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">Подписаться</button>
                   </span>
