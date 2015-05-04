@@ -1,0 +1,21 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    font-family: 'Open Sans', sans-serif !important;		
+		}
+h1, h2, h3, h4, h5 {font-family: 'Open Sans', sans-serif !important;}
+.sf-menu > li > a {font-family: 'Open Sans', sans-serif !important;}
+.item-title {font-family: 'Open Sans', sans-serif !important;}
+.price {font-family: 'Open Sans', sans-serif !important;}
+button.detail {font-family: 'Open Sans', sans-serif !important;}
+.shopnow {font-family: 'Open Sans', sans-serif !important;}
+.moreinfo_block .tab-info{font-family: 'Open Sans', sans-serif !important;}
+.layered_filter{font-family: 'Open Sans', sans-serif !important;}
+.commentList .name {font-family: 'Open Sans', sans-serif !important;}
+#submitComment {font-family: 'Open Sans', sans-serif !important;}
+#block_top_menu .cat-title {font-family: 'Open Sans', sans-serif !important;}
+#header_links li a {font-family: 'Open Sans', sans-serif !important;}
+.title_block {font-family: 'Open Sans', sans-serif !important;}
+#header .cart_block a {font-family: 'Open Sans', sans-serif !important;}
+#header .cart_block .price {font-family: 'Open Sans', sans-serif !important;}
+
+

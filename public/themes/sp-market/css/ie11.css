@@ -1,0 +1,56 @@
+/********************************************************
+			IE11
+********************************************************/
+/*-------Fix IE 11 ----*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /********************************************************
+			    IE11
+    ********************************************************/
+  .spcat-items .content_price span.product-price {
+    text-align: left;
+    width: 100%;
+    float: left; }
+
+  .header-top-right .header_user_info ul.links li {
+    white-space: nowrap; }
+    .header-top-right .header_user_info ul.links li a {
+      white-space: nowrap; }
+
+  #homepage-slider .bx-wrapper .bx-controls-direction a.bx-next {
+    background: url("../img/icon/arrow-slider.png") no-repeat -39px 14px;
+    background-color: #777777; }
+
+  #search_block_top #searchbox {
+    padding: 0 1px !important; }
+
+  #search_block_top .button-search {
+    padding-top: 8px; }
+
+  .is_rtl .tab-slider .sp-sp-cat .spcat-tabs-container .spcat-tabs li.spcat-tab span {
+    padding-bottom: 7px; }
+    .is_rtl .tab-slider .sp-sp-cat .spcat-tabs-container .spcat-tabs li.spcat-tab span:before {
+      bottom: -14px; }
+  .is_rtl .header-top-right .header_user_info ul li a i {
+    margin-right: 15px; }
+  .is_rtl .login-regis .yt-login-regis {
+    direction: ltr; }
+  .is_rtl .login-regis .yt-login-regis:before {
+    border-right: 10px solid transparent !important;
+    border-left: 0 solid transparent !important; }
+  .is_rtl #languages-block-top div.current, .is_rtl #currencies-block-top div.current {
+    direction: ltr; }
+    .is_rtl #languages-block-top div.current img, .is_rtl #currencies-block-top div.current img {
+      float: right;
+      margin-top: 8px; }
+  .is_rtl #languages-block-top div.current img {
+    margin: 1px 2px 0 8px !important; }
+  .is_rtl .header_user_info ul.links li.compare {
+    text-align: left; }
+    .is_rtl .header_user_info ul.links li.compare a {
+      background-position: 70px 5px !important; }
+  .is_rtl span.product-price {
+    text-align: right !important;
+    float: right;
+    width: 100%; }
+  .is_rtl .products_block .product_images li {
+    direction: ltr !important; } }

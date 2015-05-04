@@ -1,0 +1,127 @@
+/* ************************************************************************************************
+	Categories Page Styles
+************************************************************************************************ */
+.content_scene_cat {
+  margin-bottom: 30px; }
+  .content_scene_cat .content_scene {
+    color: white;
+    padding: 30px 0; }
+    .content_scene_cat .content_scene h1 {
+      text-transform: uppercase;
+      /* display: none; */
+      color: white;
+      width: auto;
+      display: inline-block;
+      padding: 5px 10px;
+      background: rgba(0, 0, 0, 0.31); }
+    .content_scene_cat .content_scene .rte {
+      font-size: 14px;
+      /* display: none; */
+      padding: 8px 10px;
+      background: rgba(0, 0, 0, 0.5); }
+      .content_scene_cat .content_scene .rte p {
+        margin: 0px; }
+
+.top-pagination-content,
+.bottom-pagination-content {
+  text-align: center;
+  padding: 12px 0 12px 0;
+  position: relative; }
+  .top-pagination-content div.pagination,
+  .bottom-pagination-content div.pagination {
+    margin: 0; }
+    .top-pagination-content div.pagination .showall,
+    .bottom-pagination-content div.pagination .showall {
+      float: right;
+      margin: 0px; }
+      .top-pagination-content div.pagination .showall .btn span,
+      .bottom-pagination-content div.pagination .showall .btn span {
+        font-size: 13px;
+        padding: 3px 5px 4px 5px;
+        line-height: normal; }
+  .top-pagination-content ul.pagination,
+  .bottom-pagination-content ul.pagination {
+    margin: 20px 20px 10px; }
+    .top-pagination-content ul.pagination li,
+    .bottom-pagination-content ul.pagination li {
+      display: inline-block; }
+      .top-pagination-content ul.pagination li > a,
+      .top-pagination-content ul.pagination li > span,
+      .bottom-pagination-content ul.pagination li > a,
+      .bottom-pagination-content ul.pagination li > span {
+        margin: 0 1px 0 0px;
+        padding: 0;
+        font-weight: bold;
+        border: 1px solid;
+        border-color: #dfdede #d2d0d0 #b0afaf #d2d0d0;
+        display: block; }
+        .top-pagination-content ul.pagination li > a span,
+        .top-pagination-content ul.pagination li > span span,
+        .bottom-pagination-content ul.pagination li > a span,
+        .bottom-pagination-content ul.pagination li > span span {
+          border: 1px solid white;
+          padding: 2px 8px;
+          display: block;
+          background: url(../img/pagination-li.gif) 0 0 repeat-x #e6e6e6; }
+      .top-pagination-content ul.pagination li > a:hover span,
+      .bottom-pagination-content ul.pagination li > a:hover span {
+        background: #f6f6f6; }
+      .top-pagination-content ul.pagination li.pagination_previous, .top-pagination-content ul.pagination li.pagination_next,
+      .bottom-pagination-content ul.pagination li.pagination_previous,
+      .bottom-pagination-content ul.pagination li.pagination_next {
+        color: #777676;
+        font-weight: bold; }
+        .top-pagination-content ul.pagination li.pagination_previous > a,
+        .top-pagination-content ul.pagination li.pagination_previous > span, .top-pagination-content ul.pagination li.pagination_next > a,
+        .top-pagination-content ul.pagination li.pagination_next > span,
+        .bottom-pagination-content ul.pagination li.pagination_previous > a,
+        .bottom-pagination-content ul.pagination li.pagination_previous > span,
+        .bottom-pagination-content ul.pagination li.pagination_next > a,
+        .bottom-pagination-content ul.pagination li.pagination_next > span {
+          display: block;
+          padding: 3px 10px;
+          background: transparent; }
+      .top-pagination-content ul.pagination li.active > span,
+      .bottom-pagination-content ul.pagination li.active > span {
+        color: #333333;
+        border-color: #dfdede #d2d0d0 #b0afaf #d2d0d0; }
+        .top-pagination-content ul.pagination li.active > span span,
+        .bottom-pagination-content ul.pagination li.active > span span {
+          background: #f6f6f6; }
+  .top-pagination-content .product-count,
+  .bottom-pagination-content .product-count {
+    color: #999; }
+
+/* ************************************************************************************************
+Sub Categories Styles
+************************************************************************************************ */
+#subcategories {
+  margin-bottom: 50px; }
+  #subcategories .subcategory-heading {
+    text-transform: uppercase;
+    font: 600 18px/22px "Open Sans",sans-serif; }
+  #subcategories .subcategories-box {
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s all ease 0s; }
+  #subcategories .subcategory-name {
+    color: #333;
+    transition: 0.3s all ease 0s; }
+/* ************************************************************************************************
+CSS3
+************************************************************************************************ */
+.preview,.next {
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;	
+	}
+	
+#left_column {
+	padding-left:0
+}
+#center_column{
+	padding: 0 0 0 15px
+}

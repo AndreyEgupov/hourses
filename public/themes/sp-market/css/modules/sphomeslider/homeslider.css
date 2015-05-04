@@ -1,0 +1,201 @@
+/******************************************************************************
+						Home Page Slider
+*******************************************************************************/
+#homepage-slider {
+  /* margin-bottom: 30px; */
+  /* background: #ebebeb; */
+  width: 68.8%;
+  padding: 0;
+  position: relative;
+  overflow: inherit; 
+  float: left;
+}
+.slider-container div#htmlcontent_slidershow{
+		/* padding-left: 10px; */
+		width: 30%;
+}
+@media (max-width:650px){
+	.slider-container #htmlcontent_slidershow{
+	display:none
+	}
+	.slider-container .col-md-9{
+	width:100% !important	
+	}
+	.slider-container .col-md-9 #homepage-slider{
+		width:100%
+	}
+}
+ .slider-container div#yt_header_right{
+	float: right;
+	/* padding-left: 15px; */
+	margin: 0;
+	/* position: relative; */
+}
+  #homepage-slider #homeslider {
+    margin: 0 auto;
+    padding: 0; }
+  #homepage-slider .homeslider-description {
+    padding: 0px;
+    cursor: pointer; }
+    #homepage-slider .homeslider-description h2 {
+      font-size: 30px;
+      color: #333;
+      text-transform: uppercase;
+      margin: 0 0px 10px;
+      padding: 0;
+      line-height: 45px; }
+      #homepage-slider .homeslider-description h2 em {
+        font-style: normal; }
+    #homepage-slider .homeslider-description p {
+      padding: 0  0 20px; }
+    #homepage-slider .homeslider-description .button {
+      font-size: 14px;
+      text-transform: uppercase;
+      min-width: inherit;
+      transition: 0.3s all ease 0s; }
+      #homepage-slider .homeslider-description .button:after {
+        content: "\f0da";
+        font-family: Fontawesome;
+        margin: 0px 0px 0px 9px;
+        transition: 0.3s all ease 0s; }
+      #homepage-slider .homeslider-description .button:hover:after {
+        margin-left: 15px; }
+
+/*****************************************************************************
+						BXSlider Styles
+********************************************************************************/
+#homepage-slider .homeslider-container {
+  position: relative;
+  cursor: grab;
+  cursor: -webkit-grab; }
+#homepage-slider .homeslider-image {
+  position: absolute;
+  left: 0;
+  top: 0; }
+#homepage-slider .homeslider-description {
+  position: absolute;
+  left: 70px;
+  top: 50px; }
+#homepage-slider .bx-wrapper {
+  position: relative;
+  /* padding: 0px 5px; */
+  *zoom: 1; }
+  #homepage-slider .bx-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: right; 
+    width: 100%;
+}
+#homepage-slider .bx-wrapper .bx-viewport {
+  width: 100%;
+  direction: ltr !important; }
+#homepage-slider .bx-wrapper .bx-pager,
+#homepage-slider .bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%; }
+#homepage-slider .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(images/loading.gif) center center no-repeat white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000; }
+#homepage-slider .bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px; }
+#homepage-slider .bx-wrapper .bx-pager .bx-pager-item,
+#homepage-slider .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline; }
+#homepage-slider .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+#homepage-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#homepage-slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #000; }
+#homepage-slider .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 44.5%;
+  outline: 0;
+  width: 30px;
+  height: 50px;
+  text-indent: -9999px;
+  z-index: 9;
+  /* border-radius: 50%; */
+  transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+  filter: alpha(opacity=0); }
+  #homepage-slider .bx-wrapper .bx-controls-direction a.bx-prev {
+    left: 0px;
+    background: url("../../../img/icon/arrow-slider.png") no-repeat 12px 16px #777777; }
+  #homepage-slider .bx-wrapper .bx-controls-direction a.bx-next {
+    right: 0px;
+    background: url("../../../img/icon/arrow-slider.png") no-repeat calc(100% - 10px) 15px #777777; }
+#homepage-slider .bx-wrapper:hover .bx-controls-direction .bx-prev {
+  left: 0px;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+#homepage-slider .bx-wrapper:hover .bx-controls-direction .bx-next {
+  /* right: 0px; */
+  opacity: 1;
+  filter: alpha(opacity=100); }
+#homepage-slider .bx-wrapper .bx-controls-auto {
+  text-align: center; }
+#homepage-slider .bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url(http://prestashop.skyoftech.com/sp_market/themes/sp-market/css/modules/sphomeslider/images/controls.png) -86px -11px no-repeat;
+  margin: 0 3px; }
+#homepage-slider .bx-wrapper .bx-controls-auto .bx-start:hover,
+#homepage-slider .bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: -86px 0; }
+#homepage-slider .bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url(http://prestashop.skyoftech.com/sp_market/themes/sp-market/css/modules/sphomeslider/images/controls.png) -86px -44px no-repeat;
+  margin: 0 3px; }
+#homepage-slider .bx-wrapper .bx-controls-auto .bx-stop:hover,
+#homepage-slider .bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: -86px -33px; }
+#homepage-slider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%; }
+#homepage-slider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px; }
+#homepage-slider .bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666666 \9;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%; }
+#homepage-slider .bx-wrapper .bx-caption span {
+  color: white;
+  display: block;
+  font-size: .85em;
+  padding: 10px; }

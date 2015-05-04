@@ -1,0 +1,32 @@
+.socialsharing_product .social-sharing {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+  line-height: 36px;
+  margin-right: 10px;
+  border: none;
+  text-align: center;
+  transition: 0.3s all ease 0s; }
+  .socialsharing_product .social-sharing .fa {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s all ease 0s; }
+  .socialsharing_product .social-sharing.btn-twitter {
+    background: #4DC5F7; }
+    .socialsharing_product .social-sharing.btn-twitter:hover {
+      background: #1092c8; }
+  .socialsharing_product .social-sharing.btn-facebook {
+    background: #4C6BAB; }
+    .socialsharing_product .social-sharing.btn-facebook:hover {
+      background: #184bb6; }
+  .socialsharing_product .social-sharing.btn-google-plus {
+    background: #EA5F62; }
+    .socialsharing_product .social-sharing.btn-google-plus:hover {
+      background: #e8191d; }
+  .socialsharing_product .social-sharing.btn-pinterest {
+    background: #4DC5F7; }
+    .socialsharing_product .social-sharing.btn-pinterest:hover {
+      background: #1092c8; }

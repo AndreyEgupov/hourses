@@ -1,0 +1,93 @@
+
+.header_user_info {
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+}
+.header_user_info ul.links a{
+    font-size:12px
+}
+.header_user_info ul.links {
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+}
+#header > div.header-bottom.clearfix > div > div > div.header_user_info > ul > li.first{
+   padding-right:11px
+}
+.header_user_info ul.links li {
+    border-right: 1px solid rgb(221, 221, 221);
+    display: inline-block;
+    float: left;
+    list-style: outside none none;
+    overflow: hidden;
+    padding: 9px 12px 10px 11px;
+}
+#header > div.header-bottom.clearfix > div > div.header_user_info > ul > li.first{
+    padding-right: 11px;
+    
+}
+.header_user_info .links li a {
+    padding-left: 20px;
+    position: relative;
+}
+.header_user_info .links li.first a, .header_user_info .links li:hover a {
+    color: #fff;
+    padding-left: 20px;
+    text-indent: inherit;
+    width: auto;
+}
+#header > div.header-bottom.clearfix > div > div.header_user_info > ul > li.last > a:hover:before {
+    background-position: center -167px;
+    
+}
+#header > div.header-bottom.clearfix > div > div.header_user_info > ul > li.last > a:before
+{
+    background-position: center -195px;
+    
+}
+.header_user_info .links li.first.inactive a, .header_user_info .links li.first.inactive a, .header_user_info .links li a {
+    display: block;
+    line-height: 15px;
+    padding-left: 0;
+    position: relative;
+    text-indent: -999em;
+    width: 12px;
+}
+.header_user_info .links li:hover a.top-link-checkout:before {
+    background-position: center -108px;
+}
+.header_user_info .links li.inactive a.login:before {
+    background-position: center -25px;
+}
+.header_user_info .links li:hover a.top-link-wishlist:before {
+    background-position: center -53px;
+}
+.header_user_info .links li a.top-link-checkout:before {
+    background-position: center -137px;
+}
+.header_user_info .links li a.login:before {
+    background-position: center 1px;
+}
+.header_user_info .links li a.top-link-wishlist:before {
+    background-position: center -79px;
+}
+.header_user_info .links li.last:hover a:before{
+    background-position: center -166px;
+}
+.header_user_info .links li.last a:before{
+    background-position: center -195px;
+}
+.header_user_info ul.links li.inactive {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+.header_user_info .links a:before {
+    background-image: url("ico-quicklink.png");
+    background-repeat: no-repeat;
+    content: "";
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 13px;
+}

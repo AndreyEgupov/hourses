@@ -1,0 +1,41 @@
+ul.social-block {
+  text-align: right; }
+  ul.social-block li {
+    /* display: inline-block; */
+    list-style-type: none;
+    margin: 0; 
+    clear: both;
+}
+ul.social-block li .tooltip{display: block !important; right: 0 !important; left: inherit !important;}
+  ul.social-block li.facebook {
+    background: #3C599F;
+    
+  }
+  ul.social-block li.twitter {
+    background: #5EA9DD;
+  }
+    ul.social-block li.google-plus {
+    background: #DD4B39;
+  }
+    ul.social-block li.pinterest {
+    background: #D73532;
+  }  
+    ul.social-block li a {
+      display: block;
+      color: #FFFFFF;
+      font-size: 17px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%; }
+    ul.social-block li .fa {
+      margin: 0; }
+#social_block {
+    position: fixed;
+    top: 35%;
+    width: auto;
+    right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}

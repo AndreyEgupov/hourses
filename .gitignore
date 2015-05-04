@@ -4,3 +4,4 @@ app/cache
 app/config/config.php
 public/cache
 public/files
+public/html

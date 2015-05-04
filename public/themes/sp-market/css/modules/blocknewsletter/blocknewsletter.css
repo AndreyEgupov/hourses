@@ -1,0 +1,24 @@
+/* Block newsletter */
+.newsletter_home {
+  overflow: hidden;
+  padding: 50px 0;
+  text-align: center; }
+  .newsletter_home h1.page-heading {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .newsletter_home .page-heading-sub {
+    margin-bottom: 20px;
+    color: white; }
+  .newsletter_home .newsletter-input {
+    height: 45px;
+    border: none;
+    vertical-align: top;
+    padding: 5px 15px; }
+  .newsletter_home .button {
+    height: 45px;
+    min-width: 130px;
+    margin-left: -4px; }
+    .newsletter_home .button:hover {
+      background: #000; }

@@ -1,0 +1,17 @@
+.tags_block .block_content {
+  overflow: hidden; 
+  border: none;
+  padding: 0;
+}
+  .tags_block .block_content a {
+    display: inline-block;
+    font-weight: normal;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    float: left;
+    background-color: #eee;
+    margin: 0 3px 3px 0; }
+
+a.tag_level1.first_item {}
+    .tags_block .block_content a:hover {
+      color: white; }
