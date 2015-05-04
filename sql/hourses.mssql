@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Май 04 2015 г., 20:01
+-- Время создания: Май 04 2015 г., 20:12
 -- Версия сервера: 5.6.21
 -- Версия PHP: 5.5.14
 
@@ -19,6 +19,32 @@ SET time_zone = "+00:00";
 --
 -- База данных: `horses`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `attributes`
+--
+
+CREATE TABLE IF NOT EXISTS `attributes` (
+`id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL COMMENT 'цвет',
+  `alias` varchar(45) DEFAULT NULL COMMENT 'color',
+  `type` varchar(45) NOT NULL DEFAULT 'string' COMMENT 'int,string,date,boolean,color'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `categories`
+--
+
+CREATE TABLE IF NOT EXISTS `categories` (
+`id` int(11) NOT NULL,
+  `parent_id` varchar(255) NOT NULL COMMENT 'by 1.2.3 or 4.',
+  `title` varchar(255) NOT NULL,
+  `icon_class` varchar(45) DEFAULT NULL COMMENT 'fa-*'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -79,6 +105,37 @@ CREATE TABLE IF NOT EXISTS `pages` (
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `products`
+--
+
+CREATE TABLE IF NOT EXISTS `products` (
+`id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `price` double NOT NULL,
+  `price_old` double DEFAULT NULL,
+  `description` text,
+  `date_create` datetime DEFAULT NULL,
+  `date_update` datetime DEFAULT NULL,
+  `is_available` int(11) NOT NULL DEFAULT '1' COMMENT 'есть в наличии'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `products_attribute`
+--
+
+CREATE TABLE IF NOT EXISTS `products_attribute` (
+`id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `attribute_id` int(11) NOT NULL,
+  `attribute_value` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `users`
 --
 
@@ -130,6 +187,18 @@ CREATE TABLE IF NOT EXISTS `user_group` (
 --
 
 --
+-- Индексы таблицы `attributes`
+--
+ALTER TABLE `attributes`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `categories`
+--
+ALTER TABLE `categories`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `config`
 --
 ALTER TABLE `config`
@@ -151,6 +220,18 @@ ALTER TABLE `news`
 -- Индексы таблицы `pages`
 --
 ALTER TABLE `pages`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `products`
+--
+ALTER TABLE `products`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `products_attribute`
+--
+ALTER TABLE `products_attribute`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -176,6 +257,16 @@ ALTER TABLE `user_group`
 --
 
 --
+-- AUTO_INCREMENT для таблицы `attributes`
+--
+ALTER TABLE `attributes`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT для таблицы `categories`
+--
+ALTER TABLE `categories`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT для таблицы `config`
 --
 ALTER TABLE `config`
@@ -195,6 +286,16 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 ALTER TABLE `pages`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT для таблицы `products`
+--
+ALTER TABLE `products`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT для таблицы `products_attribute`
+--
+ALTER TABLE `products_attribute`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68d6220d-514f-4a92-8db8-fc51fb36306d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/db.02.05.2015.mssql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/db.19.04.2015_17.20.mssql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/recommended_article.19.04.2015_20.30.mssql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/samara.mssql" afterPath="" />
-    </list>
+    <list default="true" id="68d6220d-514f-4a92-8db8-fc51fb36306d" name="Default" comment="" />
     <list id="651c3a30-c589-45c5-bc7d-209aa434fe1f" name="New changelist" comment="" />
     <ignored path="sogroop.ru.iws" />
     <ignored path=".idea/workspace.xml" />
