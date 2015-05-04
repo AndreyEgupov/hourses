@@ -1,1 +1,0 @@
-{{ partial("partials/service-item-edit") }}

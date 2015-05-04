@@ -1,0 +1,17 @@
+
+@media (min-width: 980px) {
+  .pattern1 { background-image: url(../pattern/pattern1.png);}
+  .pattern2 { background-image: url(../pattern/pattern2.png);}
+  .pattern3 { background-image: url(../pattern/pattern3.png);}
+  .pattern4 { background-image: url(../pattern/pattern4.png);}
+  .pattern5 { background-image: url(../pattern/pattern5.png);}
+  .pattern6 { background-image: url(../pattern/pattern6.jpg);}
+  .pattern7 { background-image: url(../pattern/pattern7.jpg);}
+  .pattern8 { background-image: url(../pattern/pattern8.jpg);}
+  .pattern9 { background-image: url(../pattern/pattern9.jpg);}
+  .pattern10 { background-image: url(../pattern/pattern10.jpg);}
+  body.pattern6, body.pattern7,
+  body.pattern8, body.pattern9, body.pattern10{background-attachment:fixed;}
+}
+
+
