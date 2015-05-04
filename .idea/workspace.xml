@@ -2,450 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68d6220d-514f-4a92-8db8-fc51fb36306d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/su/1-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/l/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/10-single-default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/2-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/3-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/4-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/l/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/5-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/5-single-default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/6-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/6-single-default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/7-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/7-single-default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/8-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/8-single-default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/9-single-default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/smartblog/images/avatar/avatar-author-default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/banner2-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/banner2-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/banner2-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/banner2-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/spdeal/images/button-image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/m/en-default-medium_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/spdeal/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/ourmember01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/ourmember02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/ourmember03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/ourmember04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/welcome-to-sp-nik-1415445354.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/cms/wellcometoshop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/head.volt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/header.volt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/spdeal/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/spdeal/css/styles_animate.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/message.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/news.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/page.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/payment.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/recommended-article.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/room.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/service-item.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/layouts/user.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/news/index.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/news/view.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/first-header.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/items-null.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/left-menu-user.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/left-menu.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/mesage-box.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/pre-header.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/recommended-articles.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/right-menu.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/service-item-edit.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/service-items.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/service-list.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/services-table.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/slider.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/partials/top-products.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/payment/error.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/payment/success.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/recommended-article/view.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/room/add.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/room/balance.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/room/edit.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/room/index.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/room/save.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/room/statistic.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/room/user.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/service-item/list.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/service-item/view.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/user/login.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/views/user/register.volt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/cache/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/cache/timthumb_cacheLastCleanTime.touch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/audioplayer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/awesome_font.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/awesome_font_ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/calendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/color.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/default-bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/font/AGAvalancheC.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/font/AGAvalancheC.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ie8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/jcrop/Jcrop.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/jcrop/jquery.Jcrop.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/nstyles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/prettyphoto.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/slider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui-pnotify/jquery.pnotify.default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/ui/jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/zilla-likes.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/1292775959_E3F0E0E2E8F0EEE2E0EDFBE520EEE1F0F3F7E0EBFCEDFBE520EAEEEBFCF6E0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/1292775960_EEE1F0F3F7E0EBFCEDFBE520EAEEEBFCF6E0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/1332597486_ava_ryiryi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/14122012_193733.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/1422449092_6_09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/28092011_151237.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/30102012_110424.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/7588081_orig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/Irelands-Wedding-Journal-Autumn-2009.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/Irelands-Wedding-Journal-Winter-2009-Page-1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/Irelands-Wedding-Journal-Winter-2011.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/Northern-Irelands-Wedding-Journal-1(pp_w900_h1273).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/Wedding-Reception-26-best-backgrounds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/arrow-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/arrow-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/arrow_left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/arrow_r.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/b1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/banners/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/banners/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/button-input.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/captcha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/empty.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/empty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ex1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/footer-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/full1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/full2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/full3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/full4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/full5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/girl-header-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/help.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/images.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/j1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/j2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/j3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/like.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/mainmenu-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/mainmenu_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/man.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/minus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/o-WEDDING-PLANNING-facebook.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/pagination-bg-active.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/pagination-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/detali_dekora.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/fotosessia10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/fotosessia3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/fotosessia4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/fotosessia5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/fotosessia6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/products/fotosessia8.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/recommended-articles/10_podarkov_dlya_nevesty_na_8_marta_306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/recommended-articles/detskii_stol_na_svadbe_main_2_306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/recommended-articles/pokupka_svadebnogo_platya_cherez_internet_main_306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/recommended-articles/svadebnie_platya_zoog_bridal_2015_main_306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/recommended-articles/utro_nevesty_v_nejnih_pastelnih_tonah_main_306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/recommended-articles/zabavnie_foto_jeniha_s_druzyami_main_306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/recommended-articles/zimnyaya_svadebnaya_fotosessiya_v_geometricheskom_stile_main_306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/slider-description-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/st.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sub-menu-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/user.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/1XVGgj9D8y4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/2wDNc7Cd8kc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/7 признае (1).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/7 признае.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/KG5iOsexVOE.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/TeoYnGd9CBw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/ZhsUEAO-wJk.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/ZhsUEAO-wJk.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/qQZ7HtbpW1Y.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/uslugi/y5j7PqDqoLw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/valentines-day-wallpaper-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wed1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wed2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wed3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wedding-04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wedding-photo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wedding-venues-in-jackson-michigan-wedding-ceremony-in-reception-room.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wedding.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/wowslider-win-setup.zip.new" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/1.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/10.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/11.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/12.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/13.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/13.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/2.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/3.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/img/301.GIF" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/img/301.GIF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/4.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/img/477.GIF" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/img/477.GIF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/5.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/6.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/7.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/8.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/9.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/img/icon/9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon/arrow-slider.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon/arrow-slider.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/arrow-toolbar.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/arrow-toolbar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/tomato/arrow_next2.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/tomato/arrow_next2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/tomato/arrow_prev2.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/tomato/arrow_prev2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/img/arrows-ffffff.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/img/arrows-ffffff.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon/bg_box-title.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon/bg_box-title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/bg_bt_compare.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/bg_bt_compare.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/bg_module.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/bg_module.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/blank.gif" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/blank.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/breadcrumbs-right.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/breadcrumbs-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/breadcrumbs-right.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/breadcrumbs-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/breadcrumbs-right.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/breadcrumbs-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/breadcrumbs-right.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/breadcrumbs-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/breadcrumbs-right.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/breadcrumbs-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/breadcrumbs-right.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/breadcrumbs-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/btn-cart.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/btn-cart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productscategory/css/images/bx_loader.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productscategory/css/images/bx_loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcart/img/cart-content-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcart/img/cart-content-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon/cible.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon/cible.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/default_thumb.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/default_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon/delete.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon/delete.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_loading.gif" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_loading@2x.gif" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_loading@2x.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_overlay.png" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_overlay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_sprite.png" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_sprite@2x.png" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/fancybox_sprite@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.eot?" afterPath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.eot?" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.eot?v=4.2.0" afterPath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.eot?v=4.2.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.ttf?v=4.2.0" afterPath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.ttf?v=4.2.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.woff?v=4.2.0" afterPath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.woff?v=4.2.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-celander.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-celander.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-celander.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-celander.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-celander.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-celander.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-celander.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-celander.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-celander.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-celander.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-freeship.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-freeship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-freeship.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-freeship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-freeship.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-freeship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-freeship.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-freeship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-freeship.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-freeship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/ico-instock.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/ico-instock.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-minicart.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-minicart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-minicart.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-minicart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-minicart.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-minicart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-minicart.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-minicart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-minicart.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-minicart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-money.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-money.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-money.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-money.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-money.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-money.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-money.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-money.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-money.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-money.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/ico-new.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/ico-new.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockuserinfo/ico-quicklink.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockuserinfo/ico-quicklink.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/ico-sale.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/ico-sale.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocksearch/ico-search.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocksearch/ico-search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productscategory/img/ico-slider.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productscategory/img/ico-slider.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/img/ico-slider.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/img/ico-slider.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/ico-slider.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/ico-slider.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-subcate.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-subcate.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-subcate.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-subcate.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-subcate.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-subcate.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-subcate.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-subcate.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-subcate.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-subcate.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-umbrella.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/ico-umbrella.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-umbrella.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/ico-umbrella.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-umbrella.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/ico-umbrella.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-umbrella.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/ico-umbrella.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-umbrella.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/ico-umbrella.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon-zoom.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon-zoom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon_check.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon_check.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon_quote.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon_quote.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/line-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/line-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/loader.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/sphomeslider/images/loading.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/sphomeslider/images/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/orange/logo-footer.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/orange/logo-footer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/newsletter-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/newsletter-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/next-prev-detail.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/next-prev-detail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/pagination-li.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/pagination-li.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/payment-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme1/payment-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/payment-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme2/payment-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/payment-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme3/payment-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/payment-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme4/payment-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/payment-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/img/theme5/payment-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/payment-bg.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/payment-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/img/search.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/img/search.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon/serial_scroll_left.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon/serial_scroll_left.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/icon/serial_scroll_right.gif" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/icon/serial_scroll_right.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/sitemap-horizontal.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/sitemap-horizontal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/sitemap-last.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/sitemap-last.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/jquery/uniform/sprite.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/jquery/uniform/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite_next.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite_next.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite_prev.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite_prev.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite_x.png" afterPath="$PROJECT_DIR$/public/themes/sp-market/img/prettyPhoto/default/sprite_x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_75_dadada_1x400.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_222222_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_2e83ff_256x240.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_2e83ff_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_454545_256x240.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_454545_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_888888_256x240.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_888888_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_cd0a0a_256x240.png" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/images/ui-icons_cd0a0a_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jqzoom/zoomloader.gif" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jqzoom/zoomloader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/autoload/10-bootstrap.min.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/autoload/10-bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/autoload/15-jquery.total-storage.min.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/autoload/15-jquery.total-storage.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/autoload/15-jquery.uniform-modified.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/autoload/15-jquery.uniform-modified.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/frontend/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blockcart/ajax-cart.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blockcart/ajax-cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blockwishlist/js/ajax-wishlist.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blockwishlist/js/ajax-wishlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/css/animate.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/css/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/authentication.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/authentication.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/backtotop.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/backtotop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockbanner/blockbanner.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockbanner/blockbanner.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcart/blockcart.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcart/blockcart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcategories/blockcategories.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcategories/blockcategories.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcurrencies/blockcurrencies.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockcurrencies/blockcurrencies.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocklanguages/blocklanguages.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocklanguages/blocklanguages.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocklayered/blocklayered.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocklayered/blocklayered.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocklayered/blocklayered.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocklayered/blocklayered.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocknewsletter/blocknewsletter.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocknewsletter/blocknewsletter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocknewsletter/blocknewsletter.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocknewsletter/blocknewsletter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocksearch/blocksearch.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocksearch/blocksearch.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocksocial/blocksocial.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocksocial/blocksocial.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktags/blocktags.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktags/blocktags.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/css/blocktopmenu.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/css/blocktopmenu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocktopmenu/js/blocktopmenu.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocktopmenu/js/blocktopmenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockuserinfo/blockuserinfo.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockuserinfo/blockuserinfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockviewed/blockviewed.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockviewed/blockviewed.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockwishlist/blockwishlist.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blockwishlist/blockwishlist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/cart-summary.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/cart-summary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/category.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/category.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/category.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/category.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/cms.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/cms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/contact-form.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/contact-form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/css3.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/css3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/font-awesome/font-awesome.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/font-awesome/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/font1.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/font1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.svg?v=4.2.0" afterPath="$PROJECT_DIR$/public/themes/sp-market/fonts/fontawesome-webfont.svg?v=4.2.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/footer.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/footer.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/global.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/global.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/sphomeslider/homeslider.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/sphomeslider/homeslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/hooks.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/hooks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocktopmenu/js/hoverIntent.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocktopmenu/js/hoverIntent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/ie11.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/ie11.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/index.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/index.volt" afterPath="$PROJECT_DIR$/app/frontend/views/index.volt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/filter.volt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/product-list.volt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/product-sort.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/breadcrumb.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/breadcrumb.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/index/index.volt" afterPath="$PROJECT_DIR$/app/frontend/views/index/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-1.11.0.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/jquery-1.11.0.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-migrate-1.2.1.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/jquery-migrate-1.2.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/autocomplete/jquery.autocomplete.css" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/autocomplete/jquery.autocomplete.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/autocomplete/jquery.autocomplete.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/autocomplete/jquery.autocomplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/bxslider/jquery.bxslider.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/bxslider/jquery.bxslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.easing.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.easing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/jquery.fancybox.css" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/jquery.fancybox.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/fancybox/jquery.fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.idTabs.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.idTabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jqzoom/jquery.jqzoom.css" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jqzoom/jquery.jqzoom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jqzoom/jquery.jqzoom.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jqzoom/jquery.jqzoom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/jquery.prettyPhoto.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/jquery.prettyPhoto.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.scrollTo.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.scrollTo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.serialScroll.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.serialScroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.typewatch.js" afterPath="$PROJECT_DIR$/public/js/jquery/plugins/jquery.typewatch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/jquery.ui.core.css" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/jquery.ui.core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.core.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.core.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.mouse.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.mouse.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/jquery.ui.slider.css" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/jquery.ui.slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.slider.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.slider.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/jquery.ui.theme.css" afterPath="$PROJECT_DIR$/public/js/jquery/ui/themes/base/jquery.ui.theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.widget.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/ui/jquery.ui.widget.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/live_configurator.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/live_configurator.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/menu.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/menu.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/order-address.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/order-address.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/css/owl.carousel.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/css/owl.carousel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/productscategory/js/owl.carousel2.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/productscategory/js/owl.carousel2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/product.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/product.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/product.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/product_list.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/product_list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productcomments/productcomments.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productcomments/productcomments.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/productcomments/js/productcomments.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/productcomments/js/productcomments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/products-comparison.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/products-comparison.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productscategory/css/productscategory.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/productscategory/css/productscategory.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/productscategory/js/productscategory.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/productscategory/js/productscategory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/responsive.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/rtl.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/scenes.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/scenes.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blockuserinfo/selectuser.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blockuserinfo/selectuser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/sendtoafriend/sendtoafriend.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/sendtoafriend/sendtoafriend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/sitemap.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/sitemap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/slider.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/smartblog/css/smartblogstyle.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/smartblog/css/smartblogstyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/socialsharing/css/socialsharing.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/socialsharing/css/socialsharing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/css/sp-listing-tabs.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/splistingtabs/views/css/sp-listing-tabs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spcollections/spcollections.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spcollections/spcollections.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/tools/statesManagement.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/tools/statesManagement.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/sptwitterslider/assets/css/styles.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/sptwitterslider/assets/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/css/styles.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spverticalmenu/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/css/superfish-modified.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/blocktopmenu/css/superfish-modified.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocktopmenu/js/superfish-modified.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/modules/blocktopmenu/js/superfish-modified.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/system_tool.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/system_tool.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme1.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme2.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme3.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme4.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme5.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/modules/spthemeconfigurator/css/theme5.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/tools.js" afterPath="$PROJECT_DIR$/public/js/tools.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/tools/treeManagement.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/tools/treeManagement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/css/autoload/uniform.default.css" afterPath="$PROJECT_DIR$/public/themes/sp-market/css/autoload/uniform.default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/validate.js" afterPath="$PROJECT_DIR$/public/js/validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/sp-market/js/tools/vatManagement.js" afterPath="$PROJECT_DIR$/public/themes/sp-market/js/tools/vatManagement.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="651c3a30-c589-45c5-bc7d-209aa434fe1f" name="New changelist" comment="" />
@@ -482,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.volt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/footer.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.656148" vertical-offset="8142" max-vertical-offset="9075">
+            <state vertical-scroll-proportion="-25.125" vertical-offset="8142" max-vertical-offset="9075">
               <caret line="583" column="50" selection-start-line="583" selection-start-column="50" selection-end-line="583" selection-end-column="50" />
               <folding />
             </state>
@@ -504,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/controllers/IndexController.php">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="285">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -524,12 +87,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.volt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.volt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/frontend/views/index/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.583332" vertical-offset="34153" max-vertical-offset="35145">
-              <caret line="2337" column="6" selection-start-line="2337" selection-start-column="6" selection-end-line="2337" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.2414163" vertical-offset="0" max-vertical-offset="932">
+              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-sort.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/product-sort.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-37.583332" vertical-offset="418" max-vertical-offset="1410">
+              <caret line="88" column="6" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-list.volt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/product-list.volt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-37.583332" vertical-offset="17383" max-vertical-offset="18375">
+              <caret line="1219" column="5" selection-start-line="1219" selection-start-column="5" selection-end-line="1219" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#6;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#6;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#7;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#8;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#8;n#ul#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -545,11 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/extjs/desktop/modules/ArticleManager.js" />
-        <option value="$PROJECT_DIR$/public/extjs/desktop/modules/NewsManager.js" />
-        <option value="$PROJECT_DIR$/app/frontend/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/app/frontend/views/partials/service-item-edit.volt" />
-        <option value="$PROJECT_DIR$/app/library/DateFormat.php" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/service-list.volt" />
         <option value="$PROJECT_DIR$/app/admin/controllers/RecommendedArticleController.php" />
         <option value="$PROJECT_DIR$/public/extjs/desktop/App.js" />
@@ -589,13 +186,18 @@
         <option value="$PROJECT_DIR$/app/frontend/views/room/index.volt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/frontend/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/frontend/views/index/index.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/index.volt" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/header.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/head.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/menu.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/footer.volt" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/app/frontend/views/partials/breadcrumb.volt" />
+        <option value="$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt" />
+        <option value="$PROJECT_DIR$/app/frontend/views/partials/filter.volt" />
+        <option value="$PROJECT_DIR$/app/frontend/views/partials/product-list.volt" />
+        <option value="$PROJECT_DIR$/app/frontend/views/partials/product-sort.volt" />
+        <option value="$PROJECT_DIR$/app/frontend/views/index/index.volt" />
       </list>
     </option>
   </component>
@@ -681,7 +283,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -762,6 +364,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sogroop.ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hourses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sogroop.ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hourses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1238,22 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/index/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.583332" vertical-offset="34153" max-vertical-offset="35145">
-          <caret line="2337" column="6" selection-start-line="2337" selection-start-column="6" selection-end-line="2337" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/header.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.140558" vertical-offset="0" max-vertical-offset="3525">
@@ -1262,18 +900,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="956">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/head.volt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7424893" vertical-offset="6898" max-vertical-offset="8460">
           <caret line="506" column="59" selection-start-line="506" selection-start-column="59" selection-end-line="506" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/footer.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.125" vertical-offset="8142" max-vertical-offset="9075">
+          <caret line="583" column="50" selection-start-line="583" selection-start-column="50" selection-end-line="583" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1288,10 +934,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/footer.volt">
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/index.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.656148" vertical-offset="8142" max-vertical-offset="9075">
-          <caret line="583" column="50" selection-start-line="583" selection-start-column="50" selection-end-line="583" selection-end-column="50" />
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/breadcrumb.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="932">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/filter.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-37.583332" vertical-offset="4498" max-vertical-offset="5490">
+          <caret line="360" column="41" selection-start-line="360" selection-start-column="41" selection-end-line="360" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#1;n#ul#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#2;n#ul#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#3;n#ul#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#4;n#ul#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#5;n#ul#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#6;n#ul#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96781117" vertical-offset="5953" max-vertical-offset="6945">
+          <caret line="457" column="6" selection-start-line="457" selection-start-column="6" selection-end-line="457" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/product-list.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-37.583332" vertical-offset="17383" max-vertical-offset="18375">
+          <caret line="1219" column="5" selection-start-line="1219" selection-start-column="5" selection-end-line="1219" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#4;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#6;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#6;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#7;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#8;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#div#1;n#div#0;n#li#8;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/product-sort.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-37.583332" vertical-offset="418" max-vertical-offset="1410">
+          <caret line="88" column="6" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/index/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2414163" vertical-offset="0" max-vertical-offset="932">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>
