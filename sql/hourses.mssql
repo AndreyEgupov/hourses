@@ -1,0 +1,225 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.10
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Май 04 2015 г., 20:01
+-- Версия сервера: 5.6.21
+-- Версия PHP: 5.5.14
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- База данных: `horses`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `config`
+--
+
+CREATE TABLE IF NOT EXISTS `config` (
+`id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `value` varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `menu`
+--
+
+CREATE TABLE IF NOT EXISTS `menu` (
+`id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `position` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+`id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `short_description` text NOT NULL,
+  `date_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `meta_keywords` text,
+  `meta_description` text
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `pages`
+--
+
+CREATE TABLE IF NOT EXISTS `pages` (
+`id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `meta_keywords` tinytext,
+  `meta_description` tinytext,
+  `is_active` tinyint(1) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+`id` int(11) NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `phone` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `status_id` int(11) DEFAULT '1',
+  `code_validate` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `user_group_id` int(11) DEFAULT '1',
+  `balance` int(11) DEFAULT '0',
+  `tariff_plan_id` int(11) DEFAULT '1' COMMENT 'тарифный план, по-умолчанию бесплатный, если 2 - оплаченный',
+  `binding_ip` int(11) DEFAULT '0' COMMENT 'привязка к ip адрессу',
+  `date_register` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_new` int(11) DEFAULT '1',
+  `newsletter` int(11) DEFAULT '0'
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users_autorisation`
+--
+
+CREATE TABLE IF NOT EXISTS `users_autorisation` (
+`id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `session_id` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `hash` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `last_ip` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `useragent` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_group`
+--
+
+CREATE TABLE IF NOT EXISTS `user_group` (
+`id` int(11) NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Индексы сохранённых таблиц
+--
+
+--
+-- Индексы таблицы `config`
+--
+ALTER TABLE `config`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `menu`
+--
+ALTER TABLE `menu`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `news`
+--
+ALTER TABLE `news`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `pages`
+--
+ALTER TABLE `pages`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `users`
+--
+ALTER TABLE `users`
+ ADD PRIMARY KEY (`id`), ADD KEY `status_id` (`status_id`), ADD KEY `user_group_id` (`user_group_id`);
+
+--
+-- Индексы таблицы `users_autorisation`
+--
+ALTER TABLE `users_autorisation`
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `session_id` (`session_id`), ADD KEY `session_id_2` (`session_id`), ADD KEY `user_id` (`user_id`);
+
+--
+-- Индексы таблицы `user_group`
+--
+ALTER TABLE `user_group`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `config`
+--
+ALTER TABLE `config`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT для таблицы `menu`
+--
+ALTER TABLE `menu`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT для таблицы `news`
+--
+ALTER TABLE `news`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT для таблицы `pages`
+--
+ALTER TABLE `pages`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT для таблицы `users`
+--
+ALTER TABLE `users`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT для таблицы `users_autorisation`
+--
+ALTER TABLE `users_autorisation`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+--
+-- AUTO_INCREMENT для таблицы `user_group`
+--
+ALTER TABLE `user_group`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
+
+--
+-- Ограничения внешнего ключа таблицы `users`
+--
+ALTER TABLE `users`
+ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_group_id`) REFERENCES `user_group` (`id`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
