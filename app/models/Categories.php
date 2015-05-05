@@ -38,6 +38,13 @@ class Categories extends \Phalcon\Mvc\Model
      * @var integer
      */
     public $sort;
+
+    /**
+     *
+     * @var integer
+     */
+    public $count_products;
+    
     public function initialize()
     {
         $this->hasMany('id', 'Categories', 'parent_id', array('alias' => 'Categories'));

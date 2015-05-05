@@ -2,45 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68d6220d-514f-4a92-8db8-fc51fb36306d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/notpic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/printed-summer-dress.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/printed-summer-dress2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/controllers/CategoryController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/library/MenuHelper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/ProductsImage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/library/Tag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/import/categories.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/partials/category-top.volt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/category/list.volt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/product/view.volt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/controllers/CommentController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/controllers/PaymentController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/controllers/RecommendedArticleController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/controllers/RoomController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/frontend/controllers/ServiceItemController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/library/CategoryMenu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/horses.mssql" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Attributes.php" afterPath="$PROJECT_DIR$/app/models/Attributes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Categories.php" afterPath="$PROJECT_DIR$/app/models/Categories.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Config.php" afterPath="$PROJECT_DIR$/app/models/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php" afterPath="$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Menu.php" afterPath="$PROJECT_DIR$/app/models/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/News.php" afterPath="$PROJECT_DIR$/app/models/News.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Pages.php" afterPath="$PROJECT_DIR$/app/models/Pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Products.php" afterPath="$PROJECT_DIR$/app/models/Products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ProductsAttribute.php" afterPath="$PROJECT_DIR$/app/models/ProductsAttribute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/UserGroup.php" afterPath="$PROJECT_DIR$/app/models/UserGroup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Users.php" afterPath="$PROJECT_DIR$/app/models/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/breadcrumb.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/breadcrumb.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/import/categories-fix.sql" afterPath="$PROJECT_DIR$/sql/import/categories-fix.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/filter.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/filter.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/index/index.volt" afterPath="$PROJECT_DIR$/app/frontend/views/index/index.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/menu.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/menu.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/product-list.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/product-list.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.php" afterPath="$PROJECT_DIR$/app/config/services.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/page/view.volt" afterPath="$PROJECT_DIR$/app/frontend/views/page/view.volt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ProductsImage.php" afterPath="$PROJECT_DIR$/app/models/ProductsImage.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="651c3a30-c589-45c5-bc7d-209aa434fe1f" name="New changelist" comment="" />
@@ -97,21 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product-list.volt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product-list.volt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/product-list.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38513514" vertical-offset="0" max-vertical-offset="1260">
+            <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="1260">
               <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Products.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Products.php">
+      <file leaf-file-name="Categories.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Categories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.703703" vertical-offset="350" max-vertical-offset="1296">
-              <caret line="61" column="43" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.59090906" vertical-offset="542" max-vertical-offset="1098">
+              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -190,7 +153,6 @@
         <option value="$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/filter.volt" />
         <option value="$PROJECT_DIR$/app/library/MenuHelper.php" />
-        <option value="$PROJECT_DIR$/app/models/Categories.php" />
         <option value="$PROJECT_DIR$/app/frontend/views/page/view.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/breadcrumb.volt" />
         <option value="$PROJECT_DIR$/app/frontend/views/category/list.volt" />
@@ -202,6 +164,7 @@
         <option value="$PROJECT_DIR$/app/frontend/views/index/index.volt" />
         <option value="$PROJECT_DIR$/app/models/Products.php" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/product-list.volt" />
+        <option value="$PROJECT_DIR$/app/models/Categories.php" />
       </list>
     </option>
   </component>
@@ -553,17 +516,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1926" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49109948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4366492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4366492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33926702" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17395833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -826,14 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8301887" vertical-offset="116" max-vertical-offset="1044">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/frontend/controllers/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
@@ -971,18 +926,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/product-list.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Products.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.703703" vertical-offset="350" max-vertical-offset="1296">
+        <state vertical-scroll-proportion="0.59090906" vertical-offset="812" max-vertical-offset="1296">
           <caret line="61" column="43" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/partials/product-list.volt">
+    <entry file="file://$PROJECT_DIR$/app/models/Categories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38513514" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.59090906" vertical-offset="542" max-vertical-offset="1098">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding />
         </state>
       </provider>
