@@ -27,17 +27,4 @@ class Menu extends \Phalcon\Mvc\Model
      */
     public $position;
 
-    /**
-     * Independent Column Mapping.
-     */
-    public function columnMap()
-    {
-        return array(
-            'id' => 'id', 
-            'title' => 'title', 
-            'url' => 'url', 
-            'position' => 'position'
-        );
-    }
-
 }

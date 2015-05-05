@@ -1,6 +1,6 @@
 <?php
 
-class Config extends \Phalcon\Mvc\Model
+class Attributes extends \Phalcon\Mvc\Model
 {
 
     /**
@@ -13,12 +13,18 @@ class Config extends \Phalcon\Mvc\Model
      *
      * @var string
      */
-    public $name;
+    public $title;
 
     /**
      *
      * @var string
      */
-    public $value;
+    public $alias;
+
+    /**
+     *
+     * @var string
+     */
+    public $type;
 
 }

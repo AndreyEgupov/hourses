@@ -21,4 +21,22 @@ class Pages extends \Phalcon\Mvc\Model
      */
     public $description;
 
+    /**
+     *
+     * @var string
+     */
+    public $meta_keywords;
+
+    /**
+     *
+     * @var string
+     */
+    public $meta_description;
+
+    /**
+     *
+     * @var integer
+     */
+    public $is_active;
+
 }

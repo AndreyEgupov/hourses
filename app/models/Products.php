@@ -1,6 +1,6 @@
 <?php
 
-class News extends \Phalcon\Mvc\Model
+class Products extends \Phalcon\Mvc\Model
 {
 
     /**
@@ -8,6 +8,12 @@ class News extends \Phalcon\Mvc\Model
      * @var integer
      */
     public $id;
+
+    /**
+     *
+     * @var integer
+     */
+    public $category_id;
 
     /**
      *
@@ -19,13 +25,19 @@ class News extends \Phalcon\Mvc\Model
      *
      * @var string
      */
-    public $description;
+    public $price;
 
     /**
      *
      * @var string
      */
-    public $short_description;
+    public $price_old;
+
+    /**
+     *
+     * @var string
+     */
+    public $description;
 
     /**
      *
@@ -37,12 +49,12 @@ class News extends \Phalcon\Mvc\Model
      *
      * @var string
      */
-    public $meta_keywords;
+    public $date_update;
 
     /**
      *
-     * @var string
+     * @var integer
      */
-    public $meta_description;
+    public $is_available;
 
 }
