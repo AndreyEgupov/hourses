@@ -1,6 +1,6 @@
 <!-- Block layered navigation module -->
 <div id="layered_block_left" class="block">
-    <p class="title_block"><span>Shop by</span></p>
+    <p class="title_block"><span>Фильтр</span></p>
 
     <div class="block_content">
         <form action="4-automotive-motocrycle.html#" id="layered_form">

@@ -1,35 +1,40 @@
 <?
 
 namespace Multiple\Frontend\Controllers;
+use Breadcrumbs;
 use Categories;
 use CategoryMenu;
 use Cities;
+use Config;
 use Menu;
+use MenuHelper;
+use Order;
+use Phalcon\Http\Request;
 use Phalcon\Mvc\Controller;
+use Phalcon\Mvc\Dispatcher;
 
 class ControllerBase extends Controller {
 
-    const COUNT_ITEMS_VIEW = 3;
+    const COUNT_ITEMS_VIEW = 24;
     public $br = null;
 
     public function initialize() {
-        $this->br = new \Breadcrumbs();
+        $this->br = new Breadcrumbs();
 
         $this->setSessionVars();
-        $this->initLeftCategories();
 
         $this->view->setVar("user", $this->session->get("user"));
         $this->view->setVar("menuList", Menu::find(
             array("order" => "position")
         ));
 
-        $this->view->adminUserId = \Config::findFirst("name = 'admin-user-id'")->value;
+       // $this->view->adminUserId = Config::findFirst("name = 'admin-user-id'")->value;
 
-        $this->initLeftCatlog();
+        $this->initLeftCatalog();
     }
 
     private function setSessionVars  () {
-        $request = new \Phalcon\Http\Request();
+        $request = new Request();
 
         $countInPage  = $request->get("countInPage");
         if($countInPage) {
@@ -43,16 +48,19 @@ class ControllerBase extends Controller {
         if($countInPage) {
             $this->session->set("sortType", $countInPage);
         } else if(!$this->session->get("sortType")) {
-            $this->session->set("sortType", \Order::TYPE_DEFAULT);
+            $this->session->set("sortType", Order::TYPE_DEFAULT);
         }
         $this->view->setVar("sortType", $this->session->get("sortType"));
+
+        $this->view->setVar('currency', "$");
     }
 
-    private function initLeftCategories() {
-        $categoryList = Categories::find()->toArray();
-        $categories = CategoryMenu::buildTree($categoryList);
+    private function initLeftCatalog() {
+        $categoryList = Categories::find(array(
+            "order" => "sort, title "
+        ))->toArray();
 
-        debug($categories);
+        $this->view->setVar('categoriesMenu', MenuHelper::formatTree($categoryList, null));
     }
 
     protected $_isJsonResponse = false;
@@ -66,7 +74,7 @@ class ControllerBase extends Controller {
     }
 
     // After route executed event
-    public function afterExecuteRoute(\Phalcon\Mvc\Dispatcher $dispatcher) {
+    public function afterExecuteRoute(Dispatcher $dispatcher) {
         if ($this->_isJsonResponse) {
             $data = $dispatcher->getReturnedValue();
             if (is_array($data)) {

@@ -12,18 +12,7 @@
                 </div>
                 {{ partial("partials/filter") }}
             </div>
-            <div id="center_column" class="center_column col-sm-8 col-md-9">
-                <div class="content_scene_cat "></div>
-                <div class="content_sortPagiBar clearfix">
-                    {{ partial("partials/product-sort") }}
-                </div>
-
-                {{ partial("partials/product-list") }}
-
-                <div class="content_sortPagiBar clearfix">
-                    {{ partial("partials/product-sort") }}
-                </div>
-            </div>
+            {{ partial("partials/product-list") }}
         </div>
     </div>
 </div>

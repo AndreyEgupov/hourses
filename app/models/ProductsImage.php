@@ -1,6 +1,6 @@
 <?php
 
-class ProductsAttribute extends \Phalcon\Mvc\Model
+class ProductsImage extends \Phalcon\Mvc\Model
 {
 
     /**
@@ -17,18 +17,15 @@ class ProductsAttribute extends \Phalcon\Mvc\Model
 
     /**
      *
-     * @var integer
-     */
-    public $attribute_id;
-
-    /**
-     *
      * @var string
      */
-    public $attribute_value;
+    public $src;
+
+    /**
+     * Initialize method for model.
+     */
     public function initialize()
     {
-        $this->belongsTo('attribute_id', 'Attributes', 'id', array('alias' => 'Attributes'));
         $this->belongsTo('product_id', 'Products', 'id', array('alias' => 'Products'));
     }
 
