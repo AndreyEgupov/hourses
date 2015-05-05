@@ -2,72 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68d6220d-514f-4a92-8db8-fc51fb36306d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Attributes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/library/CategoryMenu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Products.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/ProductsAttribute.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/library/Statistics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/Cities.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/Messages.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/RecommendedArticle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/ServiceItem.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/ServiceItemComments.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/ServiceItemImages.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/ServiceItemVideos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/ServiceItemVisits.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/Slider.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Services.php" afterPath="$PROJECT_DIR$/app/models/Categories.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Config.php" afterPath="$PROJECT_DIR$/app/models/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/import/categories-fix.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sql/import-categories.sql" afterPath="$PROJECT_DIR$/sql/import/import-categories.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/library/CategoryMenu.php" afterPath="$PROJECT_DIR$/app/library/CategoryMenu.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php" afterPath="$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Menu.php" afterPath="$PROJECT_DIR$/app/models/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/News.php" afterPath="$PROJECT_DIR$/app/models/News.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Pages.php" afterPath="$PROJECT_DIR$/app/models/Pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/UserGroup.php" afterPath="$PROJECT_DIR$/app/models/UserGroup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Users.php" afterPath="$PROJECT_DIR$/app/models/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_animated.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_animated.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_core.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_list.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_path.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/animated.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/animated.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/categories-left.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.php" afterPath="$PROJECT_DIR$/app/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/core.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/filter.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/filter.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/head.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/head.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/header.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/header.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/horses.mssql" afterPath="$PROJECT_DIR$/sql/horses.mssql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/icons.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/import-categories.sql" afterPath="$PROJECT_DIR$/sql/import-categories.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/larger.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/list.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/mixins.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/path.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/product-list.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/product-list.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/frontend/views/partials/product-sort.volt" afterPath="$PROJECT_DIR$/app/frontend/views/partials/product-sort.volt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sogroop.ru.iml" afterPath="$PROJECT_DIR$/.idea/sogroop.ru.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/stacked.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/variables.less" afterPath="$PROJECT_DIR$/public/css/font-awesome-4.3.0/less/variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="651c3a30-c589-45c5-bc7d-209aa434fe1f" name="New changelist" comment="" />
@@ -104,12 +42,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryMenu.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CategoryMenu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/library/CategoryMenu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+            <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories-fix.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/import/categories-fix.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.061503418" vertical-offset="0" max-vertical-offset="878">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerBase.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.666666" vertical-offset="522" max-vertical-offset="1728">
+              <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+              <folding>
+                <element signature="e#45#60#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/public/extjs/desktop/modules/RecommendedArticleManager.js" />
         <option value="$PROJECT_DIR$/app/frontend/controllers/RecommendedArticleController.php" />
         <option value="$PROJECT_DIR$/app/frontend/views/partials/recommended-articles.volt" />
@@ -174,8 +133,9 @@
         <option value="$PROJECT_DIR$/sql/import-categories.sql" />
         <option value="$PROJECT_DIR$/app/config/config.php" />
         <option value="$PROJECT_DIR$/.phalcon/all-model.sh" />
-        <option value="$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php" />
         <option value="$PROJECT_DIR$/app/library/CategoryMenu.php" />
+        <option value="$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php" />
+        <option value="$PROJECT_DIR$/sql/import/categories-fix.sql" />
       </list>
     </option>
   </component>
@@ -230,6 +190,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hourses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sogroop.ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hourses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sogroop.ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hourses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="import" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,33 +293,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sogroop.ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hourses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,6 +325,7 @@
       <recent name="$PROJECT_DIR$/app/frontend/views/layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql/import" />
       <recent name="$PROJECT_DIR$/app/views/layouts" />
       <recent name="$PROJECT_DIR$/app/views" />
     </key>
@@ -638,7 +605,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1962">
           <caret line="25" column="51" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="e#45#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -833,25 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/import-categories.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01655629" vertical-offset="0" max-vertical-offset="906">
-          <caret line="1" column="109" selection-start-line="1" selection-start-column="109" selection-end-line="1" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.phalcon/all-model.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
           <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.333334" vertical-offset="0" max-vertical-offset="1602">
-          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -920,10 +874,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sql/import/import-categories.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.020501139" vertical-offset="0" max-vertical-offset="878">
+          <caret line="1" column="109" selection-start-line="1" selection-start-column="109" selection-end-line="1" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/ControllerBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.666666" vertical-offset="522" max-vertical-offset="1728">
+          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding>
+            <element signature="e#45#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/library/CategoryMenu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/import/categories-fix.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.061503418" vertical-offset="0" max-vertical-offset="878">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="66" />
           <folding />
         </state>
       </provider>

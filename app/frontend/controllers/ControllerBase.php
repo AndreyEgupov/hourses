@@ -1,6 +1,8 @@
 <?
 
 namespace Multiple\Frontend\Controllers;
+use Categories;
+use CategoryMenu;
 use Cities;
 use Menu;
 use Phalcon\Mvc\Controller;
@@ -14,7 +16,7 @@ class ControllerBase extends Controller {
         $this->br = new \Breadcrumbs();
 
         $this->setSessionVars();
-
+        $this->initLeftCategories();
 
         $this->view->setVar("user", $this->session->get("user"));
         $this->view->setVar("menuList", Menu::find(
@@ -46,8 +48,11 @@ class ControllerBase extends Controller {
         $this->view->setVar("sortType", $this->session->get("sortType"));
     }
 
-    private function initLeftCatlog() {
+    private function initLeftCategories() {
+        $categoryList = Categories::find()->toArray();
+        $categories = CategoryMenu::buildTree($categoryList);
 
+        debug($categories);
     }
 
     protected $_isJsonResponse = false;
