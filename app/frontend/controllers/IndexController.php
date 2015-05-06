@@ -5,6 +5,8 @@ use RecommendedArticle;
 use ServiceItem;
 use Services;
 use Slider;
+use Phalcon\Mvc\Model\Query;
+use Phalcon\Paginator\Adapter\Model;
 
 class IndexController extends ControllerBase
 {
