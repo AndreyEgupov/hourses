@@ -13,7 +13,7 @@ class Module implements ModuleDefinitionInterface
     /**
      * Регистрация автозагрузчика, специфичного для текущего модуля
      */
-    public function registerAutoloaders()
+    public function registerAutoloaders(\Phalcon\DiInterface $dependencyInjector = null)
     {
         $loader = new Loader();
 
@@ -29,7 +29,7 @@ class Module implements ModuleDefinitionInterface
     /**
      * Регистрация специфичных сервисов для модуля
      */
-    public function registerServices($di)
+    public function registerServices(\Phalcon\DiInterface $di)
     {
         // Регистрация диспетчера
         $di->set('dispatcher', function() {
