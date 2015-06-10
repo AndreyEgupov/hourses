@@ -581,7 +581,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 yt-copyright">
-                    &copy; 2015 Ecommerce software. Создано <a class="_blank" href="http://s.tkachenko.org.ua">Сергей Ткаченко</a>
+                    &copy; 2015 Ecommerce software. Создано <a class="_blank" href="http://stkachenko.org.ua">Сергей Ткаченко</a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 yt-payment">
                     <div class="block-payment">

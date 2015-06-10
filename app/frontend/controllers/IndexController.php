@@ -32,7 +32,6 @@ class IndexController extends ControllerBase
 
         $this->view->setVar('product', $page);
 
-        //$this->br->add($category->title, "category/list/".$categoryId);
     }
 
 }

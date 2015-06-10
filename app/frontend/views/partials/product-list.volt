@@ -28,20 +28,22 @@
                             {{ item.title|e }}
                         </a>
                     </h5>
-                    <p class="product-desc" itemprop="description">
-                        {{ item.description|e }}
-                    </p>
+                    <div class="product-desc" itemprop="description">
+                        {{ item.description }}
+                    </div>
 
                     <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                          class="content_price">
                         <span itemprop="price" class="price product-price">
-                            {{ currency }} {{ item.price|e }}
+                            {{ currency }} {{ item.price }}
                         </span>
                         <meta itemprop="priceCurrency" content="USD"/>
                         <span class="old-price product-price">
-                            {{ currency }} {{ item.price_old|e }}
+                            {{ currency }} {{ item.price_old }}
                         </span>
+                        {% if item.price_old %}
                         <span class="price-percent-reduction">-{{ noformat(100 - item.price/item.price_old * 100) }}%</span>
+                        {% endif %}
                     </div>
                     <div class="button-container">
                         <a class="button ajax_add_to_cart_button cart_button"

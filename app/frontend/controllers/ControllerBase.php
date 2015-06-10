@@ -52,7 +52,7 @@ class ControllerBase extends Controller {
         }
         $this->view->setVar("sortType", $this->session->get("sortType"));
 
-        $this->view->setVar('currency', "$");
+        $this->view->setVar('currency', "₽");
     }
 
     private function initLeftCatalog() {
