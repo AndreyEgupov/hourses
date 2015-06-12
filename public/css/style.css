@@ -5,3 +5,21 @@
 .breadcrumb  li {
     text-transform: capitalize;
 }
+
+#quantity_wanted_p, #add_to_cart, #pQuantityAvailable {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+#attributes label:first-letter {
+    text-transform: uppercase;
+}
+
+#attributes label {
+    margin-right: 10px;
+}
+
+.attribute_list li {
+    font-weight: 600;
+    text-transform: uppercase;
+}

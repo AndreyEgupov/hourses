@@ -95,6 +95,12 @@ $di->set('view', function () use ($config) {
                     return '\Tag::noformat(' . $resolvedArgs . ')';
                 }
             );
+            $compiler->addFunction(
+                'getAttributeName',
+                function ($resolvedArgs, $exprArgs) {
+                    return '\AttributeNames::findFirst(' . $resolvedArgs . ')';
+                }
+            );
             return $volt;
         },
         '.phtml' => 'Phalcon\Mvc\View\Engine\Php'

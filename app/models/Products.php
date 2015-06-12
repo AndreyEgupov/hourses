@@ -62,10 +62,38 @@ class Products extends \Phalcon\Mvc\Model
      * @var integer
      */
     public $id_sync;
+
+    public function getFirstImage () {
+        $images = $this->ProductsImage;
+        if(!$images->getFirst()) {
+            $img = new ProductsImage();
+            $img->src = '/img/notpic.jpg';
+            return $img;
+        };
+        return $images->getFirst();
+    }
+
+    public function getUniqueAttributes () {
+        $productAttributes = $this->ProductAttributes;
+        $attributeNames = array();
+        foreach ($productAttributes as $productAttribute) {
+            $attribute = $productAttribute->Attribute;
+            $attributeName = $attribute->AttributeName;
+            $attributeNames[$attributeName->id] [] = $attribute;
+        }
+
+        return $attributeNames;
+    }
+
+    /**
+     * Initialize method for model.
+     */
     public function initialize()
     {
-        $this->hasMany('id', 'ProductsAttribute', 'product_id', array('alias' => 'ProductsAttribute'));
+        $this->hasMany('id', 'ProductAttributes', 'product_id', array('alias' => 'ProductAttributes'));
         $this->hasMany('id', 'ProductsImage', 'product_id', array('alias' => 'ProductsImage'));
+        $this->belongsTo('param_id', 'Params', 'id', array('alias' => 'Params'));
+        $this->belongsTo('site_id', 'Sites', 'id', array('alias' => 'Sites'));
         $this->belongsTo('category_id', 'Categories', 'id', array('alias' => 'Categories'));
     }
 

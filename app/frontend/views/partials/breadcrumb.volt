@@ -9,7 +9,16 @@
             </li>
         {% else %}
             <span class="navigation-pipe"><i class="fa fa-angle-double-right"></i></span>
-            <li class="category316 last"> {{ b['text'] }}</li>
+            {% if loop.last %}
+                <li class="category316 last">
+                    {{ b['text'] }}
+                </li>
+            {% else %}
+                <li class="category316">
+                    <a href="{{ b['link'] }}">{{ b['text'] }}</a>
+                </li>
+            {% endif %}
+
         {% endif %}
     {% endfor %}
 </div>

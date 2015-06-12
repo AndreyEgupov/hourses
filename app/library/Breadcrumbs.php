@@ -32,13 +32,15 @@ class Breadcrumbs
      * @param string $link
      * @param boolean $active
      */
-    public function add($caption, $link, $active = false)
+    public function add($caption, $link=null, $active = false)
     {
         $element = array(
-            'link' => '/' . $link,
             'text' => $caption,
             'active' => $active? "active" : ""
         );
+        if($link) {
+            $element['link'] = '/' . $link;
+        }
         $this->elements[] = $element;
         //array_unshift($this->elements, $element);
     }

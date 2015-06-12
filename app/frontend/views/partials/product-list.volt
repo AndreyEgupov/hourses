@@ -10,7 +10,7 @@
             <div class="product-container" itemscope itemtype="http://schema.org/Product">
                 <div class="left-block">
                     <div class="product-image-container">
-                        <a class="product_img_link" href="/" title="Enase temu vacen" itemprop="url">
+                        <a class="product_img_link" href="/product/view/{{ item.id }}" title="Enase temu vacen" itemprop="url">
                             {% for img in item.ProductsImage %}
                                 {% if loop.index > 2 %} {% break  %} {% endif %}
                                 <img class="img_{{ loop.index0 }}" src="/timthumb.php?w=245&h=245&src={{ img.src }}" alt="" />
@@ -23,7 +23,7 @@
                 </div>
                 <div class="right-block">
                     <h5 itemprop="name">
-                        <a href="automotive-motocrycle/4-printed-dress.html" title="{{ item.title|e }}"
+                        <a href="/product/view/{{ item.id }}" title="{{ item.title|e }}"
                            itemprop="url">
                             {{ item.title|e }}
                         </a>
@@ -48,7 +48,7 @@
                     <div class="button-container">
                         <a class="button ajax_add_to_cart_button cart_button"
                            href="cart%3Fadd=1&amp;id_product=4&amp;token=c3148f158c47dee7012a227278ac6a29.html"
-                           rel="nofollow" title="Add to cart" data-id-product="4">
+                           rel="nofollow" title="Добавить в корзину" data-id-product="4">
                             <span>В корзину</span>
                         </a>
                     </div>

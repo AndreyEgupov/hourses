@@ -349,7 +349,6 @@ function addCombination(idCombination, arrayOfIdAttributes, quantity, price, eco
 // search the combinations' case of attributes and update displaying of availability, prices, ecotax, and image
 function findCombination(firstTime)
 {
-	$('#minimal_quantity_wanted_p').fadeOut();
 	if (typeof $('#minimal_quantity_label').text() === 'undefined' || $('#minimal_quantity_label').html() > 1)
 		$('#quantity_wanted').val(1);
 

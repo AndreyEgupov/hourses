@@ -106,7 +106,7 @@ ul.product_list h5 {
   margin: 10px 0 4px;
   font-weight: bold;
 
-    max-height: 44px;
+    height: 44px;
     overflow: hidden;
 }
 

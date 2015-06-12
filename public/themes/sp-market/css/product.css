@@ -434,7 +434,6 @@ div.rightprice {
   float: none; }
 
 #attributes .attribute_list .selector {
-  width: 80px !important;
   height: 32px;
   position: relative;
   background: #fff;
@@ -458,19 +457,6 @@ div.rightprice {
     height: 100%;
     border: solid 1px #e2e2e2;
     box-shadow: none; }
-  #attributes .attribute_list .selector:after {
-    content: "\f0d7";
-    background: #fff;
-    color: #8d8d8d;
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    right: 1px;
-    top: 1px;
-    height: 30px;
-    width: 28px;
-    pointer-events: none;
-    font-family: Fontawesome; }
 
 #attributes .attribute_list #color_to_pick_list {
   list-style-type: none; }
