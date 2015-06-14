@@ -2,7 +2,9 @@
 .primary_block {
   margin-bottom: 40px;
   /* overflow: hidden; */
-  margin: 0; }
+  margin: 0;
+    padding-bottom: 40px;
+}
 
 .top-hr {
   background: none repeat scroll 0 0 #c4c4c4;
@@ -189,10 +191,14 @@ span.view_scroll_spacer {
   width: 37px; }
 
 span.view_scroll_spacer.scroll_left > a {
-  background-position: -36px 0px; }
+  background-position: -36px 0px;
+    display: block;
+}
 
 span.view_scroll_spacer.scroll_right > a {
-  background-position: -71px 0px; }
+  background-position: -71px 0px;
+    display: block;
+}
 
 span.view_scroll_spacer.scroll_left:hover > a {
   background-position: 0px 0px; }
@@ -661,7 +667,7 @@ table.table-product-discounts tr td, table.table-product-discounts tr th {
 
 #quantity_wanted_p a.product_quantity_down {
   background: none repeat scroll 0 0 #444444;
-  font-size: 13px;
+  font-size: 10px;
   padding: 0 4px;
   position: absolute;
   right: 14px;
@@ -671,6 +677,7 @@ table.table-product-discounts tr td, table.table-product-discounts tr th {
   line-height: 10px; }
 
 #quantity_wanted_p a.product_quantity_up {
+    font-size: 10px;
   background: none repeat scroll 0 0 #444444;
   padding: 0 4px;
   position: absolute;

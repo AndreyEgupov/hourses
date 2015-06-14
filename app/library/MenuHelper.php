@@ -50,7 +50,7 @@ class MenuHelper {
             $icon = "";
             if($first) {
                 $cls .= ' spvm-hoverforce';
-                $icon = '<i class="icon8"></i>';
+                $icon = '<!--<i class="icon8"></i>-->';
             }
             $out .= '<li class="'.$cls.'" >'.$icon.'<a href="'.$children['url'].'">'.$children['title'].'</a>'.$icon . self::menuTop($children['submenu'], false) . '</li>';
         }

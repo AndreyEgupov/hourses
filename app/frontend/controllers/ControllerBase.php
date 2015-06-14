@@ -5,18 +5,23 @@ use Breadcrumbs;
 use Categories;
 use CategoryMenu;
 use Cities;
-use Config;
 use Menu;
 use MenuHelper;
 use Order;
 use Phalcon\Http\Request;
 use Phalcon\Mvc\Controller;
 use Phalcon\Mvc\Dispatcher;
+use ProductFilters;
+use Phalcon\Paginator\Adapter\Model;
+
 
 class ControllerBase extends Controller {
 
     const COUNT_ITEMS_VIEW = 24;
     public $br = null;
+
+    public $products;
+    public $productFilters;
 
     public function initialize() {
         $this->br = new Breadcrumbs();
@@ -85,6 +90,8 @@ class ControllerBase extends Controller {
         }
 
         $this->view->setVar("br", $this->br->generate()); // added breadcrumb in view
+
+        $this->initFilter ();
     }
 
     /**
@@ -94,5 +101,51 @@ class ControllerBase extends Controller {
         if(!$this->session->get("user")) {
             $this->response->redirect('/user/login');
         }
+    }
+
+    public function initFilter () {
+        $categoryId = $this->view->getVar('categoryId');
+
+        $attributes = $this->request->get('attribute');
+        $attributes = $attributes? $attributes : array();
+
+        $prices = $this->request->get('prices');
+        $prices = $prices? array('price' => array(@$prices[0], @$prices[1])) : array();
+
+        $productFilters = new ProductFilters($attributes, $categoryId, $prices);
+        $productFiltersBase = new ProductFilters(array(), $categoryId, array());
+
+        $this->products = $productFilters->getList();
+        $productsMeta = $productFilters->getMeta();
+        $productsMetaBase = $productFiltersBase->getMeta();
+
+        $attributes = $productFilters->getAttributes();
+
+        $variables = array(
+            'minPrice' => $productsMetaBase['min'],
+            'maxPrice' => $productsMetaBase['max'],
+            'priceOne' => $prices? @$prices['price'][0] : $productsMeta['min'],
+            'priceTwo' => $prices? @$prices['price'][1] : $productsMeta['max'],
+            'attributes' => $attributes
+        );
+
+        $this->view->setVars($variables);
+
+        $this->initProducts();
+    }
+
+    private function initProducts () {
+        if(!$this->products) {return;}
+
+        $currentPage = (int) @$_GET["page"];
+        $paginator = new Model(
+            array(
+                "data" => $this->products,
+                "limit"=> ControllerBase::COUNT_ITEMS_VIEW,
+                "page" => $currentPage? $currentPage : 1
+            )
+        );
+        $page = $paginator->getPaginate();
+        $this->view->setVar('page', $page);
     }
 }

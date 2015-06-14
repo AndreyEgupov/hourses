@@ -75,25 +75,14 @@ class Attributes extends \Phalcon\Mvc\Model
      */
     public $id_sync;
 
-    public function getVal () {
-        if($this->text_) {return $this->text_;}
-        if($this->int_) {return $this->int_;}
-        if($this->double_) {return $this->double_;}
-        if($this->boolean_) {return $this->boolean_;}
-        if($this->date_) {return $this->date_;}
-        if($this->datetime_) {return $this->datetime_;}
-        if($this->varchar_) {return $this->varchar_;}
-        if($this->img_) {return $this->img_;}
-    }
-
     /**
      * Initialize method for model.
      */
     public function initialize()
     {
+        $this->hasMany('id', 'Colors', 'attribute_id', array('alias' => 'Colors'));
         $this->hasMany('id', 'ProductAttributes', 'attribute_id', array('alias' => 'ProductAttributes'));
-        $this->hasMany('id', 'Colors', 'attribute_id', array('alias' => 'Color'));
-        $this->belongsTo('attribute_name_id', 'AttributeNames', 'id', array('alias' => 'AttributeName'));
+        $this->belongsTo('attribute_name_id', 'AttributeNames', 'id', array('alias' => 'AttributeNames'));
     }
 
     /**
@@ -115,6 +104,17 @@ class Attributes extends \Phalcon\Mvc\Model
             'hash' => 'hash', 
             'id_sync' => 'id_sync'
         );
+    }
+
+    public function getVal () {
+        if($this->text_) {return $this->text_;}
+        if($this->int_) {return $this->int_;}
+        if($this->double_) {return $this->double_;}
+        if($this->boolean_) {return $this->boolean_;}
+        if($this->date_) {return $this->date_;}
+        if($this->datetime_) {return $this->datetime_;}
+        if($this->varchar_) {return $this->varchar_;}
+        if($this->img_) {return $this->img_;}
     }
 
 }

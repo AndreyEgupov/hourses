@@ -16,6 +16,14 @@ class ProductController extends ControllerBase
 
         $category = $product->Categories;
 
+
+        $similarProducts = \Products::find(array(
+            "category_id = :categoryId:",
+            "bind" => array("categoryId" => $category->id),
+            "limit" => 10
+        ));
+        $this->view->setVar('similarProducts', $similarProducts);
+
         $this->br->add($category->title, 'category/list/'.$category->id);
         $this->br->add($product->title);
     }

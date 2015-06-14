@@ -1,0 +1,53 @@
+<script type="text/javascript">
+    var CUSTOMIZE_TEXTFIELD = 1;
+    var FancyboxI18nClose = 'Close';
+    var FancyboxI18nNext = 'Next';
+    var FancyboxI18nPrev = 'Previous';
+    var add_compare_item = 'You add  to the product comparison';
+    var added_to_wishlist = 'Added to your wishlist.';
+    var ajax_allowed = true;
+    var ajaxsearch = true;
+    var baseDir = 'http://hourses.local/';
+    var baseUri = 'http://hourses.local/';
+    var blocklayeredSliderName = {"price": "price", "weight": "weight"};
+    var blocksearch_type = 'top';
+    var comparator_max_item = 3;
+    var comparedProductsIds = [];
+    var contentOnly = false;
+    var customizationIdMessage = 'Customization #';
+    var delete_txt = 'Delete';
+    var displayList = false;
+
+    var freeProductTranslation = 'Free!';
+    var freeShippingTranslation = 'Free shipping!';
+    var generated_date = 1430737157;
+    var id_lang = 1;
+    var img_dir = 'http://hourses.local/html/sp-market/themes/sp-market/img/';
+    var instantsearch = false;
+    var isGuest = 0;
+    var isLogged = 0;
+    var isMobile = false;
+    var loggin_required = 'You must be logged in to manage your wishlist.';
+    var max_item = 'You cannot add more than 3 product(s) to the product comparison';
+    var min_item = 'Please select at least one product';
+    var mywishlist_url = 'http://hourses.local/html/sp_market/en/module/blockwishlist/mywishlist';
+    var page_name = 'category';
+    var param_product_url = '#';
+    var priceDisplayMethod = 1;
+    var priceDisplayPrecision = 2;
+    var quickView = true;
+    var removingLinkText = 'remove this product from my cart';
+    var request = 'http://hourses.local/html/sp_market/en/4-automotive-motocrycle';
+    var roundMode = 2;
+    var search_url = 'http://hourses.local/html/sp_market/en/search';
+    var static_token = 'c3148f158c47dee7012a227278ac6a29';
+    var token = '0da8ad71b7bf32b93cf0e05e1ce35b8d';
+    var usingSecureMode = false;
+    var wishlistProductsIds = false;
+
+    /** PRODUCT FILTER **/
+    window.currency = '{{ currency }}';
+    window.minPrice = '{{ minPrice }}';
+    window.maxPrice = '{{ maxPrice }}';
+    window.prices = ['{{ priceOne }}', '{{ priceTwo }}'];
+</script>

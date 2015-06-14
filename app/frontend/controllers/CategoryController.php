@@ -3,7 +3,6 @@ namespace Multiple\Frontend\Controllers;
 
 use Categories;
 use Phalcon\Mvc\Model\Query;
-use Phalcon\Paginator\Adapter\Model;
 use RecommendedArticle;
 use ServiceItem;
 use Services;
@@ -12,8 +11,6 @@ use Slider;
 class CategoryController extends ControllerBase {
 
     public function listAction($categoryId) {
-        $currentPage = (int) @$_GET["page"];
-
         $category = Categories::findFirst($categoryId);
         $sql = "
             SELECT p.*
@@ -28,17 +25,10 @@ class CategoryController extends ControllerBase {
         $products   = $query->execute(array(
             'parentSortId' => $category->parent_sort_id."%"
         ));
-        $paginator = new Model(
-            array(
-                "data" => $products,
-                "limit"=> ControllerBase::COUNT_ITEMS_VIEW,
-                "page" => $currentPage? $currentPage : 1
-            )
-        );
-        $page = $paginator->getPaginate();
 
-        $this->view->setVar('product', $page);
+        $this->products = $products;
 
+        $this->view->setVar('categoryId', $category->id);
         $this->br->add($category->title, "category/list/".$categoryId);
     }
 

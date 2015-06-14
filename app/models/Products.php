@@ -63,28 +63,6 @@ class Products extends \Phalcon\Mvc\Model
      */
     public $id_sync;
 
-    public function getFirstImage () {
-        $images = $this->ProductsImage;
-        if(!$images->getFirst()) {
-            $img = new ProductsImage();
-            $img->src = '/img/notpic.jpg';
-            return $img;
-        };
-        return $images->getFirst();
-    }
-
-    public function getUniqueAttributes () {
-        $productAttributes = $this->ProductAttributes;
-        $attributeNames = array();
-        foreach ($productAttributes as $productAttribute) {
-            $attribute = $productAttribute->Attribute;
-            $attributeName = $attribute->AttributeName;
-            $attributeNames[$attributeName->id] [] = $attribute;
-        }
-
-        return $attributeNames;
-    }
-
     /**
      * Initialize method for model.
      */
@@ -116,4 +94,25 @@ class Products extends \Phalcon\Mvc\Model
         );
     }
 
+    public function getFirstImage () {
+        $images = $this->ProductsImage;
+        if(!$images->getFirst()) {
+            $img = new ProductsImage();
+            $img->src = '/img/notpic.jpg';
+            return $img;
+        };
+        return $images->getFirst();
+    }
+
+    public function getUniqueAttributes () {
+        $productAttributes = $this->ProductAttributes;
+        $attributeNames = array();
+        foreach ($productAttributes as $productAttribute) {
+            $attribute = $productAttribute->Attribute;
+            $attributeName = $attribute->AttributeName;
+            $attributeNames[$attributeName->id] [] = $attribute;
+        }
+
+        return $attributeNames;
+    }
 }

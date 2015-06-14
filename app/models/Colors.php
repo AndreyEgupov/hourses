@@ -22,6 +22,14 @@ class Colors extends \Phalcon\Mvc\Model
     public $hash;
 
     /**
+     * Initialize method for model.
+     */
+    public function initialize()
+    {
+        $this->belongsTo('attribute_id', 'Attributes', 'id', array('alias' => 'Attributes'));
+    }
+
+    /**
      * Independent Column Mapping.
      */
     public function columnMap()
