@@ -11,4 +11,10 @@ $loader->registerDirs(
         $config->application->libraryDir,
         $config->application->modelsDir
     )
-)->register();
+);
+$loader->registerNamespaces(
+    array(
+        "AbstractModels"    => $config->application->abstractModelsDir,
+    )
+);
+$loader->register();

@@ -5,17 +5,17 @@ abstract class Order {
     static function getOrderServiceItem ($orderType) {
         switch($orderType) {
             case 1:
-                return "title ASC";
+                return "Products.title ASC";
             case 2:
-                return "title DESC";
+                return "Products.title DESC";
             case 3:
-                return "price ASC";
+                return "Products.price ASC";
             case 4:
-                return "price DESC";
+                return "Products.price DESC";
             case 5:
-                return "date_post ASC";
+                return "Products.date_create ASC";
             case 6:
-                return "is_vip=1 DESC, date_post DESC";
+                return "Products.date_create DESC";
         }
 
         throw new Exception("wrong type order column");

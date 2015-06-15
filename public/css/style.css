@@ -167,3 +167,11 @@ body #thumbs_list {
     width: 90%;
     margin: 15px 0 15px 3%;
 }
+
+#selectProductSort {
+    width: 150px;
+}
+
+#nb_item {
+    width: 60px;
+}

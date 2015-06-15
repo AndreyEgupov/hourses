@@ -882,7 +882,7 @@ form.pagination {
   border-style: solid;
   border-width: 1px;
   height: 29px;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 25px;
   padding: 0 8px; }
 
@@ -1829,10 +1829,12 @@ form#account-creation_form textarea {
   float: left !important; }
 
 #uniform-selectProductSort {
-  width: 90px !important; }
+  /*width: 90px !important; */
+}
 
 #uniform-nb_item {
-  width: 50px !important; }
+  /*width: 50px !important; */
+}
 
 .content_sortPagiBar .sortPagiBar .selector {
   float: right;

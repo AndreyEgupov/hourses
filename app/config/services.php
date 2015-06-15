@@ -101,6 +101,12 @@ $di->set('view', function () use ($config) {
                     return '\AttributeNames::findFirst(' . $resolvedArgs . ')';
                 }
             );
+            $compiler->addFunction(
+                'format_sum',
+                function ($resolvedArgs, $exprArgs) {
+                    return 'number_format(' . $resolvedArgs . ', 0, "", " ")';
+                }
+            );
             return $volt;
         },
         '.phtml' => 'Phalcon\Mvc\View\Engine\Php'

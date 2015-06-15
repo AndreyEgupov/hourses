@@ -20,8 +20,8 @@ class ProductAttributes extends \Phalcon\Mvc\Model
      */
     public function initialize()
     {
-        $this->belongsTo('product_id', 'Products', 'id', array('alias' => 'Products'));
-        $this->belongsTo('attribute_id', 'Attributes', 'id', array('alias' => 'Attributes'));
+        $this->belongsTo('product_id', 'Products', 'id', array('alias' => 'Product'));
+        $this->belongsTo('attribute_id', 'Attributes', 'id', array('alias' => 'Attribute'));
     }
 
     /**

@@ -49,5 +49,5 @@
     window.currency = '{{ currency }}';
     window.minPrice = '{{ minPrice }}';
     window.maxPrice = '{{ maxPrice }}';
-    window.prices = ['{{ priceOne }}', '{{ priceTwo }}'];
+    window.prices = ['{{ (priceOne) }}', '{{ (priceTwo) }}'];
 </script>

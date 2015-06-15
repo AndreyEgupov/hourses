@@ -1,6 +1,7 @@
 <?
 
 namespace Multiple\Frontend\Controllers;
+use AbstractModels\AbstractAttributes;
 use Breadcrumbs;
 use Categories;
 use CategoryMenu;
@@ -8,6 +9,7 @@ use Cities;
 use Menu;
 use MenuHelper;
 use Order;
+use Paginator;
 use Phalcon\Http\Request;
 use Phalcon\Mvc\Controller;
 use Phalcon\Mvc\Dispatcher;
@@ -41,23 +43,23 @@ class ControllerBase extends Controller {
     private function setSessionVars  () {
         $request = new Request();
 
-        $countInPage  = $request->get("countInPage");
-        if($countInPage) {
-            $this->session->set("countInPage", $countInPage);
+        if($request->get("countInPage")) {
+            $this->session->set("countInPage", $request->get("countInPage"));
         } else if(!$this->session->get("countInPage")) {
             $this->session->set("countInPage", ControllerBase::COUNT_ITEMS_VIEW);
         }
-        $this->view->setVar("countInPage", $this->session->get("countInPage"));
 
-        $countInPage  = $request->get("sortType");
-        if($countInPage) {
-            $this->session->set("sortType", $countInPage);
+        if($request->get("sortType")) {
+            $this->session->set("sortType", $request->get("sortType"));
         } else if(!$this->session->get("sortType")) {
             $this->session->set("sortType", Order::TYPE_DEFAULT);
         }
+
+        $this->view->setVar("countInPage", $this->session->get("countInPage"));
         $this->view->setVar("sortType", $this->session->get("sortType"));
 
         $this->view->setVar('currency', "₽");
+        $this->view->setVar("p", $request->get("page"));
     }
 
     private function initLeftCatalog() {
@@ -112,21 +114,25 @@ class ControllerBase extends Controller {
         $prices = $this->request->get('prices');
         $prices = $prices? array('price' => array(@$prices[0], @$prices[1])) : array();
 
-        $productFilters = new ProductFilters($attributes, $categoryId, $prices);
+        $order = $this->view->getVar('sortType');
+
+        $productFilters = new ProductFilters($attributes, $categoryId, $prices, $order);
         $productFiltersBase = new ProductFilters(array(), $categoryId, array());
 
         $this->products = $productFilters->getList();
         $productsMeta = $productFilters->getMeta();
         $productsMetaBase = $productFiltersBase->getMeta();
 
-        $attributes = $productFilters->getAttributes();
+        //$attributes = $productFilters->getAttributes($attributes, $categoryId, $prices);
+        //$attributesGroup = AbstractAttributes::group($attributes);
 
         $variables = array(
             'minPrice' => $productsMetaBase['min'],
             'maxPrice' => $productsMetaBase['max'],
             'priceOne' => $prices? @$prices['price'][0] : $productsMeta['min'],
             'priceTwo' => $prices? @$prices['price'][1] : $productsMeta['max'],
-            'attributes' => $attributes
+            //'attributesGroup' => $attributesGroup,
+            //'attributesRequest' => $attributes
         );
 
         $this->view->setVars($variables);
@@ -141,11 +147,12 @@ class ControllerBase extends Controller {
         $paginator = new Model(
             array(
                 "data" => $this->products,
-                "limit"=> ControllerBase::COUNT_ITEMS_VIEW,
+                "limit"=> $this->view->getVar('countInPage'),
                 "page" => $currentPage? $currentPage : 1
             )
         );
-        $page = $paginator->getPaginate();
+        $page = new Paginator($paginator->getPaginate());
         $this->view->setVar('page', $page);
     }
+
 }

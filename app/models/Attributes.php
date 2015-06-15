@@ -80,9 +80,9 @@ class Attributes extends \Phalcon\Mvc\Model
      */
     public function initialize()
     {
-        $this->hasMany('id', 'Colors', 'attribute_id', array('alias' => 'Colors'));
+        $this->hasMany('id', 'Colors', 'attribute_id', array('alias' => 'Color'));
         $this->hasMany('id', 'ProductAttributes', 'attribute_id', array('alias' => 'ProductAttributes'));
-        $this->belongsTo('attribute_name_id', 'AttributeNames', 'id', array('alias' => 'AttributeNames'));
+        $this->belongsTo('attribute_name_id', 'AttributeNames', 'id', array('alias' => 'AttributeName'));
     }
 
     /**
