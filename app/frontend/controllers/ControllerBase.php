@@ -32,7 +32,9 @@ class ControllerBase extends Controller {
 
         $this->view->setVar("user", $this->session->get("user"));
         $this->view->setVar("menuList", Menu::find(
-            array("order" => "position")
+            array(
+                "order" => "position"
+            )
         ));
 
        // $this->view->adminUserId = Config::findFirst("name = 'admin-user-id'")->value;
@@ -64,6 +66,7 @@ class ControllerBase extends Controller {
 
     private function initLeftCatalog() {
         $categoryList = Categories::find(array(
+            "count_products IS NOT NULL",
             "order" => "sort, title "
         ))->toArray();
 
