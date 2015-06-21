@@ -5,27 +5,29 @@
                 <div class="row">
                     <!-- Block currencies module -->
                     <div id="currencies-block-top">
-                        <form id="setCurrency" action="4-automotive-motocrycle.html" method="post">
+                        <form id="setCurrency" action="" method="post">
                             <div class="current">
-                                <input type="hidden" name="id_currency" id="id_currency" value=""/>
-                                <input type="hidden" name="SubmitCurrency" value=""/>
-                                <!--<span class="cur-label">Currency :</span>-->
-                                <span>Euros </span></div>
+                                <input type="hidden" name="currency" id="currency" value=""/>
+                                <span>{{ currencyObj.title }} {{ currencyObj.symbol }} </span>
+                            </div>
                             <ul id="first-currencies" class="currencies_ul toogle_content">
-                                <li class="selected">
-                                    <a href="javascript:setCurrency(1);" rel="nofollow" title="Dollar">
-                                        Руб.
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:setCurrency(2);" rel="nofollow" title="Euros">
-                                        Dollar
-                                    </a>
-                                </li>
+                                {% for curr in currencies %}
+                                    {% if currencyObj.id == curr.id %}{% continue %}{% endif %}
+                                    <li>
+                                        <a href="javascript:setCurr({{ curr.id }});" rel="nofollow" title="{{ curr.title }}">
+                                            {{ curr.title }} {{ curr.symbol }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </form>
                     </div>
-
+                    <script>
+                        function setCurr (id) {
+                            $("input#currency").val(id);
+                            $("form#setCurrency").submit();
+                        }
+                    </script>
                     {#<div class="header_user_info">#}
                     {#<ul class="links">#}
                     {#<li class="first">#}
@@ -74,128 +76,8 @@
                     <div class="header-middle-right col-lg-9 col-md-9 col-sm-12 col-xs-12">
                         <!-- MODULE Block cart -->
                         <div class="shopping_cart clearfix">
-                            <a href="order.html" title="View my shopping cart" rel="nofollow">
-                                <div class="shopcart"><b>Shopping Cart</b> <br/>
-                                    <span class="ajax_cart_quantity unvisible">0</span>
-                                    <span class="ajax_cart_product_txt unvisible">Product</span>
-                                    <span class="ajax_cart_product_txt_s unvisible">Products</span>
-                                    <span class="ajax_cart_total unvisible"></span>
-                                    <span class="ajax_cart_no_product">(empty)</span>
-                                </div>
-                            </a>
-
-                            <div class="cart_block block exclusive">
-                                <div class="head-minicart">
-                                    <span class="label-products">Your products </span>
-                                    <span class="label-price">Price </span>
-                                </div>
-                                <div class="block_content">
-                                    <!-- block list of products -->
-                                    <div class="cart_block_list">
-                                        <p class="cart_block_no_products">
-                                            No products
-                                        </p>
-
-                                        <div class="cart-prices">
-                                            <div class="cart-prices-line first-line">
-								<span class="pr">
-									Shipping
-								</span>
-                                                <span class="price cart_block_shipping_cost ajax_cart_shipping_cost">Free shipping!</span>
-                                            </div>
-                                            <div class="cart-prices-line last-line">
-                                                <span class="price cart_block_total ajax_block_cart_total">$ 0.00</span>
-                                                <span>Total</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wrapper">
-                                        <a href="order.html" class="button">Go to cart</a>
-                                        <a href="order%3Fstep=1.html" class="button" title="Checkout" rel="nofollow">checkout</a>
-                                    </div>
-                                </div>
-                            </div>
+                            {{ partial('partials/cart') }}
                         </div>
-
-                        <div id="layer_cart">
-                            <div class="clearfix">
-                                <div class="layer_cart_product col-xs-12 col-md-6">
-                                    <span class="cross" title="Close window"></span>
-
-                                    <h2>
-                                        <i class="icon-ok"></i>Product successfully added to your shopping cart
-                                    </h2>
-
-                                    <div class="product-image-container layer_cart_img">
-                                    </div>
-                                    <div class="layer_cart_product_info">
-                                        <span id="layer_cart_product_title" class="product-name"></span>
-                                        <span id="layer_cart_product_attributes"></span>
-
-                                        <div>
-                                            <strong class="dark">Quantity</strong>
-                                            <span id="layer_cart_product_quantity"></span>
-                                        </div>
-                                        <div>
-                                            <strong class="dark">Total</strong>
-                                            <span id="layer_cart_product_price"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="layer_cart_cart col-xs-12 col-md-6">
-                                    <h2>
-                                        <!-- Plural Case [both cases are needed because page may be updated in Javascript] -->
-					<span class="ajax_cart_product_txt_s  unvisible">
-						There are <span class="ajax_cart_quantity">0</span> items in your cart.
-					</span>
-                                        <!-- Singular Case [both cases are needed because page may be updated in Javascript] -->
-					<span class="ajax_cart_product_txt ">
-						There is 1 item in your cart.
-					</span>
-                                    </h2>
-
-                                    <div class="layer_cart_row">
-                                        <strong class="dark">
-                                            Total products
-                                        </strong>
-					<span class="ajax_block_products_total">
-											</span>
-                                    </div>
-
-                                    <div class="layer_cart_row">
-                                        <strong class="dark">
-                                            Total shipping&nbsp;                    </strong>
-					<span class="ajax_cart_shipping_cost">
-													Free shipping!
-											</span>
-                                    </div>
-                                    <div class="layer_cart_row">
-                                        <strong class="dark">
-                                            Total
-                                        </strong>
-					<span class="ajax_block_cart_total">
-											</span>
-                                    </div>
-                                    <div class="button-container">
-					<span class="continue btn btn-default button exclusive-medium" title="Continue shopping">
-						<span>
-							<i class="fa fa-chevron-left left"></i>Continue shopping
-						</span>
-					</span>
-                                        <a class="btn btn-default button button-medium" href="order.html"
-                                           title="Proceed to checkout" rel="nofollow">
-						<span>
-							Proceed to checkout<i class="fa fa-chevron-right right"></i>
-						</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="crossseling"></div>
-                        </div>
-                        <!-- #layer_cart -->
-                        <div class="layer_cart_overlay"></div>
-
 
                         <!-- /MODULE Block cart --><!-- Block search module TOP -->
 

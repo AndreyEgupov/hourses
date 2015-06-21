@@ -107,6 +107,23 @@ $di->set('view', function () use ($config) {
                     return 'number_format(' . $resolvedArgs . ', 0, "", " ")';
                 }
             );
+
+            $compiler->addFunction(
+                'getPrice',
+                function($resolvedArgs, $exprArgs) use ($compiler) {
+                    $price = $compiler->expression($exprArgs[0]['expr']);
+                    $currency = $compiler->expression($exprArgs[1]['expr']);
+                    return '\Сurrency::getVal(' . $price . ', '.$currency.')';
+                }
+            );
+
+            $compiler->addFunction(
+                'getPageUrl',
+                function($resolvedArgs, $exprArgs){
+                    return '\Paginator::getPageUrl(' . $resolvedArgs.')';
+                }
+            );
+
             return $volt;
         },
         '.phtml' => 'Phalcon\Mvc\View\Engine\Php'
@@ -138,7 +155,7 @@ $di->set('modelsMetadata', function () {
 /**
  * Start the session the first time some component request the session service
  */
-$di->set('session', function () {
+$di->set('session', function () use ($config) {
     $session = new SessionAdapter();
     $session->start();
 

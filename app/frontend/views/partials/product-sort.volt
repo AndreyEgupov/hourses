@@ -1,13 +1,7 @@
 <div class="sortPagiBar  clearfix">
     <div class="row">
         <div class="col-xs-12">
-            <div class="view-mode-wrap col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                <ul class="display hidden-xs">
-                    <li id="grid"><a rel="nofollow" href=""title="Grid"><i class="fa fa-th-large"></i></a></li>
-                    <li id="list"><a rel="nofollow" href="" title="List"><i class="fa fa-th-list"></i></a></li>
-                </ul>
-            </div>
-            <div class="toolbar-center col-lg-5 col-md-5 col-sm-8 col-xs-12">
+            <div class="toolbar-center col-lg-6 col-md-5 col-sm-8 col-xs-12">
                 <form id="productsSortForm" action="" class="productsSortForm"  method="GET">
                     <div class="select">
                         <label for="selectProductSort">Sort:</label>
@@ -39,32 +33,32 @@
             </div>
             <!-- Pagination -->
             {% if page.items|length > 0 and page.total_pages > 1 %}
-                <div class="pager-wrapper col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="pager-wrapper col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div  class="pagination clearfix">
                         <ul class="pagination">
                             <li id="pagination_previous_bottom" class="{% if page.current == 1 %}disabled{% endif %} pagination_previous">
                                 {% if page.current != 1 %}
-                                    <a href="?page={{ page.before }}"></a>
+                                    <a href="{{ getPageUrl(page.before) }}"></a>
                                 {% endif %}
                             </li>
                             {% if page.showFirst() %}
                                 <li >
-                                    <a href="?page=1">1</a>
+                                    <a href="{{ getPageUrl(1) }}">1</a>
                                 </li>
                             {% endif %}
                             {% for index in page.getPages() %}
                                 <li {% if page.current == index %}class="active"{% endif %} >
-                                    <a href="?page={{ index }}">{{ index }}</a>
+                                    <a href="{{ getPageUrl(index) }}">{{ index }}</a>
                                 </li>
                             {% endfor %}
                             {% if page.showLast() %}
                                 <li >
-                                    <a href="?page={{ page.last }}">{{ page.last }}</a>
+                                    <a href="{{ getPageUrl(page.last) }}">{{ page.last }}</a>
                                 </li>
                             {% endif %}
                             <li id="pagination_next_bottom" class="{% if page.current == page.total_pages %}disabled{% endif %} pagination_next">
                                 {% if page.current != page.total_pages %}
-                                    <a href="?page={{ page.next }}"></a>
+                                    <a href="{{ getPageUrl(page.next) }}"></a>
                                 {% endif %}
                             </li>
                         </ul>

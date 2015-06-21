@@ -9,8 +9,8 @@
                     <div class="layered_subtitle_heading">
                         <span class="layered_subtitle">Цена:</span>
                         <span id="layered_price_range"><i>$</i> <spn></spn> - <i>$</i> <spn></spn></span>
-                        <input type="hidden" value="{{ minPrice }}" id="priceMin" name="prices[]" />
-                        <input type="hidden" value="{{ maxPrice }}" id="priceMax" name="prices[]" />
+                        <input type="hidden" value="{{ getPrice(minPrice, currencyObj) }}" id="priceMin" name="prices[]" />
+                        <input type="hidden" value="{{ getPrice(maxPrice, currencyObj) }}" id="priceMax" name="prices[]" />
                     </div>
                     <div id="ul_layered_price" class="col-lg-12" ></div>
                 </div>

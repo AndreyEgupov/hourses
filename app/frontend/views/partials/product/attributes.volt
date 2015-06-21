@@ -12,7 +12,7 @@
                         {% for attr in attrList %}
                             <li class="">
                                 {% set color = attr.Color %}
-                                <a href="" name="{{ attr.getVal() }}" class="color_pick selected" style="background:#{{ color.getFirst().hash }};" title="{{ attr.getVal() }}"></a>
+                                <a href="" name="{{ attr.getVal() }}" class="color_pick selected" style="background:#{{ color.getFirst().hash }};" title="{{ attr.getVal() }}" data-attr-id="{{ attr.id }}"></a>
                             </li>
                         {% endfor %}
                         </select>

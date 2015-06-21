@@ -47,4 +47,13 @@ class Paginator {
     public function showLast() {
         return ($this->current <= $this->last - Paginator::COUNT_PAGES/2 );
     }
+
+    static public function getPageUrl($page ) {
+        $uri = $_SERVER['REQUEST_URI'];
+        if(!preg_match("/\\?/", $uri)) {
+            return "?page=".$page;
+        }
+        $uri = preg_replace("/(\\?|&)page=[0-9]+/", "", $uri);
+        return $uri . "&page=".$page;
+    }
 }

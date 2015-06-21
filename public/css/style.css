@@ -175,3 +175,20 @@ body #thumbs_list {
 #nb_item {
     width: 60px;
 }
+
+#categories_block_left ul.tree li.active > a {
+    color: #00ABF0;
+}
+
+.functional-buttons {
+    display: none !important;
+}
+
+body #layer_cart {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, 0);
+    margin: 0;
+}

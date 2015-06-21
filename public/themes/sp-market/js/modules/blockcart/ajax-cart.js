@@ -125,12 +125,7 @@ var ajaxCart = {
 	//override every button in the page in relation to the cart
 	overrideButtonsInThePage : function(){
 		//for every 'add' buttons...
-		$(document).on('click', '.ajax_add_to_cart_button', function(e){
-			e.preventDefault();
-			var idProduct =  $(this).data('id-product');
-			if ($(this).prop('disabled') != 'disabled')
-				ajaxCart.add(idProduct, null, false, this);
-		});
+
 		//for product page 'add' button...
 		$(document).on('click', '#add_to_cart button', function(e){
 			e.preventDefault();

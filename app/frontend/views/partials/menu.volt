@@ -7,14 +7,10 @@
                 <div id="block_top_menu" class="sf-contener col-md-12 col-sm-12 col-xs-12 clearfix ">
                     <div class="cat-title"><i class="fa fa-bars"></i></div>
                     <ul class="sf-menu clearfix menu-content">
-                        <li data-class="menuhome" class="sf-haveshild menu-home">
-                            <a title="Home" href="/">Главная</a>
-                        </li>
-                        <li><a href="" title="Доставка">Доставка</a></li>
-                        <li><a href="" title="Правила сайта">Правила сайта</a></li>
                         <li><a href="" title="О нас">О нас</a></li>
+                        <li><a href="" title="Доставка">Доставка</a></li>
                         <li><a href="" title="Контакты">Контакты</a></li>
-
+                        <li><a href="" title="Правила сайта">Правила сайта</a></li>
                     </ul>
                 </div>
                 <!--/ Menu -->

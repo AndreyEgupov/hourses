@@ -46,8 +46,9 @@
     var wishlistProductsIds = false;
 
     /** PRODUCT FILTER **/
-    window.currency = '{{ currency }}';
+    window.currency = '{{ currencyObj.symbol }}';
     window.minPrice = '{{ minPrice }}';
     window.maxPrice = '{{ maxPrice }}';
     window.prices = ['{{ (priceOne) }}', '{{ (priceTwo) }}'];
+    window.priceRelation = '{{ currencyObj.relation }}';
 </script>

@@ -31,7 +31,7 @@ class MenuHelper {
             $out = '<ul class="tree dhtml">';
         }
         foreach ($data as $name => $children) {
-            $out .= '<li><a href="'.$children['url'].'" data-count="'.$children['count_products'].'">'.$children['title'].'</a>' . self::menuLeft($children['submenu'], false) . '</li>';
+            $out .= '<li><a href="'.$children['url'].'" data-count="'.$children['count_products'].'" >'.$children['title'].'</a>' . self::menuLeft($children['submenu'], false) . '</li>';
         }
         $out .= '</ul>';
         return $out;

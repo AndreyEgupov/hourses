@@ -1,14 +1,8 @@
 <head>
-    <meta charset="utf-8"/>
-    <title>Rures tuma nurem - Welcome to SP Market</title>
-    <meta name="description"
-          content="Curabitur nec dolor commodo, tempus turpis vitae, maximus sapien. Aenean lobortis purus in efficitur bibendum. Vestibulum interdum magna pellentesque neque sagittis dignissim. Maecenas vestibulum ex nisi, a egestas augue condimentum sed"/>
-    <meta name="generator" content="PrestaShop"/>
+    {{ partial('partials/head/meta') }}
     <meta name="robots" content="index,follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico%3F1423705562"/>
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico%3F1423705562"/>
 
     <link href="/themes/sp-market/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="/themes/sp-market/css/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" media="all"/>

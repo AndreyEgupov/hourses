@@ -44,9 +44,8 @@
                                                 <div class="price">
                                                     <p class="our_price_display" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                                                         <link itemprop="availability" href="http://schema.org/InStock">
-                                                        <span id="our_price_display2" itemprop="price">{{ currency }} {{ product.price }}</span>
-                                                        <meta itemprop="priceCurrency" content="{{ currency }}">
-
+                                                        <span id="our_price_display2" itemprop="price">{{ currencyObj.symbol }} {{ getPrice(product.price, currencyObj) }}</span>
+                                                        <meta itemprop="priceCurrency" content="{{ currencyObj.title }}">
                                                     </p>
                                                 </div>
                                                 <div class="clear"></div>
@@ -55,10 +54,14 @@
                                     </div>
                                     <div id="short_description_block">
                                         <div id="short_description_content" class="rte align_justify" itemprop="description">
-                                            <h2>Описание</h2>
-                                            <div>
-                                                {{ product.description }}
-                                            </div>
+                                            {% if product.description %}
+                                                <h2>Описание товара</h2>
+                                                <div>
+                                                    {{ product.description }}
+                                                </div>
+                                            {% else %}
+                                                Описание товара отсутствует
+                                            {% endif %}
                                         </div>
                                     </div>
 
@@ -79,9 +82,9 @@
                                                 </p>
                                                 <div class="box-cart-bottom" style="margin-left: 5px;">
                                                     <div>
-                                                        <p id="add_to_cart" class="buttons_bottom_block no-print">
-                                                            <button type="submit" name="Submit" class="button exclusive" title="Добавить в корзину">
-                                                                <span><i class="fa fa-shopping-cart"></i> Добавить в корзину</span>
+                                                        <p class="buttons_bottom_block no-print">
+                                                            <button type="button" name="" class="button exclusive" title="Добавить в корзину" onclick="cartAdd({{ product.id }})">
+                                                                <span><i class="fa fa-shopping-cart" style="font-size: 2em;width: 30px;"></i> Добавить в корзину</span>
                                                             </button>
                                                         </p>
                                                     </div>

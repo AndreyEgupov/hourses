@@ -1,8 +1,6 @@
 <head>
-    <meta charset="utf-8"/>
-    <title>Automotive &amp; Motocrycle - Welcome to SP Market</title>
-    <meta name="description" content=""/>
-    <meta name="generator" content=""/>
+    {{ partial('partials/head/meta') }}
+
     <meta name="robots" content="index,follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>

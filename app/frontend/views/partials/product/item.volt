@@ -27,23 +27,24 @@
                 {{ item.description }}
             </div>
 
-            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"
-                 class="content_price">
-                        <span itemprop="price" class="price product-price">
-                            {{ currency }} {{ item.price }}
-                        </span>
-                <meta itemprop="priceCurrency" content="USD"/>
-                        <span class="old-price product-price">
-                            {{ currency }} {{ item.price_old }}
-                        </span>
+            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
+                <span itemprop="price" class="price product-price">
+                    {{ currencyObj.symbol }} {{ getPrice(item.price, currencyObj) }}
+                </span>
+                <meta itemprop="priceCurrency" content="{{ currencyObj.title }}"/>
+                {% if item.price_old %}
+                    <span class="old-price product-price">
+                        {{ currencyObj.symbol }} {{ getPrice(item.price_old, currencyObj) }}
+                    </span>
+                {% endif %}
                 {% if item.price_old %}
                     <span class="price-percent-reduction">-{{ noformat(100 - item.price/item.price_old * 100) }}%</span>
                 {% endif %}
             </div>
             <div class="button-container">
                 <a class="button ajax_add_to_cart_button cart_button"
-                   href="cart%3Fadd=1&amp;id_product=4&amp;token=c3148f158c47dee7012a227278ac6a29.html"
-                   rel="nofollow" title="Добавить в корзину" data-id-product="4">
+                   href="javascript:cartAdd({{ item.id }})"
+                   rel="nofollow" title="Добавить в корзину" data-id-product="{{ item.id }}">
                     <span>В корзину</span>
                 </a>
             </div>
