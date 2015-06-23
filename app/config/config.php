@@ -20,5 +20,17 @@ return new \Phalcon\Config(array(
 
         'cacheDir'          => __DIR__ . '/../../app/cache/',
         'baseUri'           => '',
-    )
+        'publicUrl' => 'http://hourses.local'
+    ),
+    'mail' => array(
+        'fromName' => 'Интернет-магазин EUR@HORSE',
+        'fromEmail' => 'eurohorse@local.com',
+        'smtp' => array(
+            'server'	=> 'smtp.gmail.com',
+            'port' 		=> 465,
+            'security' => 'ssl',
+            'username' => 'bombascter@gmail.com',
+            'password' => 'tsqzjhdpgicytwfa',
+        )
+    ),
 ));

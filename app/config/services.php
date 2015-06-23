@@ -183,3 +183,7 @@ $di->set('router', function () {
 
     return $router;
 });
+
+$di->set('mail', function() use ($config) {
+    return new Mail($config);
+});

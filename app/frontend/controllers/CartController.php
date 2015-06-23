@@ -33,5 +33,24 @@ class CartController extends ControllerBase {
         $this->view->setRenderLevel(View::LEVEL_ACTION_VIEW);
 
     }
+
+    public function editCountAction ($productId, $count) {
+        $this->view->setRenderLevel(View::LEVEL_NO_RENDER);
+        $cart = $this->session->get('cart');
+        foreach($cart->getProducts() as $key => $product) {
+            if($product['id'] == $productId) {
+                $cart->products[$key]['count'] = $count;
+            }
+        }
+        $this->session->set('cart', $cart);
+    }
+
+    public function deleteAction ($productId) {
+        $this->view->setRenderLevel(View::LEVEL_NO_RENDER);
+        $cart = $this->session->get('cart');
+        $cart->removeById($productId);
+
+        $this->session->set('cart', $cart);
+    }
 }
 

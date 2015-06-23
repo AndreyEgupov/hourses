@@ -39,6 +39,15 @@ class Cart {
         return $this;
     }
 
+    public function removeById($productId) {
+        foreach($this->products as $key => $product) {
+            if($productId == $product['id']) {
+                unset($this->products[$key]);
+            }
+        }
+        return $this;
+    }
+
     public function removeAll() {
         $this->products = array();
         return $this;

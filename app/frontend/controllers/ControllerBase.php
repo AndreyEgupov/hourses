@@ -29,7 +29,11 @@ class ControllerBase extends Controller {
     public $products;
     public $productFilters;
 
+    public $appEmails = array();
+
     public function initialize() {
+        $this->appEmails = explode(",", Config::findFirst('name = "email"')->value);
+
         $this->br = new Breadcrumbs();
 
         $this->setSessionVars();
