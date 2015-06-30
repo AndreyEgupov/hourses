@@ -52,6 +52,14 @@ class ControllerBase extends Controller {
         $this->initLeftCatalog();
         $this->setCurrency();
         $this->setCart();
+        $this->setFooter();
+    }
+
+    private function setFooter () {
+
+        $this->view->setVar('categories', Categories::find(array(
+            'limit' => 8
+        )));
     }
 
     private function setConfig() {

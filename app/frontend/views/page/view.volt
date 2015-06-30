@@ -1,10 +1,12 @@
-{% if data|length %}
-    <h1>{{ data.title }}</h1>
-    <div class="content-page">
-        {{ data.description }}
+<div id="center_column" class="center_column col-sm-8 col-md-9">
+    <div id="content">
+        <div class="blog-post">
+            <div class="page-item-title">
+                <h1>{{ data.title }}</h1>
+            </div>
+            <div itemprop="articleBody">
+                {{ data.description }}
+            </div>
+        </div>
     </div>
-{% else %}
-    <div class="content-page">
-        Ничего не найдено
-    </div>
-{% endif %}
+</div>
