@@ -68,12 +68,11 @@
             <div class="container">
                 <div class="row">
                     <div id="header_logo" class="logo col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <a class="logo" href="/" title="Welcome to SP Market">
-                            <img src="/img/welcome-to-sp-nik-1415445354.jpg" alt="Welcome to SP Market" width="142"
-                                 height="42"/>
+                        <a class="logo" href="/" title="Магазин конных товаров">
+                            <img src="/img/welcome-to-sp-nik-1415445354.jpg" alt="Магазин конных товаров" width="150"/>
                         </a>
                     </div>
-                    <div class="header-middle-right col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <div class="header-middle-right col-lg-9 col-md-9 col-sm-12 col-xs-12" >
                         <!-- MODULE Block cart -->
                         <div class="shopping_cart clearfix">
                             {{ partial('partials/cart') }}
