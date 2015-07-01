@@ -73,4 +73,11 @@ class Cart {
     public function getProducts () {
         return $this->products;
     }
+
+    public static function getFullUrl($string) {
+        if(preg_match("/^http/", $string)) {
+            return $string;
+        }
+        return $_SERVER["HTTP_HOST"] . $string;
+    }
 }

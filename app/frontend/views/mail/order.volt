@@ -33,7 +33,7 @@
         <tr class="cart_item first_item address_0 odd" data-product-id="{{ p['id'] }}">
             <td class="cart_product">
                 <a href="">
-                    <img src="{{ p['img'] }}" alt="" width="98" height="98">
+                    <img src="{{ getFullUrl(p['img']) }}" alt="" width="98" height="98">
                 </a>
             </td>
             <td class="cart_description">
@@ -50,9 +50,9 @@
                 <span class="label label-success">In stock</span>
             </td>
             <td class="cart_unit" data-title="Unit price">
-                                    <span class="price" >
-                                        <span class="price">{{ currencyObj.symbol }} {{ getPrice(p['price'], currencyObj) }}</span>
-                                    </span>
+                <span class="price" >
+                    <span class="price">{{ currencyObj.symbol }} {{ getPrice(p['price'], currencyObj) }}</span>
+                </span>
             </td>
 
             <td class="cart_quantity text-center">

@@ -4,25 +4,25 @@
     {% for attrNameId, attrList in product.getUniqueAttributes() %}
         {% set attrName = getAttributeName(attrNameId) %}
         {% if attrNameId == 1 or attrNameId == 4 or attrNameId == 5 %}{% continue %}{% endif %}
-        {% if attrNameId == 2 %}
-            <fieldset class="attribute_fieldset">
-                <label class="attribute_label">{{ attrName.title }} :&nbsp;</label>
-                <div class="attribute_list">
-                    <ul id="color_to_pick_list" class="clearfix">
-                        {% for attr in attrList %}
-                            <li class="">
-                                {% set color = attr.Color %}
-                                <a href="" name="{{ attr.getVal() }}" class="color_pick selected" style="background:#{{ color.getFirst().hash }};" title="{{ attr.getVal() }}" data-attr-id="{{ attr.id }}"></a>
-                            </li>
-                        {% endfor %}
-                        </select>
+        {#{% if attrNameId == 2 %}#}
+            {#<fieldset class="attribute_fieldset">#}
+                {#<label class="attribute_label">{{ attrName.title }} :&nbsp;</label>#}
+                {#<div class="attribute_list">#}
+                    {#<ul id="color_to_pick_list" class="clearfix">#}
+                        {#{% for attr in attrList %}#}
+                            {#<li class="">#}
+                                {#{% set color = attr.Color %}#}
+                                {#<a href="" name="{{ attr.getVal() }}" class="color_pick selected" style="background:#{{ color.getFirst().hash }};" title="{{ attr.getVal() }}" data-attr-id="{{ attr.id }}"></a>#}
+                            {#</li>#}
+                        {#{% endfor %}#}
+                        {#</select>#}
 
-                    </ul>
-                    <input type="hidden" class="color_pick_hidden" name="group_{{ attrName.id }}" value="">
-                </div>
-            </fieldset>
-            {% continue %}
-        {% endif %}
+                    {#</ul>#}
+                    {#<input type="hidden" class="color_pick_hidden" name="group_{{ attrName.id }}" value="">#}
+                {#</div>#}
+            {#</fieldset>#}
+            {#{% continue %}#}
+        {#{% endif %}#}
         {% if attrList|length > 1 %}
                 <fieldset class="attribute_fieldset">
                     <label class="attribute_label" for="group_{{ attrName.id }}">{{ attrName.title }} :&nbsp;</label>

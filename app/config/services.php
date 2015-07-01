@@ -124,6 +124,14 @@ $di->set('view', function () use ($config) {
                 }
             );
 
+            $compiler->addFunction(
+                'getFullUrl',
+                function($resolvedArgs, $exprArgs){
+
+                    return '\Cart::getFullUrl('.$resolvedArgs.')';
+                }
+            );
+
             return $volt;
         },
         '.phtml' => 'Phalcon\Mvc\View\Engine\Php'

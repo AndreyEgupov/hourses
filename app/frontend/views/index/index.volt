@@ -13,7 +13,7 @@
                 {{ partial("partials/filter") }}
             </div>
             <div id="center_column" class="center_column col-sm-8 col-md-9">
-
+                {{ partial("partials/slider") }}
                 <div class="content_scene_cat "></div>
                 {% if page.items|length %}
                     <div class="content_sortPagiBar clearfix">

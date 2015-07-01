@@ -1,7 +1,6 @@
 <?
 
 namespace Multiple\Frontend\Controllers;
-use AbstractModels\AbstractAttributes;
 use Breadcrumbs;
 use Cart;
 use Categories;
@@ -53,6 +52,7 @@ class ControllerBase extends Controller {
         $this->setCurrency();
         $this->setCart();
         $this->setFooter();
+        $this->setMenu();
     }
 
     private function setFooter () {
@@ -145,9 +145,10 @@ class ControllerBase extends Controller {
         $prices = $prices? array('price' => array(@$prices[0], @$prices[1])) : array();
 
         $order = $this->view->getVar('sortType');
+        $search = $this->request->get('s');
 
-        $productFilters = new ProductFilters($attributes, $categoryId, $prices, $order);
-        $productFiltersBase = new ProductFilters(array(), $categoryId, array());
+        $productFilters = new ProductFilters($attributes, $categoryId, $prices, $order, $search);
+        $productFiltersBase = new ProductFilters(array(), $categoryId, array(), null, $search);
 
         $this->products = $productFilters->getList();
         $productsMeta = $productFilters->getMeta();
@@ -222,6 +223,13 @@ class ControllerBase extends Controller {
             $this->session->set('cart', $cart);
         }
         $this->view->setVar('cart', $cart);
+    }
+
+    private function setMenu() {
+        $menuList = Menu::find(array(
+            'order' => "position"
+        ));
+        $this->view->setVar('menuList', $menuList);
     }
 
 }

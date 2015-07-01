@@ -58,7 +58,7 @@ class OrderController extends ControllerBase {
             $this->session->set('cart', $cart);
             $this->view->setVar('cart', $cart);
 
-            $this->view->setVar('success', 'Ваш тоар успешно отправлен на обработку, наши менеджеры свяжуться с вами в ближайщее время!');
+            $this->view->setVar('success', 'Ваш товар успешно отправлен на обработку, наши менеджеры свяжуться с вами в ближайщее время!');
         }
 
         $this->view->setVar('request', $this->request);

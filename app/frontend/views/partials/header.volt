@@ -82,14 +82,9 @@
                         <!-- /MODULE Block cart --><!-- Block search module TOP -->
 
                         <div id="search_block_top" class="col-md-offset-3 clearfix">
-                            <form id="searchbox" method="get"
-                                  action="http://prestashop.skyoftech.com/sp_market/en/search">
-                                <input type="hidden" name="controller" value="search"/>
-                                <input type="hidden" name="orderby" value="position"/>
-                                <input type="hidden" name="orderway" value="desc"/>
-                                <input class="search_query form-control" type="text" id="search_query_top"
-                                       name="search_query" placeholder="Enter keywords to search..." value=""/>
-                                <button type="submit" name="submit_search" class=" button-search">
+                            <form id="searchbox" method="get" action="/">
+                                <input class="search_query form-control" type="text" name="s" placeholder="Что будем искать?" value="" />
+                                <button type="submit" class=" button-search">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </form>

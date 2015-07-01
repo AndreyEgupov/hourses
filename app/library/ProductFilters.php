@@ -7,8 +7,8 @@ class ProductFilters {
     private $model = Products::class;
     private $builder = null;
 
-    function __construct(array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null) {
-        $this->builder($attrIdList, $categoryId, $filterParams, $order);
+    function __construct(array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null, $search=null) {
+        $this->builder($attrIdList, $categoryId, $filterParams, $order, $search);
     }
 
     /**
@@ -66,7 +66,7 @@ class ProductFilters {
         return  $attributes;
     }
 
-    public function builder (array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null) {
+    public function builder (array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null, $search = null) {
         $builder = new Builder(array('models' => array('Products')));
 
         if($attrIdList) {
@@ -90,6 +90,9 @@ class ProductFilters {
         }
         if($order) {
             $builder->orderBy(Order::getOrderServiceItem($order));
+        }
+        if($search) {
+            $builder->andWhere("Products.title LIKE :s: OR Products.description LIKE :s:", array("s"=>'%'.$search.'%'));
         }
 
         $this->builder = $builder;

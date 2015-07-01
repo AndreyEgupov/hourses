@@ -6,20 +6,20 @@ Ext.define("DataAppModules",{
         return [
         { name: 'Пользователи', iconCls: 'grid-shortcut', module: 'users-manager' },
         { name: 'Статьи', iconCls: 'grid-shortcut', module: 'article-manager' },
-        { name: 'Рекомендованые Статьи', iconCls: 'grid-shortcut', module: 'recommended-article-manager' },
-        { name: 'Новости', iconCls: 'grid-shortcut', module: 'news-manager' },
+        //{ name: 'Рекомендованые Статьи', iconCls: 'grid-shortcut', module: 'recommended-article-manager' },
+        //{ name: 'Новости', iconCls: 'grid-shortcut', module: 'news-manager' },
         { name: 'Меню', iconCls: 'grid-shortcut', module: 'menu-manager' },
         //{ name: 'Бонусы и акции', iconCls: 'grid-shortcut', module: 'bonus-manager' },
 
-        { name: 'Пополнения счетов', iconCls: 'grid-shortcut', module: 'payment-manager' },
-        { name: 'Обьявления', iconCls: 'grid-shortcut', module: 'service-item-manager' },
-        { name: 'Баннеры', iconCls: 'grid-shortcut', module: 'banner-manager' },
-        { name: 'Комментарии', iconCls: 'grid-shortcut', module: 'comments-manager' },
-        { name: 'Сообщения', iconCls: 'grid-shortcut', module: 'feedback-manager' },
-        { name: 'Перелинковка', iconCls: 'grid-shortcut', module: 'redirect-manager' },
+        { name: 'Категории', iconCls: 'grid-shortcut', module: 'service-manager' },
+        //{ name: 'Обьявления', iconCls: 'grid-shortcut', module: 'service-item-manager' },
+        //{ name: 'Баннеры', iconCls: 'grid-shortcut', module: 'banner-manager' },
+        //{ name: 'Комментарии', iconCls: 'grid-shortcut', module: 'comments-manager' },
+        //{ name: 'Сообщения', iconCls: 'grid-shortcut', module: 'feedback-manager' },
+        //{ name: 'Перелинковка', iconCls: 'grid-shortcut', module: 'redirect-manager' },
         { name: 'Files', iconCls: 'grid-shortcut', module: 'file-manager' },
         { name: 'Config', iconCls: 'grid-shortcut', module: 'config-manager' },
-        { name: 'Кто Онлайн', iconCls: 'grid-shortcut', module: 'acc-win' }
+        //{ name: 'Кто Онлайн', iconCls: 'grid-shortcut', module: 'acc-win' }
     ];
     } 
 });
@@ -61,7 +61,7 @@ Ext.define('MyDesktop.App', {
             new MyDesktop.MenuManager(),
             new MyDesktop.BonusManager(),
             new MyDesktop.UsersManager(),
-            new MyDesktop.ServiceItemManager(),
+            new MyDesktop.ServiceManager(),
             new MyDesktop.BannerManager(),
             new MyDesktop.RedirectManager(),
             new MyDesktop.CommentsManager(),

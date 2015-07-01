@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-    <link href="/themes/sp-market/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
     <link rel="stylesheet" href="/themes/sp-market/css/global.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="/themes/sp-market/css/css3.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="/themes/sp-market/css/autoload/uniform.default.css" type="text/css" media="all"/>
