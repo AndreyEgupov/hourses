@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Июл 01 2015 г., 18:35
+-- Время создания: Июл 01 2015 г., 22:17
 -- Версия сервера: 5.6.21
 -- Версия PHP: 5.6.8
 
@@ -822,7 +822,7 @@ CREATE TABLE IF NOT EXISTS `attribute_names` (
 `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `id_sync` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `attribute_names`
@@ -6267,7 +6267,7 @@ CREATE TABLE IF NOT EXISTS `products_image` (
   `product_id` int(11) NOT NULL,
   `src` varchar(255) NOT NULL,
   `id_sync` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9487 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9488 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `products_image`
@@ -15776,7 +15776,8 @@ INSERT INTO `products_image` (`id`, `product_id`, `src`, `id_sync`) VALUES
 (9483, 2713, 'http://best-horse.com/image/cache/data/suveniru2/304612-l2-600x600.jpg', 9484),
 (9484, 2714, 'http://best-horse.com/image/cache/data/suveniru/0140-l1-600x600.jpg', 9485),
 (9485, 2715, 'http://best-horse.com/image/cache/data/suveniru2/304611-l2-600x600.jpg', 9486),
-(9486, 2715, 'http://best-horse.com/image/cache/data/suveniru2/304611-l1-600x600.jpg', 9487);
+(9486, 2715, 'http://best-horse.com/image/cache/data/suveniru2/304611-l1-600x600.jpg', 9487),
+(9487, 1675, '/attach/SocUWjQmpu8.jpg', NULL);
 
 -- --------------------------------------------------------
 
@@ -37222,7 +37223,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=765;
 -- AUTO_INCREMENT для таблицы `attribute_names`
 --
 ALTER TABLE `attribute_names`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT для таблицы `categories`
 --
@@ -37277,7 +37278,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5283;
 -- AUTO_INCREMENT для таблицы `products_image`
 --
 ALTER TABLE `products_image`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9487;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9488;
 --
 -- AUTO_INCREMENT для таблицы `slider`
 --
