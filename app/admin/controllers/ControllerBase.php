@@ -3,15 +3,36 @@
 namespace Multiple\Admin\Controllers;
 use Exception;
 use JsonController;
+use Phalcon\Paginator\Adapter\Model;
 
 class ControllerBase extends JsonController {
 
     public function getListAction() {
         $this->setJson();
-        $data = call_user_func ($this->model."::find");
+
+        $params = array();
+        if($order = $this->request->get('sort')) {
+            $orderType = $this->request->get('dir');
+            $params['order'] = $order . ' '.$orderType;
+        }
+        $data = call_user_func_array($this->model."::find", $params);
+
+        if($this->request->get('limit') and $this->request->get('page')) {
+            $paginator = new Model(
+                array(
+                    "data" => $data,
+                    "limit"=> $this->request->get('limit'),
+                    "page" => $this->request->get('page')
+                )
+            );
+            return array(
+                'data' => $paginator->getPaginate()->items,
+                'totalCount' => count($data),
+            );
+        }
         return array(
-            'data' => $data->toArray(),
-            'totalCount' => count($data->toArray()),
+            'data' => $data,
+            'totalCount' => count($data),
         );
     }
 
@@ -38,6 +59,7 @@ class ControllerBase extends JsonController {
 
     public function saveAction($id=null) {
         $this->setJson();
+
         $id = $id ?  $id : $this->request->get('id');
 
         if (!isset($id)) {
@@ -67,6 +89,21 @@ class ControllerBase extends JsonController {
             "data" => $data
         );
     }
+
+    /**
+     * example condition = 'service_id = 1 AND is_active = 1 '
+     * @return array - список
+     */
+    public function findByAction () {
+        $this->setJson();
+        $condition = $this->request->get('condition');
+        $data = call_user_func_array ($this->model."::find", array($condition));
+        return array(
+            'data' => $data->toArray(),
+            'totalCount' => count($data->toArray()),
+        );
+    }
+
 
     public function initialize() {
         $user = $this->session->get("user");

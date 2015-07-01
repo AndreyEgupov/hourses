@@ -12,6 +12,8 @@ Ext.define("DataAppModules",{
         //{ name: 'Бонусы и акции', iconCls: 'grid-shortcut', module: 'bonus-manager' },
 
         { name: 'Категории', iconCls: 'grid-shortcut', module: 'service-manager' },
+        { name: 'Аттрибуты', iconCls: 'grid-shortcut', module: 'attribute-manager' },
+        { name: 'Товары', iconCls: 'grid-shortcut', module: 'product-manager' },
         //{ name: 'Обьявления', iconCls: 'grid-shortcut', module: 'service-item-manager' },
         //{ name: 'Баннеры', iconCls: 'grid-shortcut', module: 'banner-manager' },
         //{ name: 'Комментарии', iconCls: 'grid-shortcut', module: 'comments-manager' },
@@ -47,7 +49,7 @@ Ext.define('MyDesktop.App', {
 
     init: function() {
         // custom logic before getXYZ methods get called...
-
+        Ext.data.Store.prototype.pageSize = 1000;
         this.callParent();
 
         // now ready...
@@ -56,6 +58,8 @@ Ext.define('MyDesktop.App', {
     getModules : function(){
         return [
             new MyDesktop.ArticleManager(),
+            new MyDesktop.AttributeManager(),
+            new MyDesktop.ProductManager(),
             new MyDesktop.RecommendedArticleManager(),
             new MyDesktop.NewsManager(),
             new MyDesktop.MenuManager(),

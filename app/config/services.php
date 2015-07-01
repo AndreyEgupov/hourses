@@ -189,6 +189,13 @@ $di->set('router', function () {
         'action'     => 2,
     ));
 
+    $router->add("/admin/:controller/:action/:params", array(
+        'module'     => 'admin',
+        'controller' => 1,
+        'action'     => 2,
+        'params'     => 3,
+    ));
+
     return $router;
 });
 
