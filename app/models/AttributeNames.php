@@ -22,8 +22,16 @@ class AttributeNames extends \Phalcon\Mvc\Model
     public $id_sync;
 
     /**
-     * Initialize method for model.
+     *
+     * @var string
      */
+    public $type;
+
+    /**
+     *
+     * @var integer
+     */
+    public $is_visible;
     public function initialize()
     {
         $this->hasMany('id', 'Attributes', 'attribute_name_id', array('alias' => 'Attributes'));
@@ -37,7 +45,9 @@ class AttributeNames extends \Phalcon\Mvc\Model
         return array(
             'id' => 'id', 
             'title' => 'title', 
-            'id_sync' => 'id_sync'
+            'id_sync' => 'id_sync', 
+            'type' => 'type', 
+            'is_visible' => 'is_visible'
         );
     }
 

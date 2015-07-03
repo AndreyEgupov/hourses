@@ -18,7 +18,7 @@ Ext.define('MyDesktop.AttributeManager', {
         this.store = null;
         this.urlImage = null;
   
-        Ext.define('Attribute', {
+        Ext.define('AttributeNames', {
             extend: 'Ext.data.Model',
             fields: [
                 {name: 'id', type: 'int'},
@@ -42,14 +42,17 @@ Ext.define('MyDesktop.AttributeManager', {
         
             // create the Data Store
             this.store = Ext.create('Ext.data.Store', {
-                model : "Attribute",
+                model : "AttributeNames",
                 proxy: {
                     type: 'ajax',
-                    url: '/admin/attribute/getList.json',
+                    url: '/admin/attribute-names/findBy',
                     reader: {
                         type: 'json',
                         root: 'data',
                         totalProperty: 'totalCount'
+                    },
+                    extraParams : {
+                        condition : 'is_visible = 1'
                     }
                 }
             });
@@ -153,7 +156,7 @@ Ext.define('MyDesktop.AttributeManager', {
                 },
                 
                 reader : Ext.create('Ext.data.reader.Json', {
-                    model: 'Attribute'
+                    model: 'AttributeNames'
                 }),
 
                 items: [{
@@ -177,7 +180,7 @@ Ext.define('MyDesktop.AttributeManager', {
                             params: {
                                 'id' : id
                             },
-                            url: '/admin/attribute/save.json',
+                            url: '/admin/attribute-names/save.json',
                             submitEmptyText: false,
                             waitMsg: 'Сохранение...',
                             success: function(form, action) {
@@ -209,7 +212,7 @@ Ext.define('MyDesktop.AttributeManager', {
             
             if (id != 'new') {
                 var f = form.getForm().load({
-                    url: '/admin/attribute/getOne.json',
+                    url: '/admin/attribute-names/getOne.json',
                     params : {
                         'id' : id
                     }

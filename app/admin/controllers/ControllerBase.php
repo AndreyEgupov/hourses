@@ -48,6 +48,7 @@ class ControllerBase extends JsonController {
     }
 
     public function removeAction($id) {
+        $this->setJson();
         if (!isset($id)) {
             throw new Exception('Id is required');
         }
@@ -97,7 +98,31 @@ class ControllerBase extends JsonController {
     public function findByAction () {
         $this->setJson();
         $condition = $this->request->get('condition');
-        $data = call_user_func_array ($this->model."::find", array($condition));
+
+        $params = array();
+        $params[] = $condition;
+
+        if($order = $this->request->get('sort')) {
+            $orderType = $this->request->get('dir');
+            $params['order'] = $order . ' '.$orderType;
+        }
+
+        $data = call_user_func_array($this->model."::find", array($params));
+
+        if($this->request->get('limit') and $this->request->get('page')) {
+            $paginator = new Model(
+                array(
+                    "data" => $data,
+                    "limit"=> $this->request->get('limit'),
+                    "page" => $this->request->get('page')
+                )
+            );
+            return array(
+                'data' => $paginator->getPaginate()->items,
+                'totalCount' => count($data),
+            );
+        }
+
         return array(
             'data' => $data->toArray(),
             'totalCount' => count($data->toArray()),

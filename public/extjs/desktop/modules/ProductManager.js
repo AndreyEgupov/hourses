@@ -22,8 +22,8 @@ Ext.define('MyDesktop.ProductManager', {
             extend: 'Ext.data.Model',
             fields: [
                 {name: 'id', type: 'int'},
-                {name: 'price', type: 'int'},
-                {name: 'price_old', type: 'int'},
+                {name: 'price', type: 'float'},
+                {name: 'price_old', type: 'float'},
                 {name: 'id_sync', type: 'int'},
                 {name: 'date_update', type: 'date'},
                 {name: 'date_create', type: 'date'},
@@ -55,7 +55,8 @@ Ext.define('MyDesktop.ProductManager', {
     },
 
     createWindow : function(){ // открытие списка событий 
-        
+        this.productAttributeList = this.app.getProductAttributes();
+
         var desktop = this.app.getDesktop();
         var id = this.id;
         var win = desktop.getWindow(id);
@@ -310,7 +311,7 @@ Ext.define('MyDesktop.ProductManager', {
     },
 
     attributeList : function (product_id, data) {
-        console.log(product_id, data);
+        this.productAttributeList.createWindow(product_id, data);
     },
 
     createForm : function(id, data){

@@ -1,9 +1,9 @@
 <?php
 namespace Multiple\Admin\Controllers;
 
-use AttributeNames;
+use Attributes;
 
 class AttributeController extends ControllerBase {
-    public $model = AttributeNames::class;
+    public $model = Attributes::class;
 }
 

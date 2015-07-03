@@ -54,13 +54,13 @@ Ext.define('MyDesktop.App', {
 
         // now ready...
     },
-
+    modules : [],
     getModules : function(){
+        this.productAttributes = new MyDesktop.ProductAttributesManager();
         return [
             new MyDesktop.ArticleManager(),
             new MyDesktop.AttributeManager(),
             new MyDesktop.ProductManager(),
-            new MyDesktop.RecommendedArticleManager(),
             new MyDesktop.NewsManager(),
             new MyDesktop.MenuManager(),
             new MyDesktop.BonusManager(),
@@ -73,8 +73,13 @@ Ext.define('MyDesktop.App', {
             new MyDesktop.ConfigManager(),
             new MyDesktop.FileManager(),
             new MyDesktop.PaymentManager(),
-            new MyDesktop.UsersOnlineManager()
+            new MyDesktop.UsersOnlineManager(),
+            this.productAttributes
         ];
+    },
+
+    getProductAttributes : function () {
+        return this.productAttributes;
     },
 
     getDesktopConfig: function () {

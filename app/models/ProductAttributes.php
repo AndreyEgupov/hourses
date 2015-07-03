@@ -7,6 +7,12 @@ class ProductAttributes extends \Phalcon\Mvc\Model
      *
      * @var integer
      */
+    public $id;
+
+    /**
+     *
+     * @var integer
+     */
     public $product_id;
 
     /**
@@ -14,10 +20,6 @@ class ProductAttributes extends \Phalcon\Mvc\Model
      * @var integer
      */
     public $attribute_id;
-
-    /**
-     * Initialize method for model.
-     */
     public function initialize()
     {
         $this->belongsTo('product_id', 'Products', 'id', array('alias' => 'Product'));
@@ -30,6 +32,7 @@ class ProductAttributes extends \Phalcon\Mvc\Model
     public function columnMap()
     {
         return array(
+            'id' => 'id', 
             'product_id' => 'product_id', 
             'attribute_id' => 'attribute_id'
         );

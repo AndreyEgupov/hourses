@@ -16,10 +16,8 @@
             MyDesktop: '/extjs/desktop'
         });
         Ext.require('MyDesktop.App');
-
-        var myDesktopApp;
         Ext.onReady(function () {
-            myDesktopApp = new MyDesktop.App();
+            window.myDesktopApp = new MyDesktop.App();
         });
     </script>
     <script type="text/javascript" src="/extjs/desktop/functions.js"></script>
