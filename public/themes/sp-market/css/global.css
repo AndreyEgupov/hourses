@@ -30,7 +30,6 @@ i {
 
 body {
   color: #777;
-  font-size: 13px;
   margin: 0;
   min-width: 320px;
   padding: 0; }
@@ -233,7 +232,6 @@ h1 strong a {
 
 .notification p {
   color: #333333;
-  font-size: 11px;
   margin: 0;
   padding: 0; }
 
@@ -583,7 +581,6 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   background: none repeat scroll 0 0 #fff;
   border: 1px solid #e7e4de;
   border-radius: 0;
-  font-size: 12px;
   height: 32px;
   padding: 4px 6px; }
 

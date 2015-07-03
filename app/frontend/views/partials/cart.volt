@@ -1,5 +1,5 @@
 <a href="/order" title="Просмотр корзины" rel="nofollow">
-    <div class="shopcart"><b>Корзина</b> <br/>
+    <div class="shopcart"><b style="display: block">Корзина</b>
         {% if cart.getTotalCount() > 0  %}
             <span class="ajax_cart_quantity ">{{ cart.getTotalCount() }}</span>
             <span class="ajax_cart_product_txt ">Товаров</span>

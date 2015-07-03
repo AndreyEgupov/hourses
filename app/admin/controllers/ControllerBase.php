@@ -8,6 +8,7 @@ use Phalcon\Paginator\Adapter\Model;
 class ControllerBase extends JsonController {
 
     public function getListAction() {
+
         $this->setJson();
 
         $params = array();
@@ -15,7 +16,8 @@ class ControllerBase extends JsonController {
             $orderType = $this->request->get('dir');
             $params['order'] = $order . ' '.$orderType;
         }
-        $data = call_user_func_array($this->model."::find", $params);
+
+        $data = call_user_func_array($this->model."::find", array($params));
 
         if($this->request->get('limit') and $this->request->get('page')) {
             $paginator = new Model(

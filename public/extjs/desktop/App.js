@@ -10,7 +10,7 @@ Ext.define("DataAppModules",{
         //{ name: 'Новости', iconCls: 'grid-shortcut', module: 'news-manager' },
         { name: 'Меню', iconCls: 'grid-shortcut', module: 'menu-manager' },
         //{ name: 'Бонусы и акции', iconCls: 'grid-shortcut', module: 'bonus-manager' },
-
+        { name: 'Слайдер ', iconCls: 'grid-shortcut', module: 'slider-manager' },
         { name: 'Категории', iconCls: 'grid-shortcut', module: 'service-manager' },
         { name: 'Аттрибуты', iconCls: 'grid-shortcut', module: 'attribute-manager' },
         { name: 'Товары', iconCls: 'grid-shortcut', module: 'product-manager' },
@@ -63,6 +63,7 @@ Ext.define('MyDesktop.App', {
             new MyDesktop.ProductManager(),
             new MyDesktop.NewsManager(),
             new MyDesktop.MenuManager(),
+            new MyDesktop.SliderManager(),
             new MyDesktop.BonusManager(),
             new MyDesktop.UsersManager(),
             new MyDesktop.ServiceManager(),
