@@ -218,3 +218,18 @@ body #layer_cart {
 .shopping_cart > a:first-child span {
     font-size: 12px;
 }
+
+.product-size-social {
+    border-top: 1px solid #E6E6E6;
+    padding: 10px 0;
+}
+
+.product-size-social > a {
+    float: right;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.product-size-social + .box-info-product {
+    margin-top: 0;
+}
