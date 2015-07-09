@@ -53,6 +53,7 @@ class ControllerBase extends Controller {
         $this->setCart();
         $this->setFooter();
         $this->setMenu();
+
     }
 
     private function setFooter () {
@@ -138,6 +139,16 @@ class ControllerBase extends Controller {
     public function initFilter () {
         $categoryId = $this->view->getVar('categoryId');
 
+        $sales = $this->request->get('sales');
+        $instock = $this->request->get('instock');
+        $novelty = $this->request->get('novelty');
+
+        $filters = array(
+            'sales' => $sales,
+            'instock' => $instock,
+            'novelty' => $novelty
+        );
+
         $attributes = $this->request->get('attribute');
         $attributes = $attributes? $attributes : array();
 
@@ -147,14 +158,14 @@ class ControllerBase extends Controller {
         $order = $this->view->getVar('sortType');
         $search = $this->request->get('s');
 
-        $productFilters = new ProductFilters($attributes, $categoryId, $prices, $order, $search);
-        $productFiltersBase = new ProductFilters(array(), $categoryId, array(), null, $search);
+        $productFilters = new ProductFilters($filters, $attributes, $categoryId, $prices, $order, $search);
+        $productFiltersBase = new ProductFilters($filters, array(), $categoryId, array(), null, $search);
 
         $this->products = $productFilters->getList();
         $productsMeta = $productFilters->getMeta();
         $productsMetaBase = $productFiltersBase->getMeta();
 
-        //$attributes = $productFilters->getAttributes($attributes, $categoryId, $prices);
+        //$attributes = $productFilters->getAttributes($filters, $attributes, $categoryId, $prices);
         //$attributesGroup = AbstractAttributes::group($attributes);
 
         $variables = array(

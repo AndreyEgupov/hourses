@@ -196,6 +196,24 @@ $di->set('router', function () {
         'params'     => 3,
     ));
 
+    $router->add("/instock", array(
+        'module'     => 'frontend',
+        'controller' => 'index',
+        'action'     => 'instock',
+    ));
+
+    $router->add("/novelty", array(
+        'module'     => 'frontend',
+        'controller' => 'index',
+        'action'     => 'novelty',
+    ));
+
+    $router->add("/sales", array(
+        'module'     => 'frontend',
+        'controller' => 'index',
+        'action'     => 'sales',
+    ));
+
     return $router;
 });
 

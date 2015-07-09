@@ -233,3 +233,22 @@ body #layer_cart {
 .product-size-social + .box-info-product {
     margin-top: 0;
 }
+
+div.slogal {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+div.slogal .phone {
+    float: right;
+    color: #00ABF0;
+}
+
+.header-container .header-top {
+    padding-bottom: 0;
+}
+
+#search_block_top {
+    float: left;
+}

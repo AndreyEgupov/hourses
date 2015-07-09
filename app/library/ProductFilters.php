@@ -7,8 +7,8 @@ class ProductFilters {
     private $model = Products::class;
     private $builder = null;
 
-    function __construct(array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null, $search=null) {
-        $this->builder($attrIdList, $categoryId, $filterParams, $order, $search);
+    function __construct(array $filters, array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null, $search=null) {
+        $this->builder($filters, $attrIdList, $categoryId, $filterParams, $order, $search);
     }
 
     /**
@@ -30,13 +30,28 @@ class ProductFilters {
     }
 
     /**
+     * @param array $filters
      * @param array $attrIdList
      * @param null $categoryId
      * @param array $filterParams
      * @return \Phalcon\Mvc\Model\Resultset\Simple
      */
-    public function getAttributes (array $attrIdList = array(), $categoryId=null, array $filterParams=array()) {
+    public function getAttributes (array $filters, array $attrIdList = array(), $categoryId=null, array $filterParams=array()) {
         $builder = new Builder(array('models' => array('Products')));
+
+        if($filters['sales']) {
+            $builder->andWhere('Products.price_old IS NOT NULL');
+        }
+
+        if($filters['instock']) {
+            $builder->andWhere('Products.is_available = 1');
+        }
+
+        if($filters['novelty']) {
+
+        }
+
+
         if($attrIdList) {
             $builder->inWhere('pa.attribute_id', $attrIdList);
         }
@@ -66,8 +81,19 @@ class ProductFilters {
         return  $attributes;
     }
 
-    public function builder (array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null, $search = null) {
+    public function builder (array $filters, array $attrIdList = array(), $categoryId=null, array $filterParams=array(), $order=null, $search = null) {
         $builder = new Builder(array('models' => array('Products')));
+        if($filters['sales']) {
+            $builder->andWhere('Products.price_old IS NOT NULL');
+        }
+
+        if($filters['instock']) {
+            $builder->andWhere('Products.is_available = 1');
+        }
+
+        if($filters['novelty']) {
+            $builder->andWhere('Products.date_create > :date:', array('date' => date('Y-m-d H:i:s')));
+        }
 
         if($attrIdList) {
             $builder->groupBy($this->model.".id");

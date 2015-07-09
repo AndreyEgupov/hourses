@@ -101,6 +101,11 @@
                 </div>
             </div>
         </div>
-
+        <div class="slogal">
+            <div class="container">
+                {{ slogal }}
+                <span class="phone">{{ phone1 }}</span>
+            </div>
+        </div>
     </header>
 </div>

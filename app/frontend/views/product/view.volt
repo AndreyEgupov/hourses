@@ -30,13 +30,15 @@
                                         <div class="leftquality">
                                             <p id="pQuantityAvailable">
                                                 Наличие в магазине:
-                                                <spn style="color: #00ABF0">
-                                                    {% if product.is_available %}
+                                                {% if product.is_available %}
+                                                    <spn style="color: #00ABF0">
                                                         <i class="fa fa-check-square-o"></i> Есть
-                                                    {% else %}
+                                                    </spn>
+                                                {% else %}
+                                                    <spn style="color: red;">
                                                         <i class="fa fa-minus-square-o"></i> Закончился
-                                                    {% endif %}
-                                                </spn>
+                                                    </spn>
+                                                {% endif %}
                                             </p>
                                         </div>
                                         <div class="rightprice">
