@@ -48,7 +48,7 @@ class ProductFilters {
         }
 
         if($filters['novelty']) {
-
+            $builder->andWhere('Products.date_create > :date:', array('date' => date('Y-m-d H:i:s', time()- (86400 * 14))));
         }
 
 
@@ -92,7 +92,7 @@ class ProductFilters {
         }
 
         if($filters['novelty']) {
-            $builder->andWhere('Products.date_create > :date:', array('date' => date('Y-m-d H:i:s')));
+            $builder->andWhere('Products.date_create > :date:', array('date' => date('Y-m-d H:i:s', time()- (86400 * 14))));
         }
 
         if($attrIdList) {

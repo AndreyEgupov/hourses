@@ -102,7 +102,7 @@
             </div>
         </div>
         <div class="slogal">
-            <div class="container">
+            <div class="container" style="padding: 0">
                 {{ slogal }}
                 <span class="phone">{{ phone1 }}</span>
             </div>
