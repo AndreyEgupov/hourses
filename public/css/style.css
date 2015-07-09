@@ -240,8 +240,15 @@ div.slogal {
     font-size: 1.5em;
 }
 
+div.slogal .container {
+    position: relative;
+}
+
 div.slogal .phone {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     color: #00ABF0;
 }
 
