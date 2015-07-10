@@ -30,12 +30,16 @@
                 </small>
             </td>
             <td class="cart_avail">
-                <span class="label label-success">In stock</span>
+                {#{% if p['is_available'] %}#}
+                    {#<span class="label label-success">В наличии</span>#}
+                {#{% else %}#}
+                    {#<span class="label label-error">Закончился</span>#}
+                {#{% endif %}#}
             </td>
             <td class="cart_unit" data-title="Unit price">
-                                    <span class="price" >
-                                        <span class="price">{{ currencyObj.symbol }} {{ getPrice(p['price'], currencyObj) }}</span>
-                                    </span>
+                <span class="price" >
+                    <span class="price">{{ currencyObj.symbol }} {{ getPrice(p['price'], currencyObj) }}</span>
+                </span>
             </td>
 
             <td class="cart_quantity text-center">
