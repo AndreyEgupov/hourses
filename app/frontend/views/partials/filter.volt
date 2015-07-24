@@ -15,51 +15,32 @@
                     <div id="ul_layered_price" class="col-lg-12" ></div>
                 </div>
 
-                {#<div class="layered_filter">#}
-                    {#<div class="layered_subtitle_heading">#}
-                        {#<span class="layered_subtitle">Цвет</span>#}
-                    {#</div>#}
-                    {#<ul id="ul_layered_id_attribute_group_3"#}
-                        {#class="col-lg-12 layered_filter_ul color-group">#}
-                        {#<li class="nomargin hiddable col-lg-6">#}
-                            {#<input class="color-option  " type="button"#}
-                                   {#name="layered_id_attribute_group_7" rel="7_3"#}
-                                   {#id="layered_id_attribute_group_7" style="background: #f5f5dc;"/>#}
-                            {#<label for="layered_id_attribute_group_7"#}
-                                   {#name="layered_id_attribute_group_7" class="layered_color"#}
-                                   {#rel="7_3">#}
-                                {#<a href="">Beige<span> (2)</span></a>#}
-                            {#</label>#}
-                        {#</li>#}
-                        {#<li class="nomargin hiddable col-lg-6">#}
-                            {#<input class="color-option  " type="button"#}
-                                   {#name="layered_id_attribute_group_8" rel="8_3"#}
-                                   {#id="layered_id_attribute_group_8" style="background: #ffffff;"/>#}
-                            {#<label for="layered_id_attribute_group_8"#}
-                                   {#name="layered_id_attribute_group_8" class="layered_color"#}
-                                   {#rel="8_3">#}
-                                {#<a href="">White<span> (3)</span></a>#}
-                            {#</label>#}
-                        {#</li>#}
-                    {#</ul>#}
-                {#</div>#}
+                <div class="layered_filter">
+                    <div class="layered_subtitle_heading">
+                        <span class="layered_subtitle">Производитель</span>
+                    </div>
+                    <ul class="col-lg-12 layered_filter_ul color-group">
+                        {% for attribute in attributes %}
+                            {% if attribute.attribute_name_id == 6 %}
+                                <li class="nomargin hiddable col-md-12">
+                                    <input {{ inObjectList(attribute, attributesRequest)? 'checked' : '' }}
+                                            type="checkbox" class="checkbox" name="attribute[]" id="layered_category_{{ attribute.id }}" value="{{ attribute.id }}"/>
+                                    <label for="layered_category_{{ attribute.id }}">
+                                        {{ attribute.val }}
+                                    </label>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
             <div class="col-sm-12" style="text-align: right; padding-right: 0;">
-                <a href='{{ router.getRewriteUri() }}' role="btn" class="btn btn-default" style="margin-right: 7px;" >Отмена</a>
+                <a href='{{ router.getRewriteUri() }}' role="button" class="btn btn-default" style="margin-right: 7px;" >Отмена</a>
                 <button type="submit" class="btn btn-primary">Применить</button>
             </div>
         </form>
     </div>
 
-    <p class="title_block" style="margin-top: 40px;"><span>Мы вконтакте</span></p>
-    <div class="block_content">
-        <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-
-        <!-- VK Widget -->
-        <div id="vk_groups"></div>
-        <script type="text/javascript">
-            VK.Widgets.Group("vk_groups", {mode: 0, width: "220", height: "400", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 12851086);
-        </script>
-    </div>
+    {{ partial('partials/socials/vk') }}
 </div>
 <!-- /Block layered navigation module -->

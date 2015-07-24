@@ -5,6 +5,14 @@ html, body {
     font-size: 14px;
 }
 
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}
+
 .content_sortPagiBar .sortPagiBar {
     margin-top: 10px;
 }
@@ -258,4 +266,41 @@ div.slogal .phone {
 
 #search_block_top {
     float: left;
+}
+
+.inverse-currency {
+    color : #3cafe7;
+}
+
+.category-list-li h5 {
+    margin-top: 0 !important;
+}
+
+.category-list-li h5 a {
+    display: block;
+    text-align: center;
+}
+
+.category-list-li {
+    width: 23% !important;
+}
+
+.category-list .product-image-container a{
+    text-align: center;
+}
+
+.category-list .product-image-container a img {
+    max-height: 130px;
+    max-width: 140px;
+}
+
+.category-list {
+    height: 215px !important;
+    width: 170px !important;
+    border: 0 !important;
+}
+
+.category-list .category-title {
+    text-transform: uppercase;
+    font-weight: 600;
 }

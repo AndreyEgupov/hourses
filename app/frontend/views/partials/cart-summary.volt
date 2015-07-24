@@ -36,10 +36,9 @@
                     {#<span class="label label-error">Закончился</span>#}
                 {#{% endif %}#}
             </td>
-            <td class="cart_unit" data-title="Unit price">
-                <span class="price" >
-                    <span class="price">{{ currencyObj.symbol }} {{ getPrice(p['price'], currencyObj) }}</span>
-                </span>
+            <td class="cart_unit" data-title="Unit price" style="text-align: center">
+                <span class="price">{{ currencyObj.symbol }} {{ getPrice(p['price'], currencyObj) }}</span>
+                <span class="price inverse-currency" style="margin-left: 15px;">{{ inverseCurrency.symbol }} {{ getPrice(p['price'], inverseCurrency) }}</span>
             </td>
 
             <td class="cart_quantity text-center">
@@ -64,6 +63,9 @@
             <td class="cart_total" data-title="Total">
                 <span class="price" id="total_product_price_24_136_0">
                     {{ currencyObj.symbol }} {{ getPrice(p['count'] * p['price'], currencyObj) }}
+                </span>
+                <span class="price inverse-currency" style="margin-left: 15px;">
+                    {{ inverseCurrency.symbol }} {{ getPrice(p['count'] * p['price'], inverseCurrency) }}
                 </span>
             </td>
             <td class="cart_delete text-center" data-title="Delete">
@@ -90,6 +92,9 @@
         </td>
         <td colspan="2" class="price" id="total_price_container">
             <span id="total_price">{{ currencyObj.symbol }} {{ getPrice(cart.getTotalPrice(), currencyObj) }}</span>
+            <span class="price inverse-currency" style="margin-left: 15px;">
+                {{ inverseCurrency.symbol }} {{ getPrice(cart.getTotalPrice(), inverseCurrency) }}
+            </span>
         </td>
     </tr>
     </tfoot>

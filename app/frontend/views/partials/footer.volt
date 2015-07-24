@@ -24,7 +24,12 @@
                     <h3 class="mod-title">Информация</h3>
                     <ul class="list-link">
                         <li class="item">
-                            <a href=/page/view/1" title="Возврат денег">
+                            <a href="/page/view/9" title="Возврат денег">
+                               Как определить размер
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="/page/view/1" title="Возврат денег">
                                 Возврат денег
                             </a>
                         </li>

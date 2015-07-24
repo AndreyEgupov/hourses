@@ -28,6 +28,8 @@ $(document).ready(function() {
         $("#layered_price_range i").each(function () {
             $(this).text(currency);
         });
+        $("#priceMin").val(prices[0]);
+        $("#priceMax").val(prices[1]);
     }
 
     function number_format(number, decimals, dec_point, thousands_sep) {

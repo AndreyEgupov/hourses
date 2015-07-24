@@ -49,6 +49,9 @@
                                                         <span id="our_price_display2" itemprop="price">{{ currencyObj.symbol }} {{ getPrice(product.price, currencyObj) }}</span>
                                                         <meta itemprop="priceCurrency" content="{{ currencyObj.title }}">
                                                     </p>
+                                                    <p itemprop="price" class="our_price_display inverse-currency" style="margin-left: 15px;">
+                                                        {{ inverseCurrency.symbol }} {{ getPrice(product.price, inverseCurrency) }}
+                                                    </p>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>

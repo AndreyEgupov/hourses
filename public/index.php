@@ -5,6 +5,9 @@ try {
     ini_set('display_errors', 1);
 
     define('PUBLIC_PATH', realpath(dirname(__FILE__)));
+    define('CACHE_PATH', PUBLIC_PATH . '/../app/cache/');
+
+
 
     /**
      * Read the configuration
@@ -25,7 +28,6 @@ try {
     include __DIR__ . "/../app/config/services.php";
 
     include __DIR__ . "/../app/config/debug.php";
-
     /**
      * Handle the request
      */

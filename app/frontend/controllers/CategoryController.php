@@ -12,6 +12,19 @@ class CategoryController extends ControllerBase {
 
     public function listAction($categoryId) {
         $category = Categories::findFirst($categoryId);
+
+        $childCategories = Categories::find(array(
+            'parent_id = :parentId:',
+            'bind' => array(
+                'parentId' => $category->id
+            )
+        ));
+        $this->view->setVar('childCategories', $childCategories);
+
+        if($childCategories->count()) {
+            $this->view->pick('category/child-list');
+        }
+
         $sql = "
             SELECT p.*
             FROM Products p

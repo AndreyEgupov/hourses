@@ -132,6 +132,15 @@ $di->set('view', function () use ($config) {
                 }
             );
 
+            $compiler->addFunction(
+                'inObjectList',
+                function($resolvedArgs, $exprArgs) use ($compiler) {
+                    $needle = $compiler->expression($exprArgs[0]['expr']);
+                    $list = $compiler->expression($exprArgs[1]['expr']);
+                    return '\AbstractModels\AbstractAttributes::inObjectList('.$needle.', '.$list.')';
+                }
+            );
+
             return $volt;
         },
         '.phtml' => 'Phalcon\Mvc\View\Engine\Php'

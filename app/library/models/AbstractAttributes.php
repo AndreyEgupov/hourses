@@ -39,4 +39,15 @@ class AbstractAttributes extends Attributes {
         }
         return $groupList;
     }
+
+    static public function inObjectList ($needle, $list) {
+        $find = false;
+        foreach($list as $obj) {
+            if($needle->id == $obj->id) {
+                $find = true;
+                break;
+            }
+        }
+        return $find;
+    }
 }

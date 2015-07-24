@@ -40,6 +40,9 @@
                 {% if item.price_old %}
                     <span class="price-percent-reduction">-{{ noformat(100 - item.price/item.price_old * 100) }}%</span>
                 {% endif %}
+                <span itemprop="price" class="price product-price right inverse-currency">
+                    {{ inverseCurrency.symbol }} {{ getPrice(item.price, inverseCurrency) }}
+                </span>
             </div>
             <div class="button-container">
                 <a class="button ajax_add_to_cart_button cart_button"

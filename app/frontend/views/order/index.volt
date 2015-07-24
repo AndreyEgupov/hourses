@@ -3,8 +3,10 @@
         <div class="row">
             {{ partial("partials/breadcrumb") }}
             <div id="center_column" class="center_column col-sm-12 col-md-12">
-                <h1 id="cart_title" class="page-heading">Корзина</h1>
-
+                <h1 id="cart_title" class="page-heading">
+                    Корзина
+                    <span class="price right" >Сумма минимального заказа 200 € евро.</span>
+                </h1>
                 <div id="order-detail-content" class="table_block table-responsive">
                     {{ partial('partials/cart-summary') }}
                 </div>

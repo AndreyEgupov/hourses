@@ -1,6 +1,8 @@
 <?
 
 namespace Multiple\Frontend\Controllers;
+use AbstractModels\AbstractAttributes;
+use Attributes;
 use Breadcrumbs;
 use Cart;
 use Categories;
@@ -13,6 +15,8 @@ use MenuHelper;
 use Meta;
 use Order;
 use Paginator;
+use Phalcon\Cache\Backend\File;
+use Phalcon\Cache\Frontend\Data;
 use Phalcon\Http\Request;
 use Phalcon\Mvc\Controller;
 use Phalcon\Mvc\Dispatcher;
@@ -50,9 +54,11 @@ class ControllerBase extends Controller {
 
         $this->initLeftCatalog();
         $this->setCurrency();
+        $this->setInverseCurrency();
         $this->setCart();
         $this->setFooter();
         $this->setMenu();
+        $this->setBrands();
 
     }
 
@@ -165,7 +171,8 @@ class ControllerBase extends Controller {
         $productsMeta = $productFilters->getMeta();
         $productsMetaBase = $productFiltersBase->getMeta();
 
-        //$attributes = $productFilters->getAttributes($filters, $attributes, $categoryId, $prices);
+        $attributesRequest = $productFilters->getAttributes($filters, $attributes, $categoryId, $prices);
+        $attributes = $productFiltersBase->getAttributes($filters, array(), $categoryId, $prices);
         //$attributesGroup = AbstractAttributes::group($attributes);
 
         $variables = array(
@@ -174,7 +181,8 @@ class ControllerBase extends Controller {
             'priceOne' => $prices? @$prices['price'][0] : $productsMeta['min'],
             'priceTwo' => $prices? @$prices['price'][1] : $productsMeta['max'],
             //'attributesGroup' => $attributesGroup,
-            //'attributesRequest' => $attributes
+            'attributesRequest' => $attributesRequest,
+            'attributes' => $attributes
         );
 
         $this->view->setVars($variables);
@@ -209,6 +217,21 @@ class ControllerBase extends Controller {
         $this->view->setVar("currencies", Currency::find());
     }
 
+    // противоположная валюта
+    private function setInverseCurrency () {
+        $currencyObj = $this->session->get('currencyObj');
+
+        if($currencyObj->id == 1) {
+            $inverseId = 3;
+        } else if($currencyObj->id == 2) {
+            $inverseId = 1;
+        } else if($currencyObj->id == 3) {
+            $inverseId = 1;
+        }
+        $inverse = Currency::findFirst($inverseId);
+        $this->view->setVar("inverseCurrency", $inverse);
+    }
+
     private function setMetaDefault () {
         $url = $this->router->getRewriteUri();
         $meta = Meta::findFirst(array(
@@ -241,6 +264,22 @@ class ControllerBase extends Controller {
             'order' => "position"
         ));
         $this->view->setVar('menuList', $menuList);
+    }
+
+    public function setBrands() {
+        $frontCache = new Data(array(
+            "lifetime" => 172800
+        ));
+
+        $cache = new File($frontCache, array(
+            "cacheDir" => CACHE_PATH
+        ));
+
+        if(!$brands = $cache->get('brands')) {
+            $brands = Attributes::find('attribute_name_id = 6'); // производители
+            $cache->save('brands', $brands);
+        }
+        $this->view->setVar('brands', $brands);
     }
 
 }
