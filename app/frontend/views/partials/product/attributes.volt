@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </fieldset>
-        {% else %}
+        {% elseif attrNameId != 8 %}
             <fieldset class="attribute_fieldset">
                 <label class="attribute_label">{{ attrName.title }} :&nbsp;</label>
                 <div class="attribute_list">
@@ -50,6 +50,10 @@
                     </ul>
                 </div>
             </fieldset>
+        {% elseif attrNameId == 8 %}
+            {% for attr in attrList %}
+                <img src="{{ attr.getVal() }}" />
+            {% endfor %}
         {% endif %}
     {% endfor %}
 </div>

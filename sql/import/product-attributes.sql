@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS attributeList;
 DROP TABLE IF EXISTS productAttributeList;
 DROP TABLE IF EXISTS pa_uid;
+DROP TABLE IF EXISTS pa_attributes;
 
 CREATE TEMPORARY TABLE attributeList
     SELECT a2.*
@@ -36,16 +37,22 @@ CREATE TEMPORARY TABLE productAttributeList
 
     WHERE a.attribute_name_id NOT IN (1,4,5);
 
+
 CREATE  TEMPORARY TABLE pa_uid
   SELECT
     pa.*, CONCAT(pa.product_id, '_', pa.attribute_id) as uid
   FROM horses.product_attributes pa;
 
+CREATE TEMPORARY TABLE pa_attributes
+    SELECT
+      pa.product_id as product_id, pa.attribute_id as attribute_id
+    FROM productAttributeList pa
+      LEFT JOIN pa_uid ON pa_uid.uid = pa.uid
+    WHERE pa_uid.uid IS NULL;
+
 start transaction;
   INSERT INTO horses.product_attributes
     SELECT
-      pa.product_id, pa.attribute_id
-    FROM productAttributeList pa
-    LEFT JOIN pa_uid ON pa_uid.uid = pa.uid
-    WHERE pa_uid.uid IS NULL;
+      null as id, pa.product_id, pa.attribute_id
+    FROM pa_attributes pa;
 commit;

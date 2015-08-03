@@ -1,3 +1,4 @@
+{% if sliderList is defined %}
 <div id="banner">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -34,3 +35,4 @@
         </a>
     </div>
 </div>
+{% endif %}

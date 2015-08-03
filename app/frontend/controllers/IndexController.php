@@ -18,8 +18,9 @@ use Phalcon\Paginator\Adapter\Model;
 class IndexController extends ControllerBase
 {
     public function indexAction() {
-
-        $this->view->setVar('sliderList', Slider::find('is_active=1'));
+        if($_GET == array()) {
+            $this->view->setVar('sliderList', Slider::find('is_active=1'));
+        }
     }
 }
 

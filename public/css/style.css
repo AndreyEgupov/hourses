@@ -304,3 +304,15 @@ div.slogal .phone {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+.header-container #header_logo .logo {
+    width: 200px
+}
+
+.header-container #header_logo .logo img {
+    width: 120%;
+}
+
+div.box-menu ul.tree {
+    font-size: 1.2em;
+}
