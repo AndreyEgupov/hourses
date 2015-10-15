@@ -28,6 +28,12 @@ class Currency extends \Phalcon\Mvc\Model
     public $relation;
 
     /**
+     *
+     * @var string
+     */
+    public $alias;
+
+    /**
      * Independent Column Mapping.
      */
     public function columnMap()
@@ -36,7 +42,8 @@ class Currency extends \Phalcon\Mvc\Model
             'id' => 'id', 
             'title' => 'title', 
             'symbol' => 'symbol', 
-            'relation' => 'relation'
+            'relation' => 'relation',
+            'alias' => 'alias'
         );
     }
 

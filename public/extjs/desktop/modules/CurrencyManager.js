@@ -1,14 +1,14 @@
-Ext.define('MyDesktop.ServiceManager', {
+Ext.define('MyDesktop.CurrencyManager', {
     extend: 'Ext.ux.desktop.Module',
 
-    id:'service-manager',
+    id:'currency-manager',
         
     init : function(){
   
         var self = this;
         
         this.launcher = {
-            text: 'Service',
+            text: 'Currency',
             iconCls: 'icon-grid',
             handler : this.createWindow,
             scope : this
@@ -18,14 +18,12 @@ Ext.define('MyDesktop.ServiceManager', {
         this.store = null;
         this.urlImage = null;
   
-        Ext.define('Service', {
+        Ext.define('Currency', {
             extend: 'Ext.data.Model',
             fields: [
                 {name: 'id', type: 'int'},
-                {name: 'parent_id', type: 'int'},
-                {name: 'count_products', type: 'int'},
-                'title','img',
-                {name: 'is_active', type: 'bool'}
+                'title', 'symbol',
+                {name : 'relation', type : "float"}
             ],
             idProperty: 'id'
         });
@@ -44,10 +42,10 @@ Ext.define('MyDesktop.ServiceManager', {
         
             // create the Data Store
             this.store = Ext.create('Ext.data.Store', {
-                model : "Service",
+                model : "Currency",
                 proxy: {
                     type: 'ajax',
-                    url: '/admin/service/getList.json',
+                    url: '/admin/currency/getList.json',
                     reader: {
                         type: 'json',
                         root: 'data',
@@ -55,7 +53,7 @@ Ext.define('MyDesktop.ServiceManager', {
                     }
                 }
             });
-
+            
             var store = this.store;
             
             this.grid = Ext.create('Ext.grid.Panel', {
@@ -70,30 +68,20 @@ Ext.define('MyDesktop.ServiceManager', {
                     width: 30,
                     sortable: true
                 },{
-                    text: "Title",
+                    text: "title",
                     dataIndex: 'title',
-                    sortable: true,
-                    flex: true
-                },{
-                    text: "Родитель",
-                    dataIndex: 'parent_id',
                     flex : true,
-                    sortable: true,
-                    renderer : function (val) {
-                        var title = null;
-                        Ext.Array.each(self.store.getRange(), function (r) {
-                            if (val == r.data.id) {
-                                title = r.data.title;
-                            }
-                        });
-                        return title;
-                    },
-                    width: 170
+                    sortable: true
                 },{
-                    text: "Кол-во товатор",
-                    dataIndex: 'count_products',
-                    sortable: true,
-                    flex: true
+                    text: "Курс (1 / курс на рынке)",
+                    dataIndex: 'relation',
+                    flex : true,
+                    sortable: true
+                },{
+                    text: "Символ",
+                    dataIndex: 'symbol',
+                    flex : true,
+                    sortable: true
                 }]
             });
             
@@ -101,7 +89,7 @@ Ext.define('MyDesktop.ServiceManager', {
         
             win = desktop.createWindow({
                 id: id,
-                title:'Категории товаров',
+                title:'Курс валют',
                 width: 800,
                 height: 600,
                 iconCls: 'icon-grid',
@@ -113,18 +101,13 @@ Ext.define('MyDesktop.ServiceManager', {
                 ],
                 tbar:[{
                     iconCls: 'icon-add',
-                    text: 'Добавить',
-                    scope: this,
-                    handler: function() {
-                        this.createForm("new");
-                    }
-                }, '-', {
-                    iconCls: 'icon-add',
                     text: 'Редактирование',
                     scope: this,
                     handler: function() {
                         var selection = grid.getView().getSelectionModel().getSelection()[0];
+
                         if (!selection) return;
+
                         this.createForm(selection.raw.id, selection.raw);
                     }
                 }]
@@ -132,18 +115,21 @@ Ext.define('MyDesktop.ServiceManager', {
             
             store.load();
         }
+        
         win.show(null, function() {windowShow(self)});
+
+        
         return win;
     },
 
     createForm : function(id, data){
-
+       
         var desktop = this.app.getDesktop();
-        var winId = 'service-manager-service-form-' + id;
+        var winId = 'currency-manager-currency-form-' + id;
         var win = desktop.getWindow(winId);
-
+        
         var self = this;
-
+        
         if(!win){
 
             this.form = Ext.widget('form', {
@@ -162,9 +148,9 @@ Ext.define('MyDesktop.ServiceManager', {
                     msgTarget: 'side',
                     anchor:'100%'
                 },
-
+                
                 reader : Ext.create('Ext.data.reader.Json', {
-                    model: 'Service'
+                    model: 'Currency'
                 }),
 
                 items: [{
@@ -174,26 +160,21 @@ Ext.define('MyDesktop.ServiceManager', {
                     disabled: true
                 },{
                     xtype: 'textfield',
-                    fieldLabel: 'Название *',
+                    fieldLabel: 'Title *',
                     name: 'title',
                     allowBlank: false
                 },{
-                    xtype: 'combo',
-                    store: self.store,
-                    displayField: 'title',
-                    valueField: 'id',
-                    name: 'parent_id',
-                    fieldLabel: 'Родительская',
-                    autoHeight: true,
-                    typeAhead: true,
-                    forceSelection: true,
-                    triggerAction: 'all',
-                    queryMode: 'local'
+                    xtype: 'textfield',
+                    fieldLabel: 'Курс (1 / курс на рынке) *',
+                    name: 'relation',
+                    allowBlank: false
                 },{
-                    xtype: 'cefileinput',
-                    fieldLabel: 'Картинка',
-                    name: 'img'
-                }],
+                    xtype: 'textfield',
+                    fieldLabel: 'Символ *',
+                    name: 'symbol',
+                    allowBlank: false
+                }
+            ],
 
                 buttons: [{
                     text: 'Сохранить',
@@ -203,7 +184,7 @@ Ext.define('MyDesktop.ServiceManager', {
                             params: {
                                 'id' : id
                             },
-                            url: '/admin/service/save/'+id,
+                            url: '/admin/currency/save.json',
                             submitEmptyText: false,
                             waitMsg: 'Сохранение...',
                             success: function(form, action) {
@@ -214,10 +195,11 @@ Ext.define('MyDesktop.ServiceManager', {
                     }
                 }]
             });
-
+            
             var form = this.form;
-            var title = id == 'new'? 'Создание' : 'Редактирование';
-
+            
+            var title = 'Редактирование';
+            
             win = desktop.createWindow({
                 id: winId,
                 title: title,
@@ -231,10 +213,10 @@ Ext.define('MyDesktop.ServiceManager', {
                     form
                 ]
             });
-
+            
             if (id != 'new') {
-                form.getForm().load({
-                    url: '/admin/service/getOne',
+                var f = form.getForm().load({
+                    url: '/admin/currency/getOne.json',
                     params : {
                         'id' : id
                     }
